@@ -618,6 +618,10 @@ file = "kubejs/data/minecolonies/worldgen/structure_set/ship.json"
 hash = "f47363a4e44da08c0ffc4197760c99e653a1d3f9e1f2ff232015bcf7daaa52cb"
 
 [[files]]
+file = "kubejs/data/minecraft/worldgen/noise/iceberg_pillar.json"
+hash = "cad5bcd7d5fcf8e2ce76e304e972bb2f4323434e6d061b03d6cba0eae62579ee"
+
+[[files]]
 file = "kubejs/data/minecraft/worldgen/structure_set/ancient_cities.json"
 hash = "fb941c2a854000c154c415cff6867e56c5e43db07f92c9bd3a0aafd25bc09aa1"
 
