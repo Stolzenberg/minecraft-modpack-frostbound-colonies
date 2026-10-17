@@ -1,0 +1,22 @@
+{
+  "structures": [
+    {
+      "structure": "repurposed_structures:village_crimson",
+      "weight": 1
+    },
+    {
+      "structure": "repurposed_structures:village_warped",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "repurposed_structures:advanced_random_spread",
+    "salt": 2010691245,
+    "spacing": 74,
+    "separation": 38,
+    "super_exclusion_zone": {
+      "chunk_count": 6,
+      "other_set": "#repurposed_structures:nether_village_avoid"
+    }
+  }
+}

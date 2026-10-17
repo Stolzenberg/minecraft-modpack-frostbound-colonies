@@ -1,0 +1,100 @@
+# slug  pin=<fileID>  [side=client|server]  [class=<CF-Klasse>]  [pack=server]
+# Basis: Skyward Frontiers 1.0.0 (gleiche Versionen für alle übernommenen Mods), ohne Himmels-/Luftschiff-Mods.
+# Alle Versionen gepinnt (so getestet). Entfernt nach Tests: biomes-o-plenty (Biome werden von Primal Winter nicht
+# eingefroren), towns-and-towers (Blöcke außerhalb der Chunks), minecolonies-compatibility (Tweaks-Mixin-Absturz),
+# primal-winter (Original, Server-Absturz), particle-rain (Konflikt-Risiko mit Primal-Winter-Wetter-Rendering),
+# terralith (zu kleinteilige Biome, durch Tectonic ersetzt).
+# Bewusst entfernt: mss-moogs-soaring-structures, sky-whale-ship (keine schwebenden Strukturen, siehe disable_structures.py).
+# --- Kern: MineColonies ---
+minecolonies                             pin=9058295
+stylecolonies                            pin=9173039
+christmascolonies                        pin=7290892
+createcolonies                           pin=8956260
+jadecolonies                             pin=8879119
+domum-ornamentum                         pin=8784713   # Release 1.0.231 ist zu alt für jadecolonies
+# --- Kern: Create + Farmer's Delight ---
+create                                   pin=7963363
+farmers-delight                          pin=8765184
+# --- Ewiger Winter ---
+colder-primal-winter                     pin=8965877     # gepflegter Fork von Primal Winter (Original 6.0.2 stürzt auf dedizierten Servern ab)
+cold-sweat                               pin=9215368
+create-cold-sweat                        pin=7214552
+# --- Weihnachten ---
+snowy-spirit                             pin=9220620
+macaws-holidays                          pin=7304374
+manyideas-christmas                      pin=8028898
+christmas-delight                        pin=6073163
+festive-delight                          pin=7884696
+christmas-culinary                       pin=5976953
+create-wrapped                           pin=7552615
+christmas-music-discs                    pin=5936162
+# --- Welt / Biome ---
+tectonic                                 pin=8855043 # Gelände: große Kontinente und Gebirge, große Biome (Config: overrides/config/tectonic.json)
+lithostitched                            pin=9170709 # von Tectonic benötigt (nicht als CurseForge-Abhängigkeit eingetragen)
+yeetusexperimentus                       pin=5444189 side=client
+# --- Strukturen / Entdecken ---
+moogs-voyager-structures                 pin=8970306
+mtr-moogs-temples-reimagined             pin=8902209
+mmr-moogs-mineshafts-reimagined          pin=9025889
+mns-moogs-nether-structures              pin=8902210
+moogs-end-structures                     pin=8902211
+when-dungeons-arise                      pin=7150870
+explorify                                pin=8082824
+create-structures-arise                  pin=8837992
+dungeon-and-taverns                      pin=5768823
+yungs-better-dungeons-neoforge           pin=5954804
+repurposed-structures                    pin=8688394
+epic-structures-igloo                    pin=8528158
+lootr                                    pin=8968561
+kubejs                                   pin=8843626
+rhino                                    pin=8463898
+natures-compass                          pin=7892954
+explorers-compass                        pin=7892943
+waystones                                pin=8969751
+# --- Mobs & Bosse ---
+mowzies-mobs                             pin=7760267
+lendercataclysm                          pin=8931182
+bosses-of-mass-destruction-forge         pin=8448640
+friends-and-foes-forge                   pin=9108912
+naturalist                               pin=9004373
+critters-and-companions                  pin=8646976
+creeper-overhaul                         pin=6051279
+enderman-overhaul                        pin=7661859
+mutant-monsters                          pin=7232511
+born-in-chaos                            pin=8268280
+ribbits                                  pin=7355196
+frost-bear                               pin=8507529
+# --- Überleben ---
+paragliders                              pin=7795089
+gravestone-mod                           pin=8671622
+sophisticated-backpacks                  pin=9154769
+betterdays                               pin=7978626 # 3x längere Tage (Config: overrides/config/betterdays-common.toml)
+# --- Kleidung: Felle & Stoffe (Kälteschutz über Cold Sweat, siehe coldsweat_frost.py) ---
+weavers-paradise                         pin=9188785 # Stoffe: Baumwolle/Seide/Wolle spinnen & weben, Kleidung als Curios
+patchouli                                pin=7730942 # Anleitungsbuch für Weavers Paradise (optionale Abhängigkeit)
+leather-working-pelts-hides              pin=7189872 # Felle & Häute von Tieren, Gerbgestell
+armor-series-norsemen                    pin=8320921 # Fellrüstungen (Wolf, Bär, Puma) und Schädelhelme
+# --- QoL ---
+jei                                      pin=8792638
+jade                                     pin=8591319
+appleskin                                pin=7854442
+xaeros-minimap                           pin=9067173 side=client
+xaeros-world-map                         pin=9067277 side=client
+mouse-tweaks                             pin=5637846 side=client
+controlling                              pin=6368976 side=client
+inventory-sorter                         pin=7188660   # Mittelklick sortiert; weicht dem Mausrad von Mouse Tweaks aus
+# --- Performance / Stabilität ---
+sodium                                   pin=8756580 side=client
+irisshaders                              pin=8242804 side=client
+complementary-reimagined                 pin=8884654 side=client class=6552
+distant-horizons                         pin=9004764
+immediatelyfast                          pin=9165518 side=client
+entityculling                            pin=9100286 side=client
+ferritecore                              pin=7524151
+modernfix                                pin=9101836
+lithium                                  pin=8330365
+alltheleaks                              pin=8943912
+clumps                                   pin=5623731
+spark                                    pin=6225208
+crash-assistant                          pin=8636685 side=client
+antixray-forge                           pin=7979123 pack=server

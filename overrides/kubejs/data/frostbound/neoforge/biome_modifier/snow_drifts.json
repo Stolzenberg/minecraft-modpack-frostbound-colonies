@@ -1,0 +1,9 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": [
+    "frostbound:snow_drift",
+    "frostbound:snow_drift_ground"
+  ],
+  "step": "top_layer_modification"
+}

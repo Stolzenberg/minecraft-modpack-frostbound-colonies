@@ -1,0 +1,13 @@
+name = "Armor Series - Norsemen"
+filename = "armor_series__norsemen-1.0.0-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "391f5bc3de52391dfc9573a1e978a933601b79d8"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8320921
+project-id = 1588078

@@ -1,0 +1,13 @@
+name = "Christmas Culinary & Decorations "
+filename = "christmas_culinary_and_decorations-1.6.0-neoforge-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b7f641c738a353d8251d7c25ce29e2520426e800"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5976953
+project-id = 946010

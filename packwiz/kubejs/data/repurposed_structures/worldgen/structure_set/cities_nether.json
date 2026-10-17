@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "repurposed_structures:city_nether",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "repurposed_structures:advanced_random_spread",
+    "salt": 314217945,
+    "spacing": 140,
+    "separation": 70,
+    "super_exclusion_zone": {
+      "chunk_count": 4,
+      "other_set": "#repurposed_structures:nether_city_avoid"
+    }
+  }
+}

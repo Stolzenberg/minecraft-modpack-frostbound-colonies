@@ -1,0 +1,13 @@
+name = "Frostbound Colonies"
+author = "Tim"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "96d34a5daebfe2fed6418d9a60e80cdf0d8d2c8e66975c9738bc3a7a54f890d2"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.256"

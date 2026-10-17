@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "minecolonies:ship",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1225566777,
+    "spacing": 77,
+    "separation": 35,
+    "type": "minecraft:random_spread"
+  }
+}

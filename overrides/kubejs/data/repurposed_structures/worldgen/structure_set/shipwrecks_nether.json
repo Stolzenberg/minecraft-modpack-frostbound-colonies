@@ -1,0 +1,26 @@
+{
+  "structures": [
+    {
+      "structure": "repurposed_structures:shipwreck_nether_bricks",
+      "weight": 1
+    },
+    {
+      "structure": "repurposed_structures:shipwreck_crimson",
+      "weight": 100
+    },
+    {
+      "structure": "repurposed_structures:shipwreck_warped",
+      "weight": 100
+    }
+  ],
+  "placement": {
+    "type": "repurposed_structures:advanced_random_spread",
+    "salt": 1224747205,
+    "spacing": 29,
+    "separation": 15,
+    "super_exclusion_zone": {
+      "chunk_count": 2,
+      "other_set": "#repurposed_structures:nether_shipwreck_avoid"
+    }
+  }
+}

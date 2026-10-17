@@ -1,0 +1,15 @@
+#
+# Should the vanilla /weather be disabled?
+enableWeatherCommand = false
+#
+# If true, snow will be layered higher than one layer during world generation.
+#
+# Note: due to snow layers being > 1 block tall, this tends to prevent most passive (and hostile) mob spawning on the surface, since there are no places to spawn.
+enableSnowAccumulationDuringWorldgen = false
+#
+#If true, snow will be layered higher than one layer during weather (snow).
+enableSnowAccumulationDuringWeather = false
+#
+# A list of dimensions that will be modified by Primal Winter.
+# Dimensions on this list, and all biomes that they may generate, **will** be modified.
+winterDimensions = ["minecraft:overworld"]

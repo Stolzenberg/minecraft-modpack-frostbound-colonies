@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "minecolonies:amazon_camp",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1223366777,
+    "spacing": 77,
+    "separation": 35,
+    "type": "minecraft:random_spread"
+  }
+}

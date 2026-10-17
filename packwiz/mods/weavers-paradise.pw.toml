@@ -1,0 +1,13 @@
+name = "Weavers Paradise"
+filename = "weaversparadise-1.6.3.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1245ac2b87209beca8831d5f40b8ffb786ddcc83"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9188785
+project-id = 1334789

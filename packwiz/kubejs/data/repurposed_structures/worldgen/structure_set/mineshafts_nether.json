@@ -1,0 +1,32 @@
+{
+  "structures": [
+    {
+      "structure": "repurposed_structures:mineshaft_basalt",
+      "weight": 100
+    },
+    {
+      "structure": "repurposed_structures:mineshaft_crimson",
+      "weight": 100
+    },
+    {
+      "structure": "repurposed_structures:mineshaft_nether",
+      "weight": 1
+    },
+    {
+      "structure": "repurposed_structures:mineshaft_soul",
+      "weight": 100
+    },
+    {
+      "structure": "repurposed_structures:mineshaft_warped",
+      "weight": 100
+    }
+  ],
+  "placement": {
+    "type": "repurposed_structures:advanced_random_spread",
+    "salt": 129435040,
+    "spacing": 2,
+    "separation": 1,
+    "frequency": 0.00275,
+    "frequency_reduction_method": "legacy_type_3"
+  }
+}

@@ -1,0 +1,13 @@
+name = "Create: Structures Arise"
+filename = "Create-Structures-Arise-1.21.1-NeoForge-176.49.49.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "05d47e5f723456ebe2058f39dd6baab1f9516f87"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8837992
+project-id = 1010066

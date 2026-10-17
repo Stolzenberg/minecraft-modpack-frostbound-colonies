@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "snowyspirit:gingerbread_house",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 784921483,
+    "spacing": 49,
+    "separation": 34
+  }
+}

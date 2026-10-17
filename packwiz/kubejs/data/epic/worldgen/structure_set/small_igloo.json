@@ -1,0 +1,19 @@
+{
+  "structures": [
+    {
+      "structure": "epic:small_igloo",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 909452342234324,
+    "locate_offset": [
+      0,
+      0,
+      0
+    ],
+    "spacing": 49,
+    "separation": 42
+  }
+}

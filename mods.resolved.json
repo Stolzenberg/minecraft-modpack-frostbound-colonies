@@ -1,0 +1,2162 @@
+[
+ {
+  "slug": "minecolonies",
+  "name": "MineColonies",
+  "projectID": 245506,
+  "fileID": 9058295,
+  "fileName": "minecolonies-1.1.1403-1.21.1.jar",
+  "date": "2026-10-04",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/9058/295/minecolonies-1.1.1403-1.21.1.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   527361,
+   298744,
+   900364,
+   303278,
+   522992
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/minecolonies",
+  "authors": [
+   "Raycoms",
+   "someaddon",
+   "LDTTeam"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "stylecolonies",
+  "name": "Stylecolonies",
+  "projectID": 827507,
+  "fileID": 9173039,
+  "fileName": "stylecolonies-1.15.64-1.21.1.jar",
+  "date": "2026-10-14",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/9173/39/stylecolonies-1.15.64-1.21.1.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   245506
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/stylecolonies",
+  "authors": [
+   "Raycoms",
+   "LDTTeam"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "christmascolonies",
+  "name": "ChristmasColonies",
+  "projectID": 945525,
+  "fileID": 7290892,
+  "fileName": "christmascolonies-1.21.1-1.9.jar",
+  "date": "2025-12-03",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/7290/892/christmascolonies-1.21.1-1.9.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/christmascolonies",
+  "authors": [
+   "Raycoms"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "createcolonies",
+  "name": "CreateColonies",
+  "projectID": 1332665,
+  "fileID": 8956260,
+  "fileName": "createcolonies-2.0.7.jar",
+  "date": "2026-09-23",
+  "releaseType": 1,
+  "downloadUrl": null,
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   298744,
+   328085
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/createcolonies",
+  "authors": [
+   "MotionlessTrain"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "jadecolonies",
+  "name": "JadeColonies",
+  "projectID": 882310,
+  "fileID": 8879119,
+  "fileName": "jadecolonies-1.21.1-1.6.1.jar",
+  "date": "2026-09-14",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8879/119/jadecolonies-1.21.1-1.6.1.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   324717
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/jadecolonies",
+  "authors": [
+   "uecasm"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "domum-ornamentum",
+  "name": "Domum Ornamentum",
+  "projectID": 527361,
+  "fileID": 8784713,
+  "fileName": "domum-ornamentum-1.0.236-snapshot-main.jar",
+  "date": "2026-09-01",
+  "releaseType": 2,
+  "downloadUrl": "https://edge.forgecdn.net/files/8784/713/domum-ornamentum-1.0.236-snapshot-main.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/domum-ornamentum",
+  "authors": [
+   "OrionOnline",
+   "Raycoms"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "create",
+  "name": "Create",
+  "projectID": 328085,
+  "fileID": 7963363,
+  "fileName": "create-1.21.1-6.0.10.jar",
+  "date": "2026-04-21",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/7963/363/create-1.21.1-6.0.10.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/create",
+  "authors": [
+   "simibubi",
+   "IThundxr"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "farmers-delight",
+  "name": "Farmer's Delight",
+  "projectID": 398521,
+  "fileID": 8765184,
+  "fileName": "FarmersDelight-1.21.1-1.3.4.jar",
+  "date": "2026-08-29",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8765/184/FarmersDelight-1.21.1-1.3.4.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/farmers-delight",
+  "authors": [
+   "vectorwing"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "colder-primal-winter",
+  "name": "Colder Primal Winter",
+  "projectID": 1709971,
+  "fileID": 8965877,
+  "fileName": "primalwinter-1.21.1-6.1.1.jar",
+  "date": "2026-09-24",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8965/877/primalwinter-1.21.1-6.1.1.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/colder-primal-winter",
+  "authors": [
+   "Wolfieboy09"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "cold-sweat",
+  "name": "Cold Sweat",
+  "projectID": 506194,
+  "fileID": 9215368,
+  "fileName": "ColdSweat-2.4.4.jar",
+  "date": "2026-10-16",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/9215/368/ColdSweat-2.4.4.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/cold-sweat",
+  "authors": [
+   "Mikul"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "create-cold-sweat",
+  "name": "Create: Cold Sweat",
+  "projectID": 1184450,
+  "fileID": 7214552,
+  "fileName": "create_cold_sweat-1.1.2.jar",
+  "date": "2025-11-12",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/7214/552/create_cold_sweat-1.1.2.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   506194,
+   328085
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/create-cold-sweat",
+  "authors": [
+   "TheOrionPax"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "snowy-spirit",
+  "name": "Snowy Spirit",
+  "projectID": 566142,
+  "fileID": 9220620,
+  "fileName": "snowyspirit-1.21.1-3.1.16-neoforge.jar",
+  "date": "2026-10-17",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/9220/620/snowyspirit-1.21.1-3.1.16-neoforge.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   499980
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/snowy-spirit",
+  "authors": [
+   "MehVahdJukaar"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "macaws-holidays",
+  "name": "Macaw's Holidays",
+  "projectID": 930232,
+  "fileID": 7304374,
+  "fileName": "mcw-holidays-1.1.2-mc1.21.1neoforge.jar",
+  "date": "2025-12-07",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/7304/374/mcw-holidays-1.1.2-mc1.21.1neoforge.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/macaws-holidays",
+  "authors": [
+   "sketch_macaw"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "manyideas-christmas",
+  "name": "ManyIdeas Christmas",
+  "projectID": 736753,
+  "fileID": 8028898,
+  "fileName": "ManyIdeasChristmas-1.21.1-2.0.1.jar",
+  "date": "2026-05-02",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8028/898/ManyIdeasChristmas-1.21.1-2.0.1.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   433642,
+   398351
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/manyideas-christmas",
+  "authors": [
+   "GeheimagentNr1",
+   "Muse31"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "christmas-delight",
+  "name": "Christmas Delight (Farmers Delight Addon)",
+  "projectID": 1134366,
+  "fileID": 6073163,
+  "fileName": "farmers_delight_christmas_edition-V1.0.2-neoforge-1.20.1.jar",
+  "date": "2025-01-10",
+  "releaseType": 1,
+  "downloadUrl": null,
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/christmas-delight",
+  "authors": [
+   "ThePoupyBuTers"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "festive-delight",
+  "name": "Festive Delight - Christmas eve",
+  "projectID": 711672,
+  "fileID": 7884696,
+  "fileName": "festive_delight-2.0.0-neoforge-1.21.1.jar",
+  "date": "2026-04-06",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/7884/696/festive_delight-2.0.0-neoforge-1.21.1.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   398521
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/festive-delight",
+  "authors": [
+   "To0pa"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "christmas-culinary",
+  "name": "Christmas Culinary & Decorations ",
+  "projectID": 946010,
+  "fileID": 5976953,
+  "fileName": "christmas_culinary_and_decorations-1.6.0-neoforge-1.21.1.jar",
+  "date": "2024-12-09",
+  "releaseType": 3,
+  "downloadUrl": "https://edge.forgecdn.net/files/5976/953/christmas_culinary_and_decorations-1.6.0-neoforge-1.21.1.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   238222
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/christmas-culinary",
+  "authors": [
+   "LillouArts"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "create-wrapped",
+  "name": "Create: Wrapped",
+  "projectID": 1394354,
+  "fileID": 7552615,
+  "fileName": "create_wrapped-1.0.3-neoforge-1.21.1.jar",
+  "date": "2026-01-30",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/7552/615/create_wrapped-1.0.3-neoforge-1.21.1.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   328085
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/create-wrapped",
+  "authors": [
+   "robinfrt"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "christmas-music-discs",
+  "name": "Christmas Music Discs",
+  "projectID": 1135456,
+  "fileID": 5936162,
+  "fileName": "christmasmusicdiscs-1.21.1-v1.3.jar",
+  "date": "2024-11-25",
+  "releaseType": 1,
+  "downloadUrl": null,
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/christmas-music-discs",
+  "authors": [
+   "ThePoupyBuTers"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "tectonic",
+  "name": "Tectonic",
+  "projectID": 686836,
+  "fileID": 8855043,
+  "fileName": "tectonic-3.0.28-neoforge-21.1.jar",
+  "date": "2026-09-11",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8855/43/tectonic-3.0.28-neoforge-21.1.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/tectonic",
+  "authors": [
+   "Apollo"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "lithostitched",
+  "name": "Lithostitched",
+  "projectID": 936015,
+  "fileID": 9170709,
+  "fileName": "lithostitched-1.8.1-neoforge-21.1.jar",
+  "date": "2026-10-14",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/9170/709/lithostitched-1.8.1-neoforge-21.1.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/lithostitched",
+  "authors": [
+   "Apollo",
+   "SmellyModder"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "yeetusexperimentus",
+  "name": "Yeetus Experimentus",
+  "projectID": 635427,
+  "fileID": 5444189,
+  "fileName": "yeetusexperimentus-neoforge-87.0.0.jar",
+  "date": "2024-06-19",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/5444/189/yeetusexperimentus-neoforge-87.0.0.jar",
+  "side": "client",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/yeetusexperimentus",
+  "authors": [
+   "Sunekaer"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "moogs-voyager-structures",
+  "name": "MVS - Moog's Voyager Structures",
+  "projectID": 656977,
+  "fileID": 8970306,
+  "fileName": "MoogsVoyagerStructures-universal-1.21-5.1.3.jar",
+  "date": "2026-09-25",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8970/306/MoogsVoyagerStructures-universal-1.21-5.1.3.jar",
+  "side": "server",
+  "why": "listed",
+  "requires": [
+   1337167
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/moogs-voyager-structures",
+  "authors": [
+   "finndog_123",
+   "olver____",
+   "TFA120",
+   "havococcultist"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "mtr-moogs-temples-reimagined",
+  "name": "MTR - Moog's Temples Reimagined",
+  "projectID": 1339737,
+  "fileID": 8902209,
+  "fileName": "MoogsTemplesReimagined-universal-1.21-2.0.4.jar",
+  "date": "2026-09-17",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8902/209/MoogsTemplesReimagined-universal-1.21-2.0.4.jar",
+  "side": "server",
+  "why": "listed",
+  "requires": [
+   1337167
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/mtr-moogs-temples-reimagined",
+  "authors": [
+   "finndog_123"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "mmr-moogs-mineshafts-reimagined",
+  "name": "MMR - Moog's Mineshafts Reimagined",
+  "projectID": 1570795,
+  "fileID": 9025889,
+  "fileName": "MoogsMineshaftsReimagined-universal-1.21-1.1.0.jar",
+  "date": "2026-10-01",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/9025/889/MoogsMineshaftsReimagined-universal-1.21-1.1.0.jar",
+  "side": "server",
+  "why": "listed",
+  "requires": [
+   1337167
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/mmr-moogs-mineshafts-reimagined",
+  "authors": [
+   "finndog_123"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "mns-moogs-nether-structures",
+  "name": "MNS - Moog's Nether Structures",
+  "projectID": 967466,
+  "fileID": 8902210,
+  "fileName": "MoogsNetherStructures-universal-1.21-3.1.1.jar",
+  "date": "2026-09-17",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8902/210/MoogsNetherStructures-universal-1.21-3.1.1.jar",
+  "side": "server",
+  "why": "listed",
+  "requires": [
+   1337167
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/mns-moogs-nether-structures",
+  "authors": [
+   "finndog_123"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "moogs-end-structures",
+  "name": "MES - Moog's End Structures",
+  "projectID": 892382,
+  "fileID": 8902211,
+  "fileName": "MoogsEndStructures-universal-1.21-2.1.1.jar",
+  "date": "2026-09-17",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8902/211/MoogsEndStructures-universal-1.21-2.1.1.jar",
+  "side": "server",
+  "why": "listed",
+  "requires": [
+   1337167
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/moogs-end-structures",
+  "authors": [
+   "finndog_123"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "when-dungeons-arise",
+  "name": "When Dungeons Arise - Forge!",
+  "projectID": 442508,
+  "fileID": 7150870,
+  "fileName": "DungeonsArise-1.21.1-2.1.68-release.jar",
+  "date": "2025-10-26",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/7150/870/DungeonsArise-1.21.1-2.1.68-release.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise",
+  "authors": [
+   "Aureljz",
+   "diamondtown_"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "explorify",
+  "name": "Explorify – Dungeons & Structures",
+  "projectID": 698309,
+  "fileID": 8082824,
+  "fileName": "Explorify v1.6.5.mod.jar",
+  "date": "2026-05-13",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8082/824/Explorify%20v1.6.5.mod.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/explorify",
+  "authors": [
+   "bebebea_loste"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "create-structures-arise",
+  "name": "Create: Structures Arise",
+  "projectID": 1010066,
+  "fileID": 8837992,
+  "fileName": "Create-Structures-Arise-1.21.1-NeoForge-176.49.49.jar",
+  "date": "2026-09-08",
+  "releaseType": 1,
+  "downloadUrl": null,
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   328085
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/create-structures-arise",
+  "authors": [
+   "SmartStreamLabs"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "dungeon-and-taverns",
+  "name": "Dungeons and Taverns",
+  "projectID": 853794,
+  "fileID": 5768823,
+  "fileName": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+  "date": "2024-09-29",
+  "releaseType": 2,
+  "downloadUrl": "https://edge.forgecdn.net/files/5768/823/dungeons-and-taverns-v4.4.4%20%5bNeoForge%5d.jar",
+  "side": "server",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/dungeon-and-taverns",
+  "authors": [
+   "Nova_Wostra"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "yungs-better-dungeons-neoforge",
+  "name": "YUNG's Better Dungeons (NeoForge) [1.20.4 - 1.21.1 ONLY]",
+  "projectID": 1015112,
+  "fileID": 5954804,
+  "fileName": "YungsBetterDungeons-1.21.1-NeoForge-5.1.4.jar",
+  "date": "2024-12-01",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/5954/804/YungsBetterDungeons-1.21.1-NeoForge-5.1.4.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   1015100
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/yungs-better-dungeons-neoforge",
+  "authors": [
+   "YUNGNICKYOUNG",
+   "EveCommander"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "repurposed-structures",
+  "name": "Repurposed Structures (Neoforge/Forge)",
+  "projectID": 368293,
+  "fileID": 8688394,
+  "fileName": "repurposed_structures-7.5.22+1.21.1-neoforge.jar",
+  "date": "2026-08-20",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8688/394/repurposed_structures-7.5.22%2b1.21.1-neoforge.jar",
+  "side": "server",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/repurposed-structures",
+  "authors": [
+   "telepathicgrunt"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "epic-structures-igloo",
+  "name": "Epic Structures: Igloo",
+  "projectID": 1511498,
+  "fileID": 8528158,
+  "fileName": "epic-structures-igloo-1.0.5 1.21+ 26+.jar",
+  "date": "2026-07-28",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8528/158/epic-structures-igloo-1.0.5%201.21%2b%2026%2b.jar",
+  "side": "server",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/epic-structures-igloo",
+  "authors": [
+   "HardWater"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "lootr",
+  "name": "Lootr (Forge & NeoForge)",
+  "projectID": 361276,
+  "fileID": 8968561,
+  "fileName": "lootr-neoforge-1.21.1-1.11.38.127.jar",
+  "date": "2026-09-25",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8968/561/lootr-neoforge-1.21.1-1.11.38.127.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/lootr",
+  "authors": [
+   "Noobanidus",
+   "ZestyBlaze",
+   "embeddedt"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "kubejs",
+  "name": "KubeJS",
+  "projectID": 238086,
+  "fileID": 8843626,
+  "fileName": "kubejs-neoforge-2101.7.2-build.377.jar",
+  "date": "2026-09-09",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8843/626/kubejs-neoforge-2101.7.2-build.377.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   1637623,
+   416294
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/kubejs",
+  "authors": [
+   "Lat"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "rhino",
+  "name": "Rhino",
+  "projectID": 416294,
+  "fileID": 8463898,
+  "fileName": "rhino-2101.2.8-build.91.jar",
+  "date": "2026-07-19",
+  "releaseType": 2,
+  "downloadUrl": "https://edge.forgecdn.net/files/8463/898/rhino-2101.2.8-build.91.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/rhino",
+  "authors": [
+   "Lat"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "natures-compass",
+  "name": "Nature's Compass",
+  "projectID": 252848,
+  "fileID": 7892954,
+  "fileName": "NaturesCompass-1.21.1-3.4.0-neoforge.jar",
+  "date": "2026-04-08",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/7892/954/NaturesCompass-1.21.1-3.4.0-neoforge.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/natures-compass",
+  "authors": [
+   "Chaosyr"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "explorers-compass",
+  "name": "Explorer's Compass",
+  "projectID": 491794,
+  "fileID": 7892943,
+  "fileName": "ExplorersCompass-1.21.1-3.4.0-neoforge.jar",
+  "date": "2026-04-08",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/7892/943/ExplorersCompass-1.21.1-3.4.0-neoforge.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/explorers-compass",
+  "authors": [
+   "Chaosyr"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "waystones",
+  "name": "Waystones",
+  "projectID": 245755,
+  "fileID": 8969751,
+  "fileName": "waystones-neoforge-1.21.1-21.1.46.jar",
+  "date": "2026-09-25",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8969/751/waystones-neoforge-1.21.1-21.1.46.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   531761
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/waystones",
+  "authors": [
+   "BlayTheNinth"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "mowzies-mobs",
+  "name": "Mowzie's Mobs",
+  "projectID": 250498,
+  "fileID": 7760267,
+  "fileName": "mowziesmobs-1.21.1-1.8.2.jar",
+  "date": "2026-03-15",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/7760/267/mowziesmobs-1.21.1-1.8.2.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   388172
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/mowzies-mobs",
+  "authors": [
+   "bobmowzie",
+   "noonyeyzz",
+   "wadoo154",
+   "pau101",
+   "vakypanda"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "lendercataclysm",
+  "name": "L_Ender 's Cataclysm",
+  "projectID": 551586,
+  "fileID": 8931182,
+  "fileName": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+  "date": "2026-09-20",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8931/182/L_Ender%27s%20Cataclysm%201.21.1-3.33.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   309927,
+   1001614
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/lendercataclysm",
+  "authors": [
+   "mcl_ender"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "bosses-of-mass-destruction-forge",
+  "name": "Bosses of Mass Destruction [Forge | NeoForge]",
+  "projectID": 941573,
+  "fileID": 8448640,
+  "fileName": "BOMD-NeoForge-1.21-1.3.3.jar",
+  "date": "2026-07-17",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8448/640/BOMD-NeoForge-1.21-1.3.3.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   955605,
+   348521,
+   388172
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/bosses-of-mass-destruction-forge",
+  "authors": [
+   "Cerbon"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "friends-and-foes-forge",
+  "name": "Friends&Foes (Forge/NeoForge)",
+  "projectID": 602059,
+  "fileID": 9108912,
+  "fileName": "friendsandfoes-neoforge-5.0.2+mc1.21.1.jar",
+  "date": "2026-10-09",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/9108/912/friendsandfoes-neoforge-5.0.2%2bmc1.21.1.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   570073
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/friends-and-foes-forge",
+  "authors": [
+   "Faboslav"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "naturalist",
+  "name": "Naturalist",
+  "projectID": 627986,
+  "fileID": 9004373,
+  "fileName": "naturalist-2.0.5-neoforge-1.21.1.jar",
+  "date": "2026-09-28",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/9004/373/naturalist-2.0.5-neoforge-1.21.1.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   388172
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/naturalist",
+  "authors": [
+   "crispytwig",
+   "Starfish_Studios"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "critters-and-companions",
+  "name": "Critters and Companions",
+  "projectID": 574913,
+  "fileID": 8646976,
+  "fileName": "crittersandcompanions-neoforge-1.21.1-2.7.0.jar",
+  "date": "2026-08-14",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8646/976/crittersandcompanions-neoforge-1.21.1-2.7.0.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   419699,
+   667299,
+   388172
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/critters-and-companions",
+  "authors": [
+   "joosh_7889",
+   "Lytho",
+   "AlexNijjar",
+   "possible_triangle",
+   "CodexAdrian",
+   "3xpl01t"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "creeper-overhaul",
+  "name": "Creeper Overhaul",
+  "projectID": 561625,
+  "fileID": 6051279,
+  "fileName": "CreeperOverhaul-neoforge-1.21.1-4.0.6.jar",
+  "date": "2025-01-04",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/6051/279/CreeperOverhaul-neoforge-1.21.1-4.0.6.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   388172,
+   570073,
+   714059
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/creeper-overhaul",
+  "authors": [
+   "joosh_7889",
+   "ThatGravyBoat"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "enderman-overhaul",
+  "name": "Enderman Overhaul",
+  "projectID": 574409,
+  "fileID": 7661859,
+  "fileName": "endermanoverhaul-neoforge-1.21.1-2.0.3.jar",
+  "date": "2026-02-22",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/7661/859/endermanoverhaul-neoforge-1.21.1-2.0.3.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   714059,
+   570073,
+   388172
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/enderman-overhaul",
+  "authors": [
+   "joosh_7889",
+   "HellionGames",
+   "ItsHamza",
+   "AlexNijjar"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "mutant-monsters",
+  "name": "Mutant Monsters",
+  "projectID": 852665,
+  "fileID": 7232511,
+  "fileName": "MutantMonsters-v21.1.1-1.21.1-NeoForge.jar",
+  "date": "2025-11-17",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/7232/511/MutantMonsters-v21.1.1-1.21.1-NeoForge.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   495476
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/mutant-monsters",
+  "authors": [
+   "Fuzs"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "born-in-chaos",
+  "name": "Born in Chaos",
+  "projectID": 686437,
+  "fileID": 8268280,
+  "fileName": "born_in_chaos_[Neoforge]_1.21.1_1.7.6.jar",
+  "date": "2026-06-17",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8268/280/born_in_chaos_%5bNeoforge%5d_1.21.1_1.7.6.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   388172
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/born-in-chaos",
+  "authors": [
+   "mongoose_artist"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "ribbits",
+  "name": "Ribbits",
+  "projectID": 622967,
+  "fileID": 7355196,
+  "fileName": "Ribbits-1.21.1-NeoForge-4.1.6.jar",
+  "date": "2025-12-19",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/7355/196/Ribbits-1.21.1-NeoForge-4.1.6.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   388172,
+   1015100
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/ribbits",
+  "authors": [
+   "joosh_7889",
+   "HellionGames",
+   "YUNGNICKYOUNG"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "frost-bear",
+  "name": "Frost Bear",
+  "projectID": 1624518,
+  "fileID": 8507529,
+  "fileName": "frostbear-neoforge-1.21.1-1.1.0.jar",
+  "date": "2026-07-25",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8507/529/frostbear-neoforge-1.21.1-1.1.0.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/frost-bear",
+  "authors": [
+   "Fatin16"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "paragliders",
+  "name": "Paragliders",
+  "projectID": 289240,
+  "fileID": 7795089,
+  "fileName": "Paraglider-neoforge-21.1.5.jar",
+  "date": "2026-03-22",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/7795/89/Paraglider-neoforge-21.1.5.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/paragliders",
+  "authors": [
+   "Tictim"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "gravestone-mod",
+  "name": "GraveStone Mod",
+  "projectID": 238551,
+  "fileID": 8671622,
+  "fileName": "gravestone-neoforge-1.21.1-1.0.40.jar",
+  "date": "2026-08-17",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8671/622/gravestone-neoforge-1.21.1-1.0.40.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/gravestone-mod",
+  "authors": [
+   "henkelmax"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "sophisticated-backpacks",
+  "name": "Sophisticated Backpacks",
+  "projectID": 422301,
+  "fileID": 9154769,
+  "fileName": "sophisticatedbackpacks-1.21.1-3.26.12.2208.jar",
+  "date": "2026-10-13",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/9154/769/sophisticatedbackpacks-1.21.1-3.26.12.2208.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   618298
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks",
+  "authors": [
+   "P3pp3rF1y"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "betterdays",
+  "name": "Better Days",
+  "projectID": 895618,
+  "fileID": 7978626,
+  "fileName": "betterdays-1.21.1-3.3.6.3-NEOFORGE.jar",
+  "date": "2026-04-24",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/7978/626/betterdays-1.21.1-3.3.6.3-NEOFORGE.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/betterdays",
+  "authors": [
+   "wendall911"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "weavers-paradise",
+  "name": "Weavers Paradise",
+  "projectID": 1334789,
+  "fileID": 9188785,
+  "fileName": "weaversparadise-1.6.3.1.jar",
+  "date": "2026-10-15",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/9188/785/weaversparadise-1.6.3.1.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   309927,
+   1578928
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/weavers-paradise",
+  "authors": [
+   "Vortianski"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "patchouli",
+  "name": "Patchouli",
+  "projectID": 306770,
+  "fileID": 7730942,
+  "fileName": "Patchouli-1.21.1-93-NEOFORGE.jar",
+  "date": "2026-03-08",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/7730/942/Patchouli-1.21.1-93-NEOFORGE.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/patchouli",
+  "authors": [
+   "Vazkii"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "leather-working-pelts-hides",
+  "name": "Leather Working - Pelts & Hides",
+  "projectID": 1374503,
+  "fileID": 7189872,
+  "fileName": "leatherworking-1.0.1.jar",
+  "date": "2025-11-05",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/7189/872/leatherworking-1.0.1.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/leather-working-pelts-hides",
+  "authors": [
+   "cluelessadc"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "armor-series-norsemen",
+  "name": "Armor Series - Norsemen",
+  "projectID": 1588078,
+  "fileID": 8320921,
+  "fileName": "armor_series__norsemen-1.0.0-neoforge-1.21.1.jar",
+  "date": "2026-06-25",
+  "releaseType": 1,
+  "downloadUrl": null,
+  "side": "server",
+  "why": "listed",
+  "requires": [
+   388172
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/armor-series-norsemen",
+  "authors": [
+   "Enderghast"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "jei",
+  "name": "Just Enough Items (JEI)",
+  "projectID": 238222,
+  "fileID": 8792638,
+  "fileName": "jei-1.21.1-neoforge-19.51.0.418.jar",
+  "date": "2026-09-02",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8792/638/jei-1.21.1-neoforge-19.51.0.418.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/jei",
+  "authors": [
+   "mezz"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "jade",
+  "name": "Jade 🔍",
+  "projectID": 324717,
+  "fileID": 8591319,
+  "fileName": "Jade-1.21.1-NeoForge-15.10.6.jar",
+  "date": "2026-08-06",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8591/319/Jade-1.21.1-NeoForge-15.10.6.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/jade",
+  "authors": [
+   "Snownee"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "appleskin",
+  "name": "AppleSkin",
+  "projectID": 248787,
+  "fileID": 7854442,
+  "fileName": "appleskin-neoforge-mc1.21-3.0.9.jar",
+  "date": "2026-04-01",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/7854/442/appleskin-neoforge-mc1.21-3.0.9.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/appleskin",
+  "authors": [
+   "squeek502"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "xaeros-minimap",
+  "name": "Xaero's Minimap",
+  "projectID": 263420,
+  "fileID": 9067173,
+  "fileName": "xaerominimap-neoforge-1.21.1-26.6.0.jar",
+  "date": "2026-10-05",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/9067/173/xaerominimap-neoforge-1.21.1-26.6.0.jar",
+  "side": "client",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap",
+  "authors": [
+   "xaero96"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "xaeros-world-map",
+  "name": "Xaero's World Map",
+  "projectID": 317780,
+  "fileID": 9067277,
+  "fileName": "xaeroworldmap-neoforge-1.21.1-1.47.0.jar",
+  "date": "2026-10-05",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/9067/277/xaeroworldmap-neoforge-1.21.1-1.47.0.jar",
+  "side": "client",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map",
+  "authors": [
+   "xaero96"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "mouse-tweaks",
+  "name": "Mouse Tweaks",
+  "projectID": 60089,
+  "fileID": 5637846,
+  "fileName": "MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+  "date": "2024-08-17",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/5637/846/MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+  "side": "client",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks",
+  "authors": [
+   "YaLTeR"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "controlling",
+  "name": "Controlling",
+  "projectID": 250398,
+  "fileID": 6368976,
+  "fileName": "Controlling-neoforge-1.21.1-19.0.5.jar",
+  "date": "2025-03-30",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/6368/976/Controlling-neoforge-1.21.1-19.0.5.jar",
+  "side": "client",
+  "why": "listed",
+  "requires": [
+   858542
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/controlling",
+  "authors": [
+   "Jaredlll08"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "inventory-sorter",
+  "name": "Inventory Sorter",
+  "projectID": 240633,
+  "fileID": 7188660,
+  "fileName": "inventorysorter-1.21.1-24.0.24.jar",
+  "date": "2025-11-05",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/7188/660/inventorysorter-1.21.1-24.0.24.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/inventory-sorter",
+  "authors": [
+   "cpw"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "sodium",
+  "name": "Sodium",
+  "projectID": 394468,
+  "fileID": 8756580,
+  "fileName": "sodium-neoforge-0.8.13+mc1.21.1.jar",
+  "date": "2026-08-28",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8756/580/sodium-neoforge-0.8.13%2bmc1.21.1.jar",
+  "side": "client",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/sodium",
+  "authors": [
+   "JellySquid"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "irisshaders",
+  "name": "Iris Shaders",
+  "projectID": 455508,
+  "fileID": 8242804,
+  "fileName": "iris-neoforge-1.8.14-beta.1+mc1.21.1.jar",
+  "date": "2026-06-13",
+  "releaseType": 2,
+  "downloadUrl": "https://edge.forgecdn.net/files/8242/804/iris-neoforge-1.8.14-beta.1%2bmc1.21.1.jar",
+  "side": "client",
+  "why": "listed",
+  "requires": [
+   394468
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/irisshaders",
+  "authors": [
+   "coderbot",
+   "IMS21"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "complementary-reimagined",
+  "name": "Complementary Shaders - Reimagined",
+  "projectID": 627557,
+  "fileID": 8884654,
+  "fileName": "ComplementaryReimagined_r5.9.3.zip",
+  "date": "2026-09-15",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8884/654/ComplementaryReimagined_r5.9.3.zip",
+  "side": "client",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/shaders/complementary-reimagined",
+  "authors": [
+   "EminGT"
+  ],
+  "classId": 6552,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "distant-horizons",
+  "name": "Distant Horizons: A Level of Detail mod",
+  "projectID": 508933,
+  "fileID": 9004764,
+  "fileName": "DistantHorizons-3.3.3-1.21.1-fabric-neoforge.jar",
+  "date": "2026-09-29",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/9004/764/DistantHorizons-3.3.3-1.21.1-fabric-neoforge.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/distant-horizons",
+  "authors": [
+   "James_Seibel"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "immediatelyfast",
+  "name": "ImmediatelyFast",
+  "projectID": 686911,
+  "fileID": 9165518,
+  "fileName": "ImmediatelyFast-NeoForge-1.6.15+1.21.1.jar",
+  "date": "2026-10-13",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/9165/518/ImmediatelyFast-NeoForge-1.6.15%2b1.21.1.jar",
+  "side": "client",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/immediatelyfast",
+  "authors": [
+   "RaphiMC"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "entityculling",
+  "name": "Entity Culling Fabric/Forge",
+  "projectID": 448233,
+  "fileID": 9100286,
+  "fileName": "entityculling-neoforge-1.11.3-mc1.21.1.jar",
+  "date": "2026-10-08",
+  "releaseType": 1,
+  "downloadUrl": null,
+  "side": "client",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/entityculling",
+  "authors": [
+   "tr7zw"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "ferritecore",
+  "name": "FerriteCore ((Neo)Forge)",
+  "projectID": 429235,
+  "fileID": 7524151,
+  "fileName": "ferritecore-7.0.3-neoforge.jar",
+  "date": "2026-01-25",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/7524/151/ferritecore-7.0.3-neoforge.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/ferritecore",
+  "authors": [
+   "malte0811"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "modernfix",
+  "name": "ModernFix",
+  "projectID": 790626,
+  "fileID": 9101836,
+  "fileName": "modernfix-neoforge-5.27.26+mc1.21.1.jar",
+  "date": "2026-10-08",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/9101/836/modernfix-neoforge-5.27.26%2bmc1.21.1.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/modernfix",
+  "authors": [
+   "embeddedt"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "lithium",
+  "name": "Lithium (Fabric/NeoForge)",
+  "projectID": 360438,
+  "fileID": 8330365,
+  "fileName": "lithium-neoforge-0.15.4+mc1.21.1.jar",
+  "date": "2026-06-27",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8330/365/lithium-neoforge-0.15.4%2bmc1.21.1.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/lithium",
+  "authors": [
+   "JellySquid"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "alltheleaks",
+  "name": "AllTheLeaks (Memory Leak Fix)",
+  "projectID": 1091339,
+  "fileID": 8943912,
+  "fileName": "alltheleaks-1.1.13+1.21.1-neoforge.jar",
+  "date": "2026-09-22",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8943/912/alltheleaks-1.1.13%2b1.21.1-neoforge.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/alltheleaks",
+  "authors": [
+   "Uncandango"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "clumps",
+  "name": "Clumps",
+  "projectID": 256717,
+  "fileID": 5623731,
+  "fileName": "Clumps-neoforge-1.21.1-19.0.0.1.jar",
+  "date": "2024-08-13",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/5623/731/Clumps-neoforge-1.21.1-19.0.0.1.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/clumps",
+  "authors": [
+   "Jaredlll08"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "spark",
+  "name": "spark",
+  "projectID": 361579,
+  "fileID": 6225208,
+  "fileName": "spark-1.10.124-neoforge.jar",
+  "date": "2025-02-23",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/6225/208/spark-1.10.124-neoforge.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/spark",
+  "authors": [
+   "Iucko"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "crash-assistant",
+  "name": "Crash Assistant",
+  "projectID": 1154099,
+  "fileID": 8636685,
+  "fileName": "CrashAssistant-neoforge-1.20.6-1.21.4-1.11.12.jar",
+  "date": "2026-08-13",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8636/685/CrashAssistant-neoforge-1.20.6-1.21.4-1.11.12.jar",
+  "side": "client",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/crash-assistant",
+  "authors": [
+   "KostromDan"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "antixray-forge",
+  "name": "AntiXray ((Neo)Forge)",
+  "projectID": 560511,
+  "fileID": 7979123,
+  "fileName": "antixray-neoforge-1.4.8+1.21.1.jar",
+  "date": "2026-04-24",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/7979/123/antixray-neoforge-1.4.8%2b1.21.1.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/antixray-forge",
+  "authors": [
+   "drexhd"
+  ],
+  "classId": 6,
+  "serverPackOnly": true
+ },
+ {
+  "slug": "structurize",
+  "name": "Structurize",
+  "projectID": 298744,
+  "fileID": 8610535,
+  "fileName": "structurize-1.0.832-1.21.1.jar",
+  "date": "2026-08-09",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8610/535/structurize-1.0.832-1.21.1.jar",
+  "side": "both",
+  "why": "dep of minecolonies",
+  "requires": [
+   527361,
+   522992
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/structurize",
+  "authors": [
+   "Raycoms",
+   "someaddon",
+   "OrionOnline",
+   "Asherslab",
+   "Nightenom"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "towntalk",
+  "name": "TownTalk",
+  "projectID": 900364,
+  "fileID": 5653504,
+  "fileName": "towntalk-1.2.0.jar",
+  "date": "2024-08-22",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/5653/504/towntalk-1.2.0.jar",
+  "side": "both",
+  "why": "dep of minecolonies",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/towntalk",
+  "authors": [
+   "Raycoms"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "multi-piston",
+  "name": "Multi-Piston",
+  "projectID": 303278,
+  "fileID": 7097877,
+  "fileName": "multipiston-1.2.58-1.21.1.jar",
+  "date": "2025-10-12",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/7097/877/multipiston-1.2.58-1.21.1.jar",
+  "side": "both",
+  "why": "dep of minecolonies",
+  "requires": [
+   298744,
+   522992
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/multi-piston",
+  "authors": [
+   "Raycoms",
+   "OrionOnline",
+   "someaddon"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "blockui",
+  "name": "BlockUI",
+  "projectID": 522992,
+  "fileID": 7541336,
+  "fileName": "blockui-1.0.209-1.21.1.jar",
+  "date": "2026-01-28",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/7541/336/blockui-1.0.209-1.21.1.jar",
+  "side": "both",
+  "why": "dep of minecolonies",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/blockui",
+  "authors": [
+   "Raycoms",
+   "OrionOnline",
+   "someaddon",
+   "Nightenom"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "selene",
+  "name": "Moonlight Lib",
+  "projectID": 499980,
+  "fileID": 9122548,
+  "fileName": "moonlight-1.21.1-3.7.2-neoforge.jar",
+  "date": "2026-10-10",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/9122/548/moonlight-1.21.1-3.7.2-neoforge.jar",
+  "side": "both",
+  "why": "dep of snowy-spirit",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/selene",
+  "authors": [
+   "MehVahdJukaar",
+   "plantspookable"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "manyideas-core",
+  "name": "ManyIdeas Core",
+  "projectID": 433642,
+  "fileID": 9123199,
+  "fileName": "ManyIdeasCore-1.21.1-3.1.0.jar",
+  "date": "2026-10-10",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/9123/199/ManyIdeasCore-1.21.1-3.1.0.jar",
+  "side": "both",
+  "why": "dep of manyideas-christmas",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/manyideas-core",
+  "authors": [
+   "GeheimagentNr1",
+   "Muse31"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "recipes-library",
+  "name": "Recipes Library",
+  "projectID": 398351,
+  "fileID": 9123268,
+  "fileName": "RecipesLibrary-1.21.1-4.0.2.jar",
+  "date": "2026-10-10",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/9123/268/RecipesLibrary-1.21.1-4.0.2.jar",
+  "side": "both",
+  "why": "dep of manyideas-christmas",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/recipes-library",
+  "authors": [
+   "GeheimagentNr1"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "moogs-structure-lib",
+  "name": "Moog's Structure Lib (moogs_structures)",
+  "projectID": 1337167,
+  "fileID": 9047179,
+  "fileName": "MoogsStructureLib-neoforge-1.21.1-3.4.2.jar",
+  "date": "2026-10-03",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/9047/179/MoogsStructureLib-neoforge-1.21.1-3.4.2.jar",
+  "side": "server",
+  "why": "dep of moogs-voyager-structures",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/moogs-structure-lib",
+  "authors": [
+   "finndog_123"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "yungs-api-neoforge",
+  "name": "YUNG's API (NeoForge) [1.20.4-1.21.1 ONLY]",
+  "projectID": 1015100,
+  "fileID": 8894736,
+  "fileName": "YungsApi-1.21.1-NeoForge-5.1.9.jar",
+  "date": "2026-09-16",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8894/736/YungsApi-1.21.1-NeoForge-5.1.9.jar",
+  "side": "both",
+  "why": "dep of yungs-better-dungeons-neoforge",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/yungs-api-neoforge",
+  "authors": [
+   "YUNGNICKYOUNG"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "better-advanced-tooltips",
+  "name": "Better Advanced Tooltips",
+  "projectID": 1637623,
+  "fileID": 8576077,
+  "fileName": "better-advanced-tooltips-2101.1.0-build.5.jar",
+  "date": "2026-08-04",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8576/77/better-advanced-tooltips-2101.1.0-build.5.jar",
+  "side": "both",
+  "why": "dep of kubejs",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/better-advanced-tooltips",
+  "authors": [
+   "Lat"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "balm",
+  "name": "Balm",
+  "projectID": 531761,
+  "fileID": 8969738,
+  "fileName": "balm-neoforge-1.21.1-21.0.66.jar",
+  "date": "2026-09-25",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8969/738/balm-neoforge-1.21.1-21.0.66.jar",
+  "side": "both",
+  "why": "dep of waystones",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/balm",
+  "authors": [
+   "BlayTheNinth"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "geckolib",
+  "name": "GeckoLib",
+  "projectID": 388172,
+  "fileID": 8893490,
+  "fileName": "geckolib-neoforge-1.21.1-4.9.3.jar",
+  "date": "2026-09-16",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8893/490/geckolib-neoforge-1.21.1-4.9.3.jar",
+  "side": "both",
+  "why": "dep of mowzies-mobs",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/geckolib",
+  "authors": [
+   "Gecko",
+   "EliotL"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "curios",
+  "name": "Curios API",
+  "projectID": 309927,
+  "fileID": 6529130,
+  "fileName": "curios-neoforge-9.5.1+1.21.1.jar",
+  "date": "2025-05-14",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/6529/130/curios-neoforge-9.5.1%2b1.21.1.jar",
+  "side": "both",
+  "why": "dep of lendercataclysm",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/curios",
+  "authors": [
+   "TheIllusiveC4"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "lionfish-api",
+  "name": "Lionfish API",
+  "projectID": 1001614,
+  "fileID": 8345326,
+  "fileName": "lionfishapi-3.1.jar",
+  "date": "2026-06-30",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8345/326/lionfishapi-3.1.jar",
+  "side": "both",
+  "why": "dep of lendercataclysm",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/lionfish-api",
+  "authors": [
+   "mcl_ender"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "cerbons-api",
+  "name": "CERBON's API [Forge | Fabric | NeoForge]",
+  "projectID": 955605,
+  "fileID": 6483943,
+  "fileName": "CerbonsAPI-NeoForge-1.21-1.3.0.jar",
+  "date": "2025-05-01",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/6483/943/CerbonsAPI-NeoForge-1.21-1.3.0.jar",
+  "side": "both",
+  "why": "dep of bosses-of-mass-destruction-forge",
+  "requires": [
+   955605
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/cerbons-api",
+  "authors": [
+   "Cerbon"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "cloth-config",
+  "name": "Cloth Config API (Fabric/Forge/NeoForge)",
+  "projectID": 348521,
+  "fileID": 5729127,
+  "fileName": "cloth-config-15.0.140-neoforge.jar",
+  "date": "2024-09-16",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/5729/127/cloth-config-15.0.140-neoforge.jar",
+  "side": "both",
+  "why": "dep of bosses-of-mass-destruction-forge",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/cloth-config",
+  "authors": [
+   "shedaniel",
+   "LinkieIsBetterThanK9"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "resourceful-lib",
+  "name": "Resourceful Lib",
+  "projectID": 570073,
+  "fileID": 5973188,
+  "fileName": "resourcefullib-neoforge-1.21-3.0.12.jar",
+  "date": "2024-12-08",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/5973/188/resourcefullib-neoforge-1.21-3.0.12.jar",
+  "side": "both",
+  "why": "dep of friends-and-foes-forge",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/resourceful-lib",
+  "authors": [
+   "ThatGravyBoat",
+   "epic_oreo"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "architectury-api",
+  "name": "Architectury API",
+  "projectID": 419699,
+  "fileID": 8492726,
+  "fileName": "architectury-13.0.11-neoforge.jar",
+  "date": "2026-07-23",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8492/726/architectury-13.0.11-neoforge.jar",
+  "side": "both",
+  "why": "dep of critters-and-companions",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/architectury-api",
+  "authors": [
+   "shedaniel",
+   "Juicebus",
+   "MaxNeedsSnacks",
+   "st0x0ef"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "yacl",
+  "name": "YetAnotherConfigLib",
+  "projectID": 667299,
+  "fileID": 7437845,
+  "fileName": "yet_another_config_lib_v3-3.8.2+1.21.1-neoforge.jar",
+  "date": "2026-01-09",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/7437/845/yet_another_config_lib_v3-3.8.2%2b1.21.1-neoforge.jar",
+  "side": "both",
+  "why": "dep of critters-and-companions",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/yacl",
+  "authors": [
+   "isXander"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "resourceful-config",
+  "name": "Resourceful Config",
+  "projectID": 714059,
+  "fileID": 6467772,
+  "fileName": "resourcefulconfig-neoforge-1.21-3.0.11.jar",
+  "date": "2025-04-26",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/6467/772/resourcefulconfig-neoforge-1.21-3.0.11.jar",
+  "side": "both",
+  "why": "dep of creeper-overhaul",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/resourceful-config",
+  "authors": [
+   "ThatGravyBoat",
+   "epic_oreo"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "puzzles-lib",
+  "name": "Puzzles Lib",
+  "projectID": 495476,
+  "fileID": 9130151,
+  "fileName": "puzzleslib-v21.1.64-mc1.21.1+neoforge.jar",
+  "date": "2026-10-11",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/9130/151/puzzleslib-v21.1.64-mc1.21.1%2bneoforge.jar",
+  "side": "both",
+  "why": "dep of mutant-monsters",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/puzzles-lib",
+  "authors": [
+   "Fuzs"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "sophisticated-core",
+  "name": "Sophisticated Core",
+  "projectID": 618298,
+  "fileID": 9201381,
+  "fileName": "sophisticatedcore-1.21.1-1.5.13.2404.jar",
+  "date": "2026-10-15",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/9201/381/sophisticatedcore-1.21.1-1.5.13.2404.jar",
+  "side": "both",
+  "why": "dep of sophisticated-backpacks",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/sophisticated-core",
+  "authors": [
+   "P3pp3rF1y"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "vortylib",
+  "name": "VortyLib",
+  "projectID": 1578928,
+  "fileID": 9088434,
+  "fileName": "vortylib-1.2.5.3.jar",
+  "date": "2026-10-07",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/9088/434/vortylib-1.2.5.3.jar",
+  "side": "both",
+  "why": "dep of weavers-paradise",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/vortylib",
+  "authors": [
+   "Vortianski"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "searchables",
+  "name": "Searchables",
+  "projectID": 858542,
+  "fileID": 5831692,
+  "fileName": "Searchables-neoforge-1.21.1-1.0.2.jar",
+  "date": "2024-10-21",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/5831/692/Searchables-neoforge-1.21.1-1.0.2.jar",
+  "side": "both",
+  "why": "dep of controlling",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/searchables",
+  "authors": [
+   "Jaredlll08"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ }
+]
