@@ -35,6 +35,10 @@ hash = "fd63c707c5e749fa250137ccb1b6955e0b29f1521c292bc2675f49f45d71fc28"
 preserve = true
 
 [[files]]
+file = "config/minecolonies-server.toml"
+hash = "7575d881ab9cddfbe26e525a2037161c0104dfeedbc59f4beb3b547f9673466a"
+
+[[files]]
 file = "config/primalwinter-common.toml"
 hash = "4423927d12d112e8fa5997774eee0d81f16d6b7620e3b7c5d6f8810b7c4ae9ed"
 
