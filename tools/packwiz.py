@@ -9,14 +9,16 @@ usage: packwiz.py <mods.resolved.json> <overrides-Ordner> <packwiz-Ordner> <Ausg
   erlaubt immer Launcher-Downloads, so entfallen manuelle Downloads für dort gespiegelte Mods.
 - Ausgabe-Ordner: <Slug>-Prism.zip, eine Prism-Launcher-Instanz, die vor jedem Start per
   packwiz-installer-bootstrap.jar den Stand von PACK_URL holt. Muss nur einmal importiert werden.
+  Enthält eine servers.dat mit SERVER, damit der Server nach dem Import schon in der Serverliste steht.
 """
-import hashlib, json, os, shutil, sys, urllib.request, zipfile
+import hashlib, json, os, shutil, struct, sys, urllib.request, zipfile
 from cf import post
 
 NAME, VERSION, AUTHOR = "Frostbound Colonies", "1.0.0", "Tim"  # wie in package.py
 SLUG = NAME.replace(" ", "")
 MC, NEOFORGE = "1.21.1", "21.1.256"
 PACK_URL = "https://raw.githubusercontent.com/Stolzenberg/minecraft-modpack-frostbound-colonies/main/packwiz/pack.toml"
+SERVER = (NAME, "server.proud-mountain.com")  # Eintrag in der Serverliste (Name, Adresse)
 # Persönliche Einstellungen: nur bei der Erstinstallation schreiben, Updates überschreiben sie nicht
 PRESERVE = ("config/iris.properties",)
 FOLDER = {6: "mods", 6552: "shaderpacks", 12: "resourcepacks"}
@@ -29,6 +31,15 @@ def q(s):
 
 def sha256(path):
     return hashlib.sha256(open(path, "rb").read()).hexdigest()
+
+
+def servers_dat(name, ip):
+    """Minecrafts servers.dat (unkomprimiertes NBT) mit einem einzigen Servereintrag."""
+    def s(v):
+        b = v.encode()
+        return struct.pack(">H", len(b)) + b
+    entry = b"\x08" + s("name") + s(name) + b"\x08" + s("ip") + s(ip) + b"\x01" + s("hidden") + b"\x00" + b"\x00"
+    return b"\x0a" + s("") + b"\x09" + s("servers") + b"\x0a" + struct.pack(">i", 1) + entry + b"\x00"
 
 
 def modrinth(hashes):
@@ -116,6 +127,7 @@ with zipfile.ZipFile(prism_zip, "w", zipfile.ZIP_DEFLATED) as z:
     z.writestr("instance.cfg", instance_cfg)
     z.writestr("mmc-pack.json", json.dumps(mmc_pack, indent=2))
     z.write(BOOTSTRAP, "minecraft/packwiz-installer-bootstrap.jar")
+    z.writestr("minecraft/servers.dat", servers_dat(*SERVER))
 
 manual = [m["slug"] for m in all_mods
           if not m.get("downloadUrl") and sha1[m["fileID"]] not in mr and not m.get("serverPackOnly")]
