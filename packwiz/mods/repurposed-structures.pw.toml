@@ -3,11 +3,11 @@ filename = "repurposed_structures-7.5.22+1.21.1-neoforge.jar"
 side = "both"
 
 [download]
+url = "https://cdn.modrinth.com/data/QDNS5oAT/versions/8duZuWci/repurposed_structures-7.5.22%2B1.21.1-neoforge.jar"
 hash-format = "sha1"
 hash = "a64f6b2d331d5c3a5feefcd18d23f4585a42b097"
-mode = "metadata:curseforge"
 
 [update]
-[update.curseforge]
-file-id = 8688394
-project-id = 368293
+[update.modrinth]
+mod-id = "QDNS5oAT"
+version = "8duZuWci"

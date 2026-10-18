@@ -3,11 +3,11 @@ filename = "ManyIdeasChristmas-1.21.1-2.0.1.jar"
 side = "both"
 
 [download]
+url = "https://cdn.modrinth.com/data/9P4EZygx/versions/8PrRTnEa/ManyIdeasChristmas-1.21.1-2.0.1.jar"
 hash-format = "sha1"
 hash = "75f959849d260e1a4b760cb654ddbd64f5176cb2"
-mode = "metadata:curseforge"
 
 [update]
-[update.curseforge]
-file-id = 8028898
-project-id = 736753
+[update.modrinth]
+mod-id = "9P4EZygx"
+version = "8PrRTnEa"

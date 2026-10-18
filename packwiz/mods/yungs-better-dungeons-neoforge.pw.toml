@@ -3,11 +3,11 @@ filename = "YungsBetterDungeons-1.21.1-NeoForge-5.1.4.jar"
 side = "both"
 
 [download]
+url = "https://cdn.modrinth.com/data/o1C1Dkj5/versions/D6aZn0Em/YungsBetterDungeons-1.21.1-NeoForge-5.1.4.jar"
 hash-format = "sha1"
 hash = "73a660c13063450e555e5e2c015ae24d606b32b4"
-mode = "metadata:curseforge"
 
 [update]
-[update.curseforge]
-file-id = 5954804
-project-id = 1015112
+[update.modrinth]
+mod-id = "o1C1Dkj5"
+version = "D6aZn0Em"

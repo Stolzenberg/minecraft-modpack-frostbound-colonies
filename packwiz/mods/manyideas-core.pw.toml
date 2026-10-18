@@ -3,11 +3,11 @@ filename = "ManyIdeasCore-1.21.1-3.1.0.jar"
 side = "both"
 
 [download]
+url = "https://cdn.modrinth.com/data/BBY8EPJt/versions/ZTTVaXD7/ManyIdeasCore-1.21.1-3.1.0.jar"
 hash-format = "sha1"
 hash = "5d9e15f5cbdc315afec9267b3715e721a37a49d1"
-mode = "metadata:curseforge"
 
 [update]
-[update.curseforge]
-file-id = 9123199
-project-id = 433642
+[update.modrinth]
+mod-id = "BBY8EPJt"
+version = "ZTTVaXD7"

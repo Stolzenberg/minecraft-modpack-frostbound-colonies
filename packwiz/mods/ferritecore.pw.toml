@@ -3,11 +3,11 @@ filename = "ferritecore-7.0.3-neoforge.jar"
 side = "both"
 
 [download]
+url = "https://cdn.modrinth.com/data/uXXizFIs/versions/x7kQWVju/ferritecore-7.0.3-neoforge.jar"
 hash-format = "sha1"
 hash = "9563692efb708b6b568df27a01ec52f6311928ef"
-mode = "metadata:curseforge"
 
 [update]
-[update.curseforge]
-file-id = 7524151
-project-id = 429235
+[update.modrinth]
+mod-id = "uXXizFIs"
+version = "x7kQWVju"

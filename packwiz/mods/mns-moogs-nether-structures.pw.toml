@@ -3,11 +3,11 @@ filename = "MoogsNetherStructures-universal-1.21-3.1.1.jar"
 side = "both"
 
 [download]
+url = "https://cdn.modrinth.com/data/nGUXvjTa/versions/OLTqXnsN/MoogsNetherStructures-universal-1.21-3.1.1.jar"
 hash-format = "sha1"
 hash = "78845cb7bccaa7812bacce4efdd5481b81b8c347"
-mode = "metadata:curseforge"
 
 [update]
-[update.curseforge]
-file-id = 8902210
-project-id = 967466
+[update.modrinth]
+mod-id = "nGUXvjTa"
+version = "OLTqXnsN"

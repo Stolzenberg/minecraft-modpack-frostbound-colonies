@@ -3,11 +3,11 @@ filename = "epic-structures-igloo-1.0.5 1.21+ 26+.jar"
 side = "both"
 
 [download]
+url = "https://cdn.modrinth.com/data/r5cwIwhb/versions/nXW1eymX/epic-structures-igloo-1.0.5.jar"
 hash-format = "sha1"
 hash = "053231a3d2b00420d933a9d608b42b84b0d907ad"
-mode = "metadata:curseforge"
 
 [update]
-[update.curseforge]
-file-id = 8528158
-project-id = 1511498
+[update.modrinth]
+mod-id = "r5cwIwhb"
+version = "nXW1eymX"

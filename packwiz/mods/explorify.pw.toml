@@ -3,11 +3,11 @@ filename = "Explorify v1.6.5.mod.jar"
 side = "both"
 
 [download]
+url = "https://cdn.modrinth.com/data/HSfsxuTo/versions/CuBdAr31/Explorify%20v1.6.5.mod.jar"
 hash-format = "sha1"
 hash = "5fb28be29200a41b034e423d87823eb19ad651cd"
-mode = "metadata:curseforge"
 
 [update]
-[update.curseforge]
-file-id = 8082824
-project-id = 698309
+[update.modrinth]
+mod-id = "HSfsxuTo"
+version = "CuBdAr31"

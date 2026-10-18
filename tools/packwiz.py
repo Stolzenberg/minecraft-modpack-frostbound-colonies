@@ -3,12 +3,14 @@
 
 usage: packwiz.py <mods.resolved.json> <overrides-Ordner> <packwiz-Ordner> <Ausgabe-Ordner>
 
-- packwiz-Ordner: pack.toml + index.toml + mods/*.pw.toml (CurseForge-Metadaten, keine Jars) + Overrides
+- packwiz-Ordner: pack.toml + index.toml + mods/*.pw.toml (Download-Metadaten, keine Jars) + Overrides
   und server-overrides/. Wird komplett neu geschrieben, danach committen und pushen.
+  Liegt exakt dieselbe Datei (SHA1) auf Modrinth, wird von dort geladen, sonst von CurseForge. Modrinth
+  erlaubt immer Launcher-Downloads, so entfallen manuelle Downloads für dort gespiegelte Mods.
 - Ausgabe-Ordner: <Slug>-Prism.zip, eine Prism-Launcher-Instanz, die vor jedem Start per
   packwiz-installer-bootstrap.jar den Stand von PACK_URL holt. Muss nur einmal importiert werden.
 """
-import hashlib, json, os, shutil, sys, zipfile
+import hashlib, json, os, shutil, sys, urllib.request, zipfile
 from cf import post
 
 NAME, VERSION, AUTHOR = "Frostbound Colonies", "1.0.0", "Tim"  # wie in package.py
@@ -29,6 +31,17 @@ def sha256(path):
     return hashlib.sha256(open(path, "rb").read()).hexdigest()
 
 
+def modrinth(hashes):
+    """SHA1 -> (Download-URL, Projekt-ID, Versions-ID) für alle Dateien, die identisch auf Modrinth liegen."""
+    req = urllib.request.Request("https://api.modrinth.com/v2/version_files", method="POST",
+                                 data=json.dumps({"hashes": hashes, "algorithm": "sha1"}).encode(),
+                                 headers={"Content-Type": "application/json", "User-Agent": "frostbound-colonies-packwiz"})
+    with urllib.request.urlopen(req, timeout=120) as r:
+        res = json.load(r)
+    return {h: (next(f["url"] for f in v["files"] if f["hashes"]["sha1"] == h), v["project_id"], v["id"])
+            for h, v in res.items()}
+
+
 all_mods = sorted(json.load(open(sys.argv[1])), key=lambda m: m["name"].lower())
 overrides, pack, out = sys.argv[2], sys.argv[3], sys.argv[4]
 server_overrides = os.path.join(os.path.dirname(os.path.abspath(overrides)), "server-overrides")
@@ -42,6 +55,7 @@ os.makedirs(out, exist_ok=True)
 
 sha1 = {f["id"]: next(h["value"] for h in f["hashes"] if h["algo"] == 1)
         for f in post("/mods/files", {"fileIds": [m["fileID"] for m in all_mods]})}
+mr = modrinth(list(sha1.values()))
 
 index = []  # (Pfad, metafile)
 for m in all_mods:
@@ -49,10 +63,17 @@ for m in all_mods:
     side = "server" if m.get("serverPackOnly") else "client" if m["side"] == "client" else "both"
     rel = f'{FOLDER[m["classId"]]}/{m["slug"]}.pw.toml'
     os.makedirs(os.path.join(pack, os.path.dirname(rel)), exist_ok=True)
+    h = sha1[m["fileID"]]
+    if h in mr:
+        url, mod_id, version = mr[h]
+        download = f'url = {q(url)}\nhash-format = "sha1"\nhash = "{h}"\n'
+        update = f'[update.modrinth]\nmod-id = {q(mod_id)}\nversion = {q(version)}\n'
+    else:
+        download = f'hash-format = "sha1"\nhash = "{h}"\nmode = "metadata:curseforge"\n'
+        update = f'[update.curseforge]\nfile-id = {m["fileID"]}\nproject-id = {m["projectID"]}\n'
     with open(os.path.join(pack, rel), "w") as f:
         f.write(f'name = {q(m["name"])}\nfilename = {q(m["fileName"])}\nside = "{side}"\n\n'
-                f'[download]\nhash-format = "sha1"\nhash = "{sha1[m["fileID"]]}"\nmode = "metadata:curseforge"\n\n'
-                f'[update]\n[update.curseforge]\nfile-id = {m["fileID"]}\nproject-id = {m["projectID"]}\n')
+                f'[download]\n{download}\n[update]\n{update}')
     index.append((rel, True))
 
 for src in (overrides, server_overrides):
@@ -96,7 +117,9 @@ with zipfile.ZipFile(prism_zip, "w", zipfile.ZIP_DEFLATED) as z:
     z.writestr("mmc-pack.json", json.dumps(mmc_pack, indent=2))
     z.write(BOOTSTRAP, "minecraft/packwiz-installer-bootstrap.jar")
 
-manual = [m["slug"] for m in all_mods if not m.get("downloadUrl") and not m.get("serverPackOnly")]
-print(os.path.join(pack, "pack.toml"), f"{len(all_mods)} Mods, {len(index) - len(all_mods)} Dateien aus Overrides")
+manual = [m["slug"] for m in all_mods
+          if not m.get("downloadUrl") and sha1[m["fileID"]] not in mr and not m.get("serverPackOnly")]
+print(os.path.join(pack, "pack.toml"), f"{len(all_mods)} Mods ({len(mr)} von Modrinth), "
+      f"{len(index) - len(all_mods)} Dateien aus Overrides")
 print(prism_zip, os.path.getsize(prism_zip))
 print(f"manueller Download nötig (Drittanbieter-Downloads vom Autor gesperrt): {manual}")

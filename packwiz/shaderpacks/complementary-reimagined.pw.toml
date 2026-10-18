@@ -3,11 +3,11 @@ filename = "ComplementaryReimagined_r5.9.3.zip"
 side = "client"
 
 [download]
+url = "https://cdn.modrinth.com/data/HVnmMxH1/versions/Bqen1mJX/ComplementaryReimagined_r5.9.3.zip"
 hash-format = "sha1"
 hash = "838139b54cddb56b2e83cd260d8efd960ac536d6"
-mode = "metadata:curseforge"
 
 [update]
-[update.curseforge]
-file-id = 8884654
-project-id = 627557
+[update.modrinth]
+mod-id = "HVnmMxH1"
+version = "Bqen1mJX"

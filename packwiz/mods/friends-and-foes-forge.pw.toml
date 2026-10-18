@@ -3,11 +3,11 @@ filename = "friendsandfoes-neoforge-5.0.2+mc1.21.1.jar"
 side = "both"
 
 [download]
+url = "https://cdn.modrinth.com/data/BOCJKD49/versions/v6DZwPli/friendsandfoes-neoforge-5.0.2%2Bmc1.21.1.jar"
 hash-format = "sha1"
 hash = "f656da0aea52bcbfa8938c213394b26d6b8fda3c"
-mode = "metadata:curseforge"
 
 [update]
-[update.curseforge]
-file-id = 9108912
-project-id = 602059
+[update.modrinth]
+mod-id = "BOCJKD49"
+version = "v6DZwPli"

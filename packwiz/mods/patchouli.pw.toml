@@ -3,11 +3,11 @@ filename = "Patchouli-1.21.1-93-NEOFORGE.jar"
 side = "both"
 
 [download]
+url = "https://cdn.modrinth.com/data/nU0bVIaL/versions/BIogJv2D/Patchouli-1.21.1-93-NEOFORGE.jar"
 hash-format = "sha1"
 hash = "5413bb9b8fc35ebe46b06b48bf9afafbd8471140"
-mode = "metadata:curseforge"
 
 [update]
-[update.curseforge]
-file-id = 7730942
-project-id = 306770
+[update.modrinth]
+mod-id = "nU0bVIaL"
+version = "BIogJv2D"
