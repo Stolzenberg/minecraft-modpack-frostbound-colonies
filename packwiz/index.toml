@@ -1812,6 +1812,11 @@ hash = "2e6a2f8c477128a76ef059dfef7ca8a1befa2ae0ebe7ae2171e716f0c905cd00"
 metafile = true
 
 [[files]]
+file = "mods/coffee-delight.pw.toml"
+hash = "bc0d060bad8ae2d70e2c6f7135d480d5f88bc89061b7e6486af5e31ad5ef7ecf"
+metafile = true
+
+[[files]]
 file = "mods/cold-sweat.pw.toml"
 hash = "28df5e8d925930030ca0a294f28310839442b082f23600b63c7d07d9323ea31c"
 metafile = true
@@ -1827,8 +1832,18 @@ hash = "616036c38fafbcaf00c0720d947ec39f571d885a014f0c81b5eeeb4193784e0e"
 metafile = true
 
 [[files]]
+file = "mods/coreprotectneo.pw.toml"
+hash = "b00955d1470239a2a527ba2b16cef48037b3dfe91778d1e57aee2d7ecf8b5a33"
+metafile = true
+
+[[files]]
 file = "mods/crash-assistant.pw.toml"
 hash = "8cb7ed61c9d40c9f60a3c7d360f7fba1e3902a75127a6377ce2f0733825982d0"
+metafile = true
+
+[[files]]
+file = "mods/create-cobblestone.pw.toml"
+hash = "72c3a27d3fe4ae9a5aa2bba0e473f1413b5eb290383fcf579bcd4fa2138c476d"
 metafile = true
 
 [[files]]
@@ -2149,6 +2164,11 @@ metafile = true
 [[files]]
 file = "mods/selene.pw.toml"
 hash = "434fbe116618b5b950edcefd05e33f33831b8fa40f47a0970e394f81c3c4c197"
+metafile = true
+
+[[files]]
+file = "mods/simple-voice-chat.pw.toml"
+hash = "a1f6bfecd4098396ad7df0ec212ebd5b76fe1c14223f9e4a712eb16738fc5b7a"
 metafile = true
 
 [[files]]

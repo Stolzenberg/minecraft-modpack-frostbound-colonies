@@ -170,6 +170,46 @@
   "serverPackOnly": false
  },
  {
+  "slug": "coffee-delight",
+  "name": "Coffee Delight",
+  "projectID": 835597,
+  "fileID": 7027805,
+  "fileName": "coffee_delight-1.4.1.jar",
+  "date": "2025-09-24",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/7027/805/coffee_delight-1.4.1.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/coffee-delight",
+  "authors": [
+   "AmarokIce"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "create-cobblestone",
+  "name": "Create Cobblestone",
+  "projectID": 1023532,
+  "fileID": 8763220,
+  "fileName": "createcobblestone-1.5.0+neoforge-1.21.1-153.jar",
+  "date": "2026-08-29",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8763/220/createcobblestone-1.5.0%2bneoforge-1.21.1-153.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   419699
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/create-cobblestone",
+  "authors": [
+   "MrStickyPiston"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
   "slug": "colder-primal-winter",
   "name": "Colder Primal Winter",
   "projectID": 1709971,
@@ -1255,6 +1295,44 @@
   "serverPackOnly": false
  },
  {
+  "slug": "simple-voice-chat",
+  "name": "Simple Voice Chat",
+  "projectID": 416089,
+  "fileID": 8601207,
+  "fileName": "voicechat-neoforge-1.21.1-2.6.22.jar",
+  "date": "2026-08-08",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8601/207/voicechat-neoforge-1.21.1-2.6.22.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat",
+  "authors": [
+   "henkelmax"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "coreprotectneo",
+  "name": "CoreProtectNeo",
+  "projectID": 1702150,
+  "fileID": 8917394,
+  "fileName": "coreprotect-24.1-neoforge-all.jar",
+  "date": "2026-09-19",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8917/394/coreprotect-24.1-neoforge-all.jar",
+  "side": "server",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/coreprotectneo",
+  "authors": [
+   "ljmrhj"
+  ],
+  "classId": 6,
+  "serverPackOnly": true
+ },
+ {
   "slug": "jei",
   "name": "Just Enough Items (JEI)",
   "projectID": 238222,
@@ -1769,6 +1847,28 @@
   "serverPackOnly": false
  },
  {
+  "slug": "architectury-api",
+  "name": "Architectury API",
+  "projectID": 419699,
+  "fileID": 8492726,
+  "fileName": "architectury-13.0.11-neoforge.jar",
+  "date": "2026-07-23",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8492/726/architectury-13.0.11-neoforge.jar",
+  "side": "both",
+  "why": "dep of create-cobblestone",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/architectury-api",
+  "authors": [
+   "shedaniel",
+   "Juicebus",
+   "MaxNeedsSnacks",
+   "st0x0ef"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
   "slug": "selene",
   "name": "Moonlight Lib",
   "projectID": 499980,
@@ -2018,28 +2118,6 @@
   "authors": [
    "ThatGravyBoat",
    "epic_oreo"
-  ],
-  "classId": 6,
-  "serverPackOnly": false
- },
- {
-  "slug": "architectury-api",
-  "name": "Architectury API",
-  "projectID": 419699,
-  "fileID": 8492726,
-  "fileName": "architectury-13.0.11-neoforge.jar",
-  "date": "2026-07-23",
-  "releaseType": 1,
-  "downloadUrl": "https://edge.forgecdn.net/files/8492/726/architectury-13.0.11-neoforge.jar",
-  "side": "both",
-  "why": "dep of critters-and-companions",
-  "requires": [],
-  "url": "https://www.curseforge.com/minecraft/mc-mods/architectury-api",
-  "authors": [
-   "shedaniel",
-   "Juicebus",
-   "MaxNeedsSnacks",
-   "st0x0ef"
   ],
   "classId": 6,
   "serverPackOnly": false

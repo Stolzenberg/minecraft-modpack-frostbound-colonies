@@ -15,6 +15,8 @@ domum-ornamentum                         pin=8784713   # Release 1.0.231 ist zu 
 # --- Kern: Create + Farmer's Delight ---
 create                                   pin=7963363
 farmers-delight                          pin=8765184
+coffee-delight                           pin=7027805 # Kaffee-Addon für Farmer's Delight
+create-cobblestone                       pin=8763220 # Bruchsteingenerator-Block mit Rotationsenergie (statt Lava/Wasser-Generatoren)
 # --- Ewiger Winter ---
 colder-primal-winter                     pin=8965877     # gepflegter Fork von Primal Winter (Original 6.0.2 stürzt auf dedizierten Servern ab)
 cold-sweat                               pin=9215368
@@ -74,6 +76,9 @@ weavers-paradise                         pin=9188785 # Stoffe: Baumwolle/Seide/W
 patchouli                                pin=7730942 # Anleitungsbuch für Weavers Paradise (optionale Abhängigkeit)
 leather-working-pelts-hides              pin=7189872 # Felle & Häute von Tieren, Gerbgestell
 armor-series-norsemen                    pin=8320921 # Fellrüstungen (Wolf, Bär, Puma) und Schädelhelme
+# --- Multiplayer ---
+simple-voice-chat                        pin=8601207 # Proximity-Voice-Chat, Server braucht UDP-Port 24454
+coreprotectneo                           pin=8917394 side=server pack=server # Block-Logging und Rollbacks, MariaDB auf dem Server (Config nur dort, enthält Passwort)
 # --- QoL ---
 jei                                      pin=8792638
 jade                                     pin=8591319

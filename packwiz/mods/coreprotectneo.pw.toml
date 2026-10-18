@@ -1,0 +1,13 @@
+name = "CoreProtectNeo"
+filename = "coreprotect-24.1-neoforge-all.jar"
+side = "server"
+
+[download]
+hash-format = "sha1"
+hash = "22e7712a53e6afc358313382e3de0ef0715ace34"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8917394
+project-id = 1702150

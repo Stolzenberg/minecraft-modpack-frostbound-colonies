@@ -1,0 +1,13 @@
+name = "Coffee Delight"
+filename = "coffee_delight-1.4.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "3a4bd8b50e71bc6818ebe73185c456f30aeac059"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7027805
+project-id = 835597

@@ -9,8 +9,8 @@ Basis ist *Skyward Frontiers* (`../skyward-frontiers`): gleiche Struktur- und Mo
 | Datei | Zweck |
 |---|---|
 | `dist/FrostboundColonies-Prism.zip` | Prism-Launcher-Instanz mit Auto-Update (empfohlen, siehe [Installation](#installation-prism-launcher-mit-auto-update)) |
-| `dist/FrostboundColonies-1.0.0.zip` | Client-Pack: CurseForge-App → *Create Custom Profile* → *Import* (ohne Auto-Update) |
-| `dist/FrostboundColonies-1.0.0-Server.zip` | Server: entpacken, `./install.sh` (bzw. `install.ps1`), `eula.txt` auf `true` setzen, `./start.sh` |
+| `dist/FrostboundColonies-1.0.0.zip` | Client-Pack für die CurseForge-App (veraltet: Stand 1.0.0, wird nicht mehr gebaut) |
+| `dist/FrostboundColonies-1.0.0-Server.zip` | Server-ZIP ohne Docker (veraltet: Stand 1.0.0, wird nicht mehr gebaut) |
 | `overrides/` | Mitgelieferte Configs, KubeJS-Skripte und das Schneeverwehungs-Datapack (`kubejs/data/`) (Quelle) |
 | `mods.resolved.json` | Exakte Projekt- und Datei-IDs aller Mods (Lock-Datei) |
 | `packwiz/` | packwiz-Pack, aus dem die Prism-Instanzen ihre Updates holen (erzeugt, nicht von Hand bearbeiten) |
@@ -18,7 +18,7 @@ Basis ist *Skyward Frontiers* (`../skyward-frontiers`): gleiche Struktur- und Mo
 | `server-overrides/` | Configs nur für den Server (AntiXray) |
 | `screenshots/` | 15 Screenshots aus dem Client mit Bildunterschriften (`screenshots/README.md`) |
 
-Neu bauen: `python3 tools/build.py tools/modlist.txt mods.resolved.json`, dann `python3 tools/package.py mods.resolved.json overrides dist` und `cd tools && python3 packwiz.py ../mods.resolved.json ../overrides ../packwiz ../dist`.
+Neu bauen: `python3 tools/build.py tools/modlist.txt mods.resolved.json`, dann `cd tools && python3 packwiz.py ../mods.resolved.json ../overrides ../packwiz ../dist`. Verteilt wird nur noch über packwiz (Prism Launcher und Docker-Server). `tools/package.py` baut bei Bedarf weiterhin die CurseForge-ZIPs.
 
 ## Installation (Prism Launcher mit Auto-Update)
 
@@ -31,7 +31,7 @@ Was ein Update **nicht** anfasst: `options.txt` (Grafik, Tasten, Sound), Welten,
 
 **Update veröffentlichen:** Neu bauen (siehe oben), committen, pushen. GitHub liefert die neue Version nach spätestens ca. 5 Minuten aus, beim nächsten Start ziehen alle Instanzen nach.
 
-**Server (Docker, `itzg/minecraft-server`):** `PACKWIZ_URL=https://raw.githubusercontent.com/Stolzenberg/minecraft-modpack-frostbound-colonies/main/packwiz/pack.toml` setzen (zusammen mit `TYPE=NEOFORGE`, `VERSION`, `NEOFORGE_VERSION`). Der Container gleicht bei jedem Start ab und installiert nur die Server-Seite (ohne Client-Mods, mit AntiXray). Nach einem Push `docker compose restart mc`. Die 5 gesperrten Mods, die der Server braucht (alle außer Entity Culling), müssen einmal unter ihrem Dateinamen in `data/mods/` liegen, sonst bricht der Start ab. Ändert sich die NeoForge-Version, auch `NEOFORGE_VERSION` anpassen. Ohne Docker: `java -jar packwiz-installer-bootstrap.jar -g -s server <URL>` im Serverordner vor dem Start.
+**Server (Docker, `itzg/minecraft-server`):** `PACKWIZ_URL=https://raw.githubusercontent.com/Stolzenberg/minecraft-modpack-frostbound-colonies/main/packwiz/pack.toml` setzen (zusammen mit `TYPE=NEOFORGE`, `VERSION`, `NEOFORGE_VERSION`). Der Container gleicht bei jedem Start ab und installiert nur die Server-Seite (ohne Client-Mods, mit AntiXray und CoreProtect). Nach einem Push `docker compose restart mc`. Die 5 gesperrten Mods, die der Server braucht (alle außer Entity Culling), müssen einmal unter ihrem Dateinamen in `data/mods/` liegen, sonst bricht der Start ab. Ändert sich die NeoForge-Version, auch `NEOFORGE_VERSION` anpassen. Außerdem nötig: UDP-Port 24454 für Simple Voice Chat veröffentlichen (`24454:24454/udp`) und ein MariaDB-Container für CoreProtect, siehe [Server: Voice Chat und CoreProtect](#server-voice-chat-und-coreprotect). Ohne Docker: `java -jar packwiz-installer-bootstrap.jar -g -s server <URL>` im Serverordner vor dem Start.
 
 ## Welt: ewiger Winter
 - **Normale Weltgenerierung** mit **Tectonic** (`config/tectonic.json`): weite Kontinente, große zusammenhängende Gebirgszüge und Ebenen mit Vanilla-Biomen, kein eigener Welttyp nötig. Gegenüber dem Standard: Biome doppelt so breit (`temperature_scale`/`vegetation_scale` 0,125, etwa 4× Fläche), breitere Gebirgszüge (`erosion_scale` 0,18), keine kleinen Inseln, keine Dschungel-Felssäulen. Gemessen: typische Biomgröße (Median) 3,6 ha statt 0,4 ha mit dem vorher genutzten Terralith, 56 % statt 14 % der Fläche liegen in großen Biomen (> 25 ha). Tectonic braucht Lithostitched, das nicht als Abhängigkeit eingetragen ist und deshalb in der Modliste steht.
@@ -102,6 +102,7 @@ Kälte ist der eigentliche Gegner. **Cold Sweat** gibt dem Spieler eine Körpert
 - 21 Mobs und Bosse aus allen Mob-Mods (u. a. Frost Bear, Frostmaw, Ferrous Wroughtnaut, Night Lich, Ender Golem, Iceologer, Mutant Zombie, Lebkuchen-Golem, Chamäleon) 60 s gleichzeitig nachts und im Schneesturm: keine Fehler.
 - Wetterzyklus: Phasenwechsel, `/frost`-Befehle und Persistenz über einen Neustart funktionieren. Temperaturmessung über Cold Sweats KubeJS-Schnittstelle liefert die erwarteten Werte.
 - Inventory Sorter 24.0.24: Server aus der neuen ZIP frisch installiert, startet ohne neue Fehler, `/invsorter` antwortet. Sortieren im Client ist nicht getestet.
+- Coffee Delight 1.4.1, Create Cobblestone 1.5.0, Simple Voice Chat 2.6.22 und CoreProtectNeo 24.1: Testserver (Kopie der Server-Mods, frische Welt) startet ohne neue Fehler, Voice-Chat-Server lauscht auf Port 24454, CoreProtect meldet „Using MySQL for data storage“ und legt seine Tabellen in MariaDB an. Voice Chat mit echten Clients und CoreProtect-Rollbacks sind nicht getestet.
 - Hearth-Rezept und Milch-Tag werden geladen (KubeJS: 1 Rezept hinzugefügt, keine Parse-Fehler).
 - Schneeverwehungen: 16.129 Chunks (2 × 2 km, zweiter Seed) ohne neue Fehler generiert, Schichtverteilung wie oben.
 - Im Log stehen nur bekannte, harmlose Meldungen: fehlende Advancements von Dungeons Arise, leere Items in Struktur-Truhen, „Cold Sweat requires primalwinter 6.0.2 or lower for compat“ (die eingebaute Kompatibilität wird durch die eigene Config ersetzt).
@@ -126,10 +127,17 @@ Kälte ist der eigentliche Gegner. **Cold Sweat** gibt dem Spieler eine Körpert
 - `allow-flight=true` ist gesetzt, weil Paraglider sonst Kicks auslösen.
 - **Empfehlung:** `white-list=true` und den Seed geheim halten.
 
+## Server: Voice Chat und CoreProtect
+- **Simple Voice Chat** (Client und Server): Sprechen in der Nähe, Hörweite 48 Blöcke, Flüstern 24. Im Spiel öffnet `V` das Menü (Mikrofon, Gruppen), Sprechen per Push-to-Talk (Standard: Feststelltaste). Der Server spricht auf **UDP 24454** (Standard in `config/voicechat/voicechat-server.properties`, `voice_host` leer: Clients nutzen dieselbe Adresse wie für das Spiel). Im Docker-Compose ist `24454:24454/udp` veröffentlicht. Wer ohne VPN von außen verbindet, braucht zusätzlich eine UDP-Portfreigabe 24454 im Router.
+- **CoreProtectNeo 24.1** (nur Server, `pack=server`): protokolliert Blockänderungen, Truhenzugriffe usw. und erlaubt Rollbacks. Befehle für OPs: `/co i` (Inspektor: Block anklicken), `/co lookup u:<Spieler> t:1d`, `/co rollback u:<Spieler> t:1h r:20`, `/co restore …`.
+  - Daten in **MariaDB 11.4** (eigener Dienst `db` im Compose, nur im internen Docker-Netz, Daten in `./db`). Gründe: Create und MineColonies erzeugen sehr viele Block-Ereignisse, und eine SQLite-Datei in `data/` würde jedes Backup aufblähen und während des Schreibens inkonsistent gesichert.
+  - Die Config `data/coreprotect/config.yml` liegt **nur auf dem Server** und nicht im Repo, weil sie das DB-Passwort enthält: `use-mysql: true`, `mysql-host: db`, `mysql-database`/`mysql-username: coreprotect`, `mysql-password` = `DB_PASSWORD` aus der `.env`, `table-prefix: co_`, `language: de`. Ohne diese Datei legt CoreProtect beim ersten Start eine SQLite-Config an.
+  - Die Datenbank ist **nicht** in den tar-Backups des Backup-Containers enthalten.
+
 ## Wichtig: kein Chunky
 **Chunky nicht ins Pack aufnehmen.** Distant Horizons 3.3.3 und Chunky 1.4.23 stürzen zusammen beim Erstellen einer neuen Welt ab (siehe Skyward Frontiers). Zum Vorgenerieren auf dem Server Chunky nur vorübergehend und ohne DH verwenden.
 
-## Mods und Shader (82 gelistet: 81 im Client, AntiXray nur auf dem Server, dazu 24 Bibliotheken)
+## Mods und Shader (86 gelistet: 84 im Client, AntiXray und CoreProtectNeo nur auf dem Server, dazu 24 Bibliotheken)
 
 **Kern: MineColonies**
 
@@ -144,6 +152,8 @@ Kälte ist der eigentliche Gegner. **Cold Sweat** gibt dem Spieler eine Körpert
 
 - [Create](https://www.curseforge.com/minecraft/mc-mods/create) – `create-1.21.1-6.0.10.jar`
 - [Farmer's Delight](https://www.curseforge.com/minecraft/mc-mods/farmers-delight) – `FarmersDelight-1.21.1-1.3.4.jar`
+- [Coffee Delight](https://www.curseforge.com/minecraft/mc-mods/coffee-delight) – `coffee_delight-1.4.1.jar`
+- [Create Cobblestone](https://www.curseforge.com/minecraft/mc-mods/create-cobblestone) – `createcobblestone-1.5.0+neoforge-1.21.1-153.jar`
 
 **Ewiger Winter**
 
@@ -217,6 +227,11 @@ Kälte ist der eigentliche Gegner. **Cold Sweat** gibt dem Spieler eine Körpert
 - [Patchouli](https://www.curseforge.com/minecraft/mc-mods/patchouli) – `Patchouli-1.21.1-93-NEOFORGE.jar`
 - [Leather Working - Pelts & Hides](https://www.curseforge.com/minecraft/mc-mods/leather-working-pelts-hides) – `leatherworking-1.0.1.jar`
 - [Armor Series - Norsemen](https://www.curseforge.com/minecraft/mc-mods/armor-series-norsemen) – `armor_series__norsemen-1.0.0-neoforge-1.21.1.jar`
+
+**Multiplayer**
+
+- [Simple Voice Chat](https://www.curseforge.com/minecraft/mc-mods/simple-voice-chat) – `voicechat-neoforge-1.21.1-2.6.22.jar`
+- [CoreProtectNeo](https://www.curseforge.com/minecraft/mc-mods/coreprotectneo) – `coreprotect-24.1-neoforge-all.jar` *(nur Server)*
 
 **QoL**
 
