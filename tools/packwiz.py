@@ -20,7 +20,7 @@ MC, NEOFORGE = "1.21.1", "21.1.256"
 PACK_URL = "https://raw.githubusercontent.com/Stolzenberg/minecraft-modpack-frostbound-colonies/main/packwiz/pack.toml"
 SERVER = (NAME, "server.proud-mountain.com")  # Eintrag in der Serverliste (Name, Adresse)
 # Persönliche Einstellungen: nur bei der Erstinstallation schreiben, Updates überschreiben sie nicht
-PRESERVE = ("config/iris.properties",)
+PRESERVE = ("config/iris.properties", "config/coldsweat/client.toml")
 FOLDER = {6: "mods", 6552: "shaderpacks", 12: "resourcepacks"}
 BOOTSTRAP = os.path.join(os.path.dirname(os.path.abspath(__file__)), "packwiz-installer-bootstrap.jar")
 

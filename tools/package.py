@@ -12,7 +12,7 @@ import html, json, os, sys, urllib.parse, zipfile
 NAME, VERSION, AUTHOR = "Frostbound Colonies", "1.0.0", "Tim"
 SLUG = NAME.replace(" ", "")
 MC, NEOFORGE = "1.21.1", "21.1.256"
-CLIENT_ONLY_CONFIGS = ("config/iris.properties",)
+CLIENT_ONLY_CONFIGS = ("config/iris.properties", "config/coldsweat/client.toml")
 
 all_mods = sorted(json.load(open(sys.argv[1])), key=lambda m: m["name"].lower())
 mods = [m for m in all_mods if not m.get("serverPackOnly")]  # Client-Manifest

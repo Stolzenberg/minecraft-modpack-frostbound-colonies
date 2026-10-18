@@ -9,6 +9,11 @@ file = "config/betterdays-common.toml"
 hash = "0d9452eb534c8dd12caee77ad5c8d7521928fb526c228914844f1cedcc34bfbf"
 
 [[files]]
+file = "config/coldsweat/client.toml"
+hash = "ec647e2bec47c16213a015b7ea0bb1664073237ad895395b8a800fd257191ba2"
+preserve = true
+
+[[files]]
 file = "config/coldsweat/item.toml"
 hash = "e97a3949ffe8c943ed3ab96a587b178db2a2ffa0e95405e5355aeeab2b5525d3"
 
