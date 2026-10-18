@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "de.frostbound.tweaks.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "LevelRendererMixin",
+    "PrimalWinterFogMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}

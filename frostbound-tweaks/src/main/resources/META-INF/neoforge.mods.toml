@@ -1,0 +1,31 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "MIT"
+
+[[mods]]
+modId = "frostbound_tweaks"
+version = "1.0.0"
+displayName = "Frostbound Tweaks"
+authors = "Tim"
+description = '''
+Client-Anpassungen für Frostbound Colonies: Schneefall, Schneegeräusche und Nebel von Colder Primal Winter nur bei echtem Niederschlag.
+'''
+# Nur im Client nötig, der Server muss die Mod nicht haben
+displayTest = "IGNORE_ALL_VERSION"
+
+[[mixins]]
+config = "frostbound_tweaks.mixins.json"
+
+[[dependencies.frostbound_tweaks]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1,)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.frostbound_tweaks]]
+modId = "primalwinter"
+type = "optional"
+versionRange = "*"
+ordering = "AFTER"
+side = "CLIENT"

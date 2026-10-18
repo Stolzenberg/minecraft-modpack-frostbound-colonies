@@ -39,6 +39,10 @@ file = "config/minecolonies-server.toml"
 hash = "7575d881ab9cddfbe26e525a2037161c0104dfeedbc59f4beb3b547f9673466a"
 
 [[files]]
+file = "config/primalwinter-client.toml"
+hash = "45c5cb438eb9c71cbd74247c6cf3d0b8c91f16f59bcf9688228ee04cd8216f75"
+
+[[files]]
 file = "config/primalwinter-common.toml"
 hash = "4423927d12d112e8fa5997774eee0d81f16d6b7620e3b7c5d6f8810b7c4ae9ed"
 
@@ -1958,6 +1962,11 @@ metafile = true
 [[files]]
 file = "mods/frost-bear.pw.toml"
 hash = "1ad39f6a2f2fb661f39646134b251c3c99d3aa2fb4554ad6c4102280ebaf0d20"
+metafile = true
+
+[[files]]
+file = "mods/frostbound-tweaks.pw.toml"
+hash = "11dcec3505e3c25e7528c021a00c0f7ea1c7ed9fda712425c68d72980f5e3377"
 metafile = true
 
 [[files]]

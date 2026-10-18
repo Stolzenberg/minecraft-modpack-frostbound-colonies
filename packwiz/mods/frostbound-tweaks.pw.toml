@@ -1,0 +1,8 @@
+name = "Frostbound Tweaks"
+filename = "frostbound-tweaks-1.0.0.jar"
+side = "client"
+
+[download]
+url = "https://raw.githubusercontent.com/Stolzenberg/minecraft-modpack-frostbound-colonies/main/extra-mods/frostbound-tweaks-1.0.0.jar"
+hash-format = "sha1"
+hash = "17e65d859c491cc7ab2c38c6fa0ddfe4403d1652"

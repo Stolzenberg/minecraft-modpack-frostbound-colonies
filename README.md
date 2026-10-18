@@ -16,6 +16,8 @@ Basis ist *Skyward Frontiers* (`../skyward-frontiers`): gleiche Struktur- und Mo
 | `packwiz/` | packwiz-Pack, aus dem die Prism-Instanzen ihre Updates holen (erzeugt, nicht von Hand bearbeiten). Mods, die als identische Datei auf Modrinth liegen (87 von 110), werden von dort geladen, der Rest von CurseForge |
 | `tools/` | `scale_structures.py` (Strukturdichte senken), `disable_structures.py` (schwebende Strukturen abschalten), `modlist.txt` (Modliste, alle Versionen gepinnt), `build.py` (Abhängigkeiten auflösen), `package.py` (ZIPs bauen), `packwiz.py` (packwiz-Pack und Prism-Instanz bauen), `packwiz-installer-bootstrap.jar` (v0.0.3, steckt in der Prism-Instanz), `coldsweat_frost.py` (Temperatur-Configs erzeugen), `coldsweat-defaults/` (Cold-Sweat-Standardwerte als Eingabe), `test/` (Testserver-Werkzeuge; `surface.py` zählt Schnee/Eis an der Oberfläche je Biom) |
 | `server-overrides/` | Configs nur für den Server (AntiXray) |
+| `frostbound-tweaks/` | Quelltext der eigenen Client-Mod *Frostbound Tweaks* (NeoForge 1.21.1, bauen mit `./gradlew build`, braucht JDK 21) |
+| `extra-mods/` | Fertige Jars eigener Mods. `tools/packwiz.py` (`EXTRA_MODS`) trägt sie mit Download direkt aus diesem Repo ins packwiz-Pack ein |
 | `screenshots/` | 15 Screenshots aus dem Client mit Bildunterschriften (`screenshots/README.md`) |
 
 Neu bauen: `python3 tools/build.py tools/modlist.txt mods.resolved.json`, dann `cd tools && python3 packwiz.py ../mods.resolved.json ../overrides ../packwiz ../dist`. Verteilt wird nur noch über packwiz (Prism Launcher und Docker-Server). `tools/package.py` baut bei Bedarf weiterhin die CurseForge-ZIPs.
@@ -48,7 +50,8 @@ Was ein Update **nicht** anfasst: `options.txt` (Grafik, Tasten, Sound), Welten,
 - **3× längere Tage** (Better Days, `config/betterdays-common.toml`: `daySpeed`/`nightSpeed` = 0,333): Ein Minecraft-Tag dauert 60 statt 20 Minuten (30 Minuten Tag, 30 Minuten Nacht). Gemessen: 200 statt 600 Ticks Tageszeit in 30 Sekunden. Beim Schlafen läuft die Zeit sanft schneller bis zum Morgen statt zu springen. Pflanzen wachsen weiter in Echtzeit, pro Tag also dreimal so viel.
 - **Wetter** (`kubejs/server_scripts/frost_storms.js`): Primal Winter würde dauerhaftes Gewitter setzen, also Monster auch am Tag. Stattdessen gilt ein Zyklus:
   - Es schneit ruhig 10–20 Minuten am Stück (⅙–⅓ der längeren Tage), tagsüber ist es hell und sicher.
-  - Danach kommt mit 60 % **klarer Himmel** (15–30 Minuten bzw. 6–12 Spielstunden, Titel „Der Himmel klart auf“): kein Schneenebel, Fernsicht, durch Distant Horizons bis weit zum Horizont. Ohne Wolkendecke ist es etwa 5 °F milder.
+  - Danach kommt mit 60 % **klarer Himmel** (15–30 Minuten bzw. 6–12 Spielstunden, Titel „Der Himmel klart auf“): kein Schneefall, der Nebel blendet aus, Fernsicht durch Distant Horizons bis weit zum Horizont. Ohne Wolkendecke ist es etwa 5 °F milder.
+  - **Sichtbarer Schnee hängt am Wetter:** Colder Primal Winter zeichnet im Client Schneefall, Schneegeräusche und Nebel sonst **immer**, unabhängig vom Wetter (Schnee per `LevelRendererMixin`, Nebel nur nach Himmelslicht). Die eigene Client-Mod *Frostbound Tweaks* (`frostbound-tweaks/`) koppelt alle drei an das Regenlevel der Welt: kein Niederschlag, kein Schnee, kein Nebel; Übergänge werden weich ein- und ausgeblendet. Schneedichte zusätzlich gesenkt (`snowDensity` 15 → 8 in `config/primalwinter-client.toml`, wird bei Updates überschrieben).
   - Sonst ein **Whiteout**: eine Minute Vorwarnung per Titel, dann 5–10 Minuten Schneesturm. Im Mittel schneit es so etwa 47 % der Zeit, 42 % ist es klar, 11 % stürmt es (vorher 80 % Schnee, 6 % klar). Währenddessen spawnen Monster auch am Tag, und wer im Freien steht, kühlt zusätzlich aus. Warme Kleidung dämpft das bis auf 15 %.
   - **`/weather` wird respektiert:** Von Hand gesetztes Wetter gilt für die angegebene Dauer (bis 1.000.000 Ticks), danach schneit es wieder. Längere Dauern (Primal Winters Dauergewitter bei neuen Welten) und das Zurücksetzen beim Schlafen werden überschrieben, Schlafen beendet den Schneefall also nicht.
   - Der Zustand übersteht Neustarts. Admins: `/frost status` (Phase, Restzeit, Temperatur an der eigenen Position), `/frost storm`, `/frost sky` (klarer Himmel), `/frost snow` (zurück zum Schneefall, Alias `/frost clear`).
@@ -137,7 +140,7 @@ Kälte ist der eigentliche Gegner. **Cold Sweat** gibt dem Spieler eine Körpert
 ## Wichtig: kein Chunky
 **Chunky nicht ins Pack aufnehmen.** Distant Horizons 3.3.3 und Chunky 1.4.23 stürzen zusammen beim Erstellen einer neuen Welt ab (siehe Skyward Frontiers). Zum Vorgenerieren auf dem Server Chunky nur vorübergehend und ohne DH verwenden.
 
-## Mods und Shader (86 gelistet: 84 im Client, AntiXray und CoreProtectNeo nur auf dem Server, dazu 24 Bibliotheken)
+## Mods und Shader (86 gelistet: 84 im Client, AntiXray und CoreProtectNeo nur auf dem Server, dazu 1 eigene Client-Mod und 24 Bibliotheken)
 
 **Kern: MineColonies**
 
@@ -260,6 +263,10 @@ Kälte ist der eigentliche Gegner. **Cold Sweat** gibt dem Spieler eine Körpert
 - [spark](https://www.curseforge.com/minecraft/mc-mods/spark) – `spark-1.10.124-neoforge.jar`
 - [Crash Assistant](https://www.curseforge.com/minecraft/mc-mods/crash-assistant) – `CrashAssistant-neoforge-1.20.6-1.21.4-1.11.12.jar`
 - [AntiXray ((Neo)Forge)](https://www.curseforge.com/minecraft/mc-mods/antixray-forge) – `antixray-neoforge-1.4.8+1.21.1.jar` *(nur Server-Pack)*
+
+**Eigene Mods**
+
+- Frostbound Tweaks (`frostbound-tweaks/`, Jar in `extra-mods/`) – `frostbound-tweaks-1.0.0.jar` *(nur Client)*
 
 **Automatisch mitinstallierte Bibliotheken**
 
