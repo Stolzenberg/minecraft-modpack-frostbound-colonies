@@ -1,4 +1,4 @@
-// Frostbound Colonies – Wetter: Dauerschnee, angekündigte Whiteout-Stürme und klare Tage
+// Frostbound Colonies – Wetter: Schneefall, klare Phasen und angekündigte Whiteout-Stürme im Wechsel
 //
 // Primal Winter stellt neue Welten auf ein permanentes Gewitter. Das hieße: Monster spawnen auch
 // tagsüber und Untote verbrennen nie. Dieses Skript übernimmt stattdessen das Overworld-Wetter:
@@ -16,9 +16,10 @@
 ;(function () {
   const DATA_KEY = 'frostbound_weather'
   const DAY = 24000
-  const SNOW_LENGTH = [36000, 72000] // 30–60 Minuten Schneefall zwischen zwei Ereignissen (Echtzeit; mit Better Days ½–1 Tag)
-  const CLEAR_CHANCE = 0.4 // sonst Whiteout
-  const CLEAR_LENGTH = [6000, 14400] // 5–12 Minuten klarer Himmel (mit Better Days 2–5 Spielstunden)
+  const SNOW_LENGTH = [12000, 24000] // 10–20 Minuten Schneefall zwischen zwei Ereignissen (Echtzeit; mit Better Days ⅙–⅓ Tag)
+  const CLEAR_CHANCE = 0.6 // sonst Whiteout
+  const CLEAR_LENGTH = [18000, 36000] // 15–30 Minuten klarer Himmel (mit Better Days 6–12 Spielstunden)
+  // Im Mittel: etwa 47 % Schnee, 42 % klar, 11 % Sturm
   const STORM_LENGTH = [6000, 12000] // 5–10 Minuten
   const WARNING = 1200 // 1 Minute Vorwarnung
   const MANUAL_MAX = 1000000 // /weather-Dauern darüber gelten nicht als Absicht (Primal Winter setzt ~2^31)

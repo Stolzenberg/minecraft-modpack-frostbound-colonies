@@ -1728,7 +1728,7 @@ hash = "c05a6226103dc59b0dd8b054bbffb726365208c1d4c7f21063fba4eb3f4aa259"
 
 [[files]]
 file = "kubejs/server_scripts/frost_storms.js"
-hash = "a7f6287f8558f138f5346b87e490c9a730e3b9aa649388826e0c0482388cc0ba"
+hash = "d7fddc4987b942f114b90df145250f3d5cee57204204161cef0127df40c5b545"
 
 [[files]]
 file = "mods/alltheleaks.pw.toml"
