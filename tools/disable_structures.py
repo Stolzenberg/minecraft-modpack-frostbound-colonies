@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Schwebende Strukturen abschalten: Struktur-JSON aus den Mod-Jars kopieren und auf einen leeren Biom-Tag umbiegen.
 
-usage: disable_structures.py <Ordner mit Mod-Jars> <overrides/kubejs/data>
+usage: disable_structures.py <Ordner mit Mod-Jars> <packwiz/kubejs/data>
 
 Die Kopien landen unter kubejs/data/<namespace>/worldgen/structure/ und überschreiben die Originale. "biomes" zeigt
 auf #frostbound:none (leerer Tag), dadurch wird die Struktur nirgends mehr platziert. Alle übrigen Felder bleiben

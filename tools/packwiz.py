@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """packwiz-Pack (Auto-Updates über GitHub) und Prism-Instanz aus mods.resolved.json bauen.
 
-usage: packwiz.py <mods.resolved.json> <overrides-Ordner> <packwiz-Ordner> <Ausgabe-Ordner>
+usage: packwiz.py <mods.resolved.json> <packwiz-Ordner> <Ausgabe-Ordner>
 
-- packwiz-Ordner: pack.toml + index.toml + mods/*.pw.toml (Download-Metadaten, keine Jars) + Overrides
-  und server-overrides/. Wird komplett neu geschrieben, danach committen und pushen.
+- packwiz-Ordner: pack.toml + index.toml + */*.pw.toml (Download-Metadaten, keine Jars) + Configs, KubeJS usw.
+  Configs und Skripte werden direkt dort gepflegt (Quelle). Neu geschrieben werden nur die .pw.toml-Dateien,
+  index.toml und pack.toml; server-overrides/ wird hineinkopiert. Danach committen und pushen.
   Liegt exakt dieselbe Datei (SHA1) auf Modrinth, wird von dort geladen, sonst von CurseForge. Modrinth
   erlaubt immer Launcher-Downloads, so entfallen manuelle Downloads für dort gespiegelte Mods.
   Eigene Mods aus extra-mods/ (EXTRA_MODS) werden direkt aus dem GitHub-Repo geladen.
@@ -59,14 +60,16 @@ def modrinth(hashes):
 
 
 all_mods = sorted(json.load(open(sys.argv[1])), key=lambda m: m["name"].lower())
-overrides, pack, out = sys.argv[2], sys.argv[3], sys.argv[4]
-server_overrides = os.path.join(os.path.dirname(os.path.abspath(overrides)), "server-overrides")
+pack, out = sys.argv[2], sys.argv[3]
+server_overrides = os.path.join(os.path.dirname(os.path.abspath(pack)), "server-overrides")
 
-if os.path.isdir(pack):
-    if not os.path.exists(os.path.join(pack, "pack.toml")):
-        sys.exit(f"{pack} existiert, ist aber kein packwiz-Ordner, breche ab")
-    shutil.rmtree(pack)
-os.makedirs(pack)
+if not os.path.exists(os.path.join(pack, "pack.toml")):
+    sys.exit(f"{pack} ist kein packwiz-Ordner, breche ab")
+# Nur Generiertes entfernen, damit entfernte Mods keine verwaisten .pw.toml hinterlassen
+for folder in set(FOLDER.values()):
+    for name in os.listdir(os.path.join(pack, folder)) if os.path.isdir(os.path.join(pack, folder)) else ():
+        if name.endswith(".pw.toml"):
+            os.remove(os.path.join(pack, folder, name))
 os.makedirs(out, exist_ok=True)
 
 sha1 = {f["id"]: next(h["value"] for h in f["hashes"] if h["algo"] == 1)
@@ -100,14 +103,18 @@ for jar, (name, side) in sorted(EXTRA_MODS.items()):
                 f'[download]\nurl = {q(f"{RAW_BASE}/extra-mods/{jar}")}\nhash-format = "sha1"\nhash = "{h}"\n')
     index.append((rel, True))
 
-for src in (overrides, server_overrides):
-    if not os.path.isdir(src):
-        continue
-    for root, _, files in os.walk(src):
+if os.path.isdir(server_overrides):
+    for root, _, files in os.walk(server_overrides):
         for name in files:
-            rel = os.path.relpath(os.path.join(root, name), src).replace(os.sep, "/")
+            rel = os.path.relpath(os.path.join(root, name), server_overrides)
             os.makedirs(os.path.join(pack, os.path.dirname(rel)), exist_ok=True)
             shutil.copy2(os.path.join(root, name), os.path.join(pack, rel))
+
+metafiles = {rel for rel, _ in index}
+for root, _, files in os.walk(pack):
+    for name in files:
+        rel = os.path.relpath(os.path.join(root, name), pack).replace(os.sep, "/")
+        if rel not in metafiles and rel not in ("index.toml", "pack.toml"):
             index.append((rel, False))
 
 with open(os.path.join(pack, "index.toml"), "w") as f:
@@ -145,6 +152,6 @@ with zipfile.ZipFile(prism_zip, "w", zipfile.ZIP_DEFLATED) as z:
 manual = [m["slug"] for m in all_mods
           if not m.get("downloadUrl") and sha1[m["fileID"]] not in mr and not m.get("serverPackOnly")]
 print(os.path.join(pack, "pack.toml"), f"{len(all_mods)} Mods ({len(mr)} von Modrinth) + {len(EXTRA_MODS)} eigene, "
-      f"{len(index) - len(all_mods) - len(EXTRA_MODS)} Dateien aus Overrides")
+      f"{len(index) - len(all_mods) - len(EXTRA_MODS)} weitere Dateien")
 print(prism_zip, os.path.getsize(prism_zip))
 print(f"manueller Download nötig (Drittanbieter-Downloads vom Autor gesperrt): {manual}")

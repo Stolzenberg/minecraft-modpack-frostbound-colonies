@@ -11,16 +11,15 @@ Basis ist *Skyward Frontiers* (`../skyward-frontiers`): gleiche Struktur- und Mo
 | `dist/FrostboundColonies-Prism.zip` | Prism-Launcher-Instanz mit Auto-Update (empfohlen, siehe [Installation](#installation-prism-launcher-mit-auto-update)) |
 | `dist/FrostboundColonies-1.0.0.zip` | Client-Pack für die CurseForge-App (veraltet: Stand 1.0.0, wird nicht mehr gebaut) |
 | `dist/FrostboundColonies-1.0.0-Server.zip` | Server-ZIP ohne Docker (veraltet: Stand 1.0.0, wird nicht mehr gebaut) |
-| `overrides/` | Mitgelieferte Configs, KubeJS-Skripte und das Schneeverwehungs-Datapack (`kubejs/data/`) (Quelle) |
 | `mods.resolved.json` | Exakte Projekt- und Datei-IDs aller Mods (Lock-Datei) |
-| `packwiz/` | packwiz-Pack, aus dem die Prism-Instanzen ihre Updates holen (erzeugt, nicht von Hand bearbeiten). Mods, die als identische Datei auf Modrinth liegen (87 von 110), werden von dort geladen, der Rest von CurseForge |
+| `packwiz/` | packwiz-Pack, aus dem die Prism-Instanzen ihre Updates holen. Configs, KubeJS-Skripte und das Schneeverwehungs-Datapack (`kubejs/data/`) werden direkt hier gepflegt (Quelle); `*.pw.toml`, `index.toml` und `pack.toml` erzeugt `tools/packwiz.py`, die nicht von Hand bearbeiten. Mods, die als identische Datei auf Modrinth liegen (87 von 110), werden von dort geladen, der Rest von CurseForge |
 | `tools/` | `scale_structures.py` (Strukturdichte senken), `disable_structures.py` (schwebende Strukturen abschalten), `modlist.txt` (Modliste, alle Versionen gepinnt), `build.py` (Abhängigkeiten auflösen), `package.py` (ZIPs bauen), `packwiz.py` (packwiz-Pack und Prism-Instanz bauen), `packwiz-installer-bootstrap.jar` (v0.0.3, steckt in der Prism-Instanz), `coldsweat_frost.py` (Temperatur-Configs erzeugen), `coldsweat-defaults/` (Cold-Sweat-Standardwerte als Eingabe), `test/` (Testserver-Werkzeuge; `surface.py` zählt Schnee/Eis an der Oberfläche je Biom) |
-| `server-overrides/` | Configs nur für den Server (AntiXray) |
+| `server-overrides/` | Configs nur für den Server (AntiXray), `tools/packwiz.py` kopiert sie nach `packwiz/` |
 | `frostbound-tweaks/` | Quelltext der eigenen Client-Mod *Frostbound Tweaks* (NeoForge 1.21.1, bauen mit `./gradlew build`, braucht JDK 21) |
 | `extra-mods/` | Fertige Jars eigener Mods. `tools/packwiz.py` (`EXTRA_MODS`) trägt sie mit Download direkt aus diesem Repo ins packwiz-Pack ein |
 | `screenshots/` | 15 Screenshots aus dem Client mit Bildunterschriften (`screenshots/README.md`) |
 
-Neu bauen: `python3 tools/build.py tools/modlist.txt mods.resolved.json`, dann `cd tools && python3 packwiz.py ../mods.resolved.json ../overrides ../packwiz ../dist`. Verteilt wird nur noch über packwiz (Prism Launcher und Docker-Server). `tools/package.py` baut bei Bedarf weiterhin die CurseForge-ZIPs.
+Neu bauen: `python3 tools/build.py tools/modlist.txt mods.resolved.json`, dann `cd tools && python3 packwiz.py ../mods.resolved.json ../packwiz ../dist`. Verteilt wird nur noch über packwiz (Prism Launcher und Docker-Server). `tools/package.py` baut bei Bedarf weiterhin die CurseForge-ZIPs.
 
 ## Installation (Prism Launcher mit Auto-Update)
 
