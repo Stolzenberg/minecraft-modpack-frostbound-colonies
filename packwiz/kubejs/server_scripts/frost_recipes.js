@@ -20,4 +20,13 @@ ServerEvents.recipes(event => {
     I: '#c:ingots/iron',
     F: 'minecraft:blast_furnace'
   }).id('frostbound:hearth_overworld')
+
+  // Create-Millstone: Diorite zu Nether Quartz, damit Quartz nicht an einem Nether-Ausflug hängt.
+  // 50 %, weil 2 Diorite im Crafting 2 Quartz kosten, sonst wäre es nur das Rezept rückwärts.
+  event.custom({
+    type: 'create:milling',
+    ingredients: [{ item: 'minecraft:diorite' }],
+    processing_time: 200,
+    results: [{ id: 'minecraft:quartz', chance: 0.5 }]
+  }).id('frostbound:milling/diorite_to_quartz')
 })

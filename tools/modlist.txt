@@ -31,7 +31,7 @@ christmas-culinary                       pin=5976953
 create-wrapped                           pin=7552615
 christmas-music-discs                    pin=5936162
 # --- Welt / Biome ---
-tectonic                                 pin=8855043 # Gelände: große Kontinente und Gebirge, große Biome (Config: overrides/config/tectonic.json)
+tectonic                                 pin=8855043 # Gelände: große Kontinente und Gebirge, große Biome (Config: packwiz/config/tectonic.json)
 lithostitched                            pin=9170709 # von Tectonic benötigt (nicht als CurseForge-Abhängigkeit eingetragen)
 yeetusexperimentus                       pin=5444189 side=client
 # --- Strukturen / Entdecken ---
@@ -70,7 +70,7 @@ frost-bear                               pin=8507529
 paragliders                              pin=7795089
 gravestone-mod                           pin=8671622
 sophisticated-backpacks                  pin=9154769
-betterdays                               pin=7978626 # 3x längere Tage (Config: overrides/config/betterdays-common.toml)
+betterdays                               pin=7978626 # 3x längere Tage (Config: packwiz/config/betterdays-common.toml)
 # --- Kleidung: Felle & Stoffe (Kälteschutz über Cold Sweat, siehe coldsweat_frost.py) ---
 weavers-paradise                         pin=9188785 # Stoffe: Baumwolle/Seide/Wolle spinnen & weben, Kleidung als Curios
 patchouli                                pin=7730942 # Anleitungsbuch für Weavers Paradise (optionale Abhängigkeit)

@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """Client-Pack (CurseForge-Import) und Server-Pack aus mods.resolved.json bauen.
 
-usage: package.py <mods.resolved.json> <overrides-Ordner> <Ausgabe-Ordner>
+usage: package.py <mods.resolved.json> <packwiz-Ordner> <Ausgabe-Ordner>
 
-- Client-ZIP: manifest.json + modlist.html + overrides/ (alles außer serverPackOnly-Mods)
-- Server-ZIP: Installationsskripte + mods.txt (Download-Liste) + Configs aus overrides/ (ohne reine
-  Client-Configs) + server-overrides/ (liegt neben dem overrides-Ordner)
+- Client-ZIP: manifest.json + modlist.html + overrides/ (alles außer serverPackOnly-Mods); die Overrides sind
+  die Configs/Skripte aus dem packwiz-Ordner ohne packwiz-Metadaten und ohne server-overrides/
+- Server-ZIP: Installationsskripte + mods.txt (Download-Liste) + Configs aus dem packwiz-Ordner (ohne reine
+  Client-Configs) + server-overrides/ (liegt neben dem packwiz-Ordner)
 """
 import html, json, os, sys, urllib.parse, zipfile
 
@@ -16,8 +17,10 @@ CLIENT_ONLY_CONFIGS = ("config/iris.properties", "config/coldsweat/client.toml",
 
 all_mods = sorted(json.load(open(sys.argv[1])), key=lambda m: m["name"].lower())
 mods = [m for m in all_mods if not m.get("serverPackOnly")]  # Client-Manifest
-overrides, out = sys.argv[2], sys.argv[3]
-server_overrides = os.path.join(os.path.dirname(os.path.abspath(overrides)), "server-overrides")
+pack, out = sys.argv[2], sys.argv[3]
+server_overrides = os.path.join(os.path.dirname(os.path.abspath(pack)), "server-overrides")
+SERVER_ONLY = tuple(os.path.relpath(os.path.join(r, f), server_overrides)
+                    for r, _, fs in os.walk(server_overrides) for f in fs)
 os.makedirs(out, exist_ok=True)
 
 manifest = {
@@ -37,7 +40,8 @@ def add_tree(z, src, prefix, skip=()):
         for f in files:
             p = os.path.join(root, f)
             rel = os.path.relpath(p, src)
-            if rel.startswith(skip):
+            # packwiz-Metadaten gehören nicht in die ZIPs
+            if rel.startswith(skip) or rel in ("index.toml", "pack.toml") or f.endswith(".pw.toml"):
                 continue
             z.write(p, os.path.join(prefix, rel))
 
@@ -53,7 +57,7 @@ client_zip = os.path.join(out, f"{SLUG}-{VERSION}.zip")
 with zipfile.ZipFile(client_zip, "w", zipfile.ZIP_DEFLATED) as z:
     z.writestr("manifest.json", json.dumps(manifest, indent=2))
     z.writestr("modlist.html", modlist)
-    add_tree(z, overrides, "overrides")
+    add_tree(z, pack, "overrides", skip=SERVER_ONLY)
 
 server_mods = [m for m in all_mods if m["side"] != "client"]
 mods_txt = "".join(f'{m["fileName"]}\t{cdn(m)}\n' for m in server_mods)
@@ -120,9 +124,7 @@ with zipfile.ZipFile(server_zip, "w", zipfile.ZIP_DEFLATED) as z:
     z.writestr("server.properties", server_properties)
     z.writestr("user_jvm_args.txt", "-Xms6G\n-Xmx10G\n")
     z.writestr("eula.txt", "# https://aka.ms/MinecraftEULA lesen und auf true setzen\neula=false\n")
-    add_tree(z, overrides, "", skip=CLIENT_ONLY_CONFIGS)
-    if os.path.isdir(server_overrides):
-        add_tree(z, server_overrides, "")
+    add_tree(z, pack, "", skip=CLIENT_ONLY_CONFIGS)
 
 client_only = sorted(m["slug"] for m in all_mods if m["side"] == "client")
 print(client_zip, os.path.getsize(client_zip))

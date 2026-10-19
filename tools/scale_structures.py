@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Strukturdichte senken: Abstände aller Struktur-Sets (Mods + Vanilla) vergrößern.
 
-usage: scale_structures.py <Ordner mit Mod-Jars> <Vanilla-Server-Jar mit data/> <overrides/kubejs/data>
+usage: scale_structures.py <Ordner mit Mod-Jars> <Vanilla-Server-Jar mit data/> <packwiz/kubejs/data>
 
 Für jedes Struktur-Set mit zufälliger Verteilung (random_spread und die erweiterten Varianten der Mods) werden
 "spacing" und "separation" mit FACTOR multipliziert (Dichte ≈ 1/FACTOR²). Namespaces in FACTOR_BY_NAMESPACE bekommen
