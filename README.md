@@ -12,7 +12,7 @@ Basis ist *Skyward Frontiers* (`../skyward-frontiers`): gleiche Struktur- und Mo
 | `dist/FrostboundColonies-1.0.0.zip` | Client-Pack für die CurseForge-App (veraltet: Stand 1.0.0, wird nicht mehr gebaut) |
 | `dist/FrostboundColonies-1.0.0-Server.zip` | Server-ZIP ohne Docker (veraltet: Stand 1.0.0, wird nicht mehr gebaut) |
 | `mods.resolved.json` | Exakte Projekt- und Datei-IDs aller Mods (Lock-Datei) |
-| `packwiz/` | packwiz-Pack, aus dem die Prism-Instanzen ihre Updates holen. Configs, KubeJS-Skripte und das Schneeverwehungs-Datapack (`kubejs/data/`) werden direkt hier gepflegt (Quelle); `*.pw.toml`, `index.toml` und `pack.toml` erzeugt `tools/packwiz.py`, die nicht von Hand bearbeiten. Mods, die als identische Datei auf Modrinth liegen (87 von 110), werden von dort geladen, der Rest von CurseForge |
+| `packwiz/` | packwiz-Pack, aus dem die Prism-Instanzen ihre Updates holen. Configs, KubeJS-Skripte und das Schneeverwehungs-Datapack (`kubejs/data/`) werden direkt hier gepflegt (Quelle); `*.pw.toml`, `index.toml` und `pack.toml` erzeugt `tools/packwiz.py`, die nicht von Hand bearbeiten. Mods, die als identische Datei auf Modrinth liegen (86 von 109), werden von dort geladen, der Rest von CurseForge |
 | `tools/` | `scale_structures.py` (Strukturdichte senken), `disable_structures.py` (schwebende Strukturen abschalten), `modlist.txt` (Modliste, alle Versionen gepinnt), `build.py` (Abhängigkeiten auflösen), `package.py` (ZIPs bauen), `packwiz.py` (packwiz-Pack und Prism-Instanz bauen), `packwiz-installer-bootstrap.jar` (v0.0.3, steckt in der Prism-Instanz), `coldsweat_frost.py` (Temperatur-Configs erzeugen), `coldsweat-defaults/` (Cold-Sweat-Standardwerte als Eingabe), `test/` (Testserver-Werkzeuge; `surface.py` zählt Schnee/Eis an der Oberfläche je Biom) |
 | `server-overrides/` | Configs nur für den Server (AntiXray), `tools/packwiz.py` kopiert sie nach `packwiz/` |
 | `frostbound-tweaks/` | Quelltext der eigenen Client-Mod *Frostbound Tweaks* (NeoForge 1.21.1, bauen mit `./gradlew build`, braucht JDK 21) |
@@ -166,7 +166,6 @@ Eine flache Creative-Dimension zum Ausprobieren von Bauwerken und Create-Maschin
 - [Create](https://www.curseforge.com/minecraft/mc-mods/create) – `create-1.21.1-6.0.10.jar`
 - [Farmer's Delight](https://www.curseforge.com/minecraft/mc-mods/farmers-delight) – `FarmersDelight-1.21.1-1.3.4.jar`
 - [Coffee Delight](https://www.curseforge.com/minecraft/mc-mods/coffee-delight) – `coffee_delight-1.4.1.jar`
-- [Create Cobblestone](https://www.curseforge.com/minecraft/mc-mods/create-cobblestone) – `createcobblestone-1.5.0+neoforge-1.21.1-153.jar`
 
 **Ewiger Winter**
 

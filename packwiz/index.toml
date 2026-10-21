@@ -1871,11 +1871,6 @@ hash = "0a5f3ba34c0e1424c3f3bdd40a09cd73d8dc017eb5f03806d49f78fe4fa3a849"
 metafile = true
 
 [[files]]
-file = "mods/create-cobblestone.pw.toml"
-hash = "b7786309d608fc24856122f081027619cab336278d179db828051c073d024082"
-metafile = true
-
-[[files]]
 file = "mods/create-cold-sweat.pw.toml"
 hash = "c2c4fbfa1522cf5d1b3047219fa259c5daa39f498140b556f913b0e690413d2f"
 metafile = true
