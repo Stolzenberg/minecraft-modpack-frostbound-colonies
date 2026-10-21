@@ -491,12 +491,24 @@ file = "kubejs/data/friendsandfoes/worldgen/structure_set/illusioner_training_gr
 hash = "9c94991c91ef3d4033b6fbf8f977ed60737941363f04191e4a56ec4fb64b3d95"
 
 [[files]]
+file = "kubejs/data/frostbound/dimension/testwelt.json"
+hash = "1115f14bbae20e755586a98ac6bc2cb58535ec455f751c1e0f3c0760b8baebab"
+
+[[files]]
+file = "kubejs/data/frostbound/dimension_type/testwelt.json"
+hash = "6d868d02da4835e1461e8945e9827fd861529f12dc704fd982cef7131021a166"
+
+[[files]]
 file = "kubejs/data/frostbound/neoforge/biome_modifier/snow_drifts.json"
 hash = "c9a535f9cc3c36c37562ecc7dfa5c47212cfa74bd4148924648c41b1ff212ba6"
 
 [[files]]
 file = "kubejs/data/frostbound/tags/worldgen/biome/none.json"
 hash = "33975eff3c2c6cf9000bce7825e1256f756eb8a353be7e9b7011bb4298f97a65"
+
+[[files]]
+file = "kubejs/data/frostbound/worldgen/biome/testwelt.json"
+hash = "a7072d7d60bb9be9c2851fcb8adc1ad6bfe1d3d68cac8706ee2499358ba5d37b"
 
 [[files]]
 file = "kubejs/data/frostbound/worldgen/configured_feature/snow_drift.json"
@@ -1733,6 +1745,10 @@ hash = "6812269b09a73cdc00d07d24d285e812307755e30bdd2c236bff689f583351d3"
 [[files]]
 file = "kubejs/server_scripts/frost_storms.js"
 hash = "d7fddc4987b942f114b90df145250f3d5cee57204204161cef0127df40c5b545"
+
+[[files]]
+file = "kubejs/server_scripts/testwelt.js"
+hash = "c680ab9cc2b9fd9952ea2f4a8ac1116d9e58be6c8bae448b7d301a278b30cae4"
 
 [[files]]
 file = "mods/alltheleaks.pw.toml"
