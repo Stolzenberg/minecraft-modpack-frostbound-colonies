@@ -16,7 +16,6 @@ domum-ornamentum                         pin=8784713   # Release 1.0.231 ist zu 
 create                                   pin=7963363
 farmers-delight                          pin=8765184
 coffee-delight                           pin=7027805 # Kaffee-Addon für Farmer's Delight
-create-cobblestone                       pin=8763220 # Bruchsteingenerator-Block mit Rotationsenergie (statt Lava/Wasser-Generatoren)
 # --- Ewiger Winter ---
 colder-primal-winter                     pin=8965877     # gepflegter Fork von Primal Winter (Original 6.0.2 stürzt auf dedizierten Servern ab)
 cold-sweat                               pin=9215368
