@@ -4,9 +4,11 @@
 // tagsüber und Untote verbrennen nie. Dieses Skript übernimmt stattdessen das Overworld-Wetter:
 //   - "snow": Schneefall (Regen ohne Gewitter), tagsüber normal hell. Dauer SNOW_LENGTH.
 //   - Danach mit CLEAR_CHANCE ein klarer Himmel ("clear", CLEAR_LENGTH): kein Nebel, Fernsicht.
-//   - Sonst ein Whiteout: nach einer Vorwarnung ("warning", WARNING) folgt ein Gewitter/Schneesturm
-//     ("storm", STORM_LENGTH). Währenddessen spawnen Monster auch am Tag, und wer im Freien steht
-//     (Himmel sichtbar), kühlt zusätzlich aus. Kälte-Isolierung (Pelz- und Wollkleidung) dämpft das.
+//   - Selten (STORM_CHANCE) ein Whiteout: nach einer Vorwarnung ("warning", WARNING) folgt ein
+//     Gewitter/Schneesturm ("storm", STORM_LENGTH). Währenddessen spawnen Monster auch am Tag, und wer
+//     im Freien steht (Himmel sichtbar), kühlt zusätzlich aus. Kälte-Isolierung (Pelz- und Wollkleidung)
+//     dämpft das.
+//   - Sonst schneit es eine weitere Phase lang weiter.
 //   - "manual": Wurde das Wetter von außen gesetzt (/weather mit Dauer bis MANUAL_MAX), gilt es für diese
 //     Dauer, danach geht es mit Schneefall weiter. Längere Dauern (Primal Winters Dauergewitter bei neuen
 //     Welten) und Dauer 0 (Zurücksetzen beim Schlafen) werden überschrieben.
@@ -17,9 +19,10 @@
   const DATA_KEY = 'frostbound_weather'
   const DAY = 24000
   const SNOW_LENGTH = [12000, 24000] // 10–20 Minuten Schneefall zwischen zwei Ereignissen (Echtzeit; mit Better Days ⅙–⅓ Tag)
-  const CLEAR_CHANCE = 0.6 // sonst Whiteout
+  const CLEAR_CHANCE = 0.6
+  const STORM_CHANCE = 0.05 // seltenes Ereignis; sonst schneit es weiter
   const CLEAR_LENGTH = [18000, 36000] // 15–30 Minuten klarer Himmel (mit Better Days 6–12 Spielstunden)
-  // Im Mittel: etwa 47 % Schnee, 42 % klar, 11 % Sturm
+  // Im Mittel: etwa 52 % Schnee, 47 % klar, gut 1 % Sturm (ein Whiteout alle ~10 Stunden Spielzeit)
   const STORM_LENGTH = [6000, 12000] // 5–10 Minuten
   const WARNING = 1200 // 1 Minute Vorwarnung
   const MANUAL_MAX = 1000000 // /weather-Dauern darüber gelten nicht als Absicht (Primal Winter setzt ~2^31)
@@ -126,8 +129,10 @@
     if (now >= s.getLong('next')) {
       phase = s.getString('phase')
       if (phase == 'snow') {
-        if (Math.random() < CLEAR_CHANCE) toClear(server, s, now)
-        else toWarning(server, s, now)
+        let r = Math.random()
+        if (r < CLEAR_CHANCE) toClear(server, s, now)
+        else if (r < CLEAR_CHANCE + STORM_CHANCE) toWarning(server, s, now)
+        else toSnow(server, s, now, null)
       } else if (phase == 'warning') {
         setPhase(server, s, 'storm', now + rand(STORM_LENGTH))
         announce(server, 'Whiteout!', 'Im Freien droht der Kältetod', 'red')

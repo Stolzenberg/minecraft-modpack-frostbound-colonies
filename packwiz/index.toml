@@ -1744,7 +1744,7 @@ hash = "6812269b09a73cdc00d07d24d285e812307755e30bdd2c236bff689f583351d3"
 
 [[files]]
 file = "kubejs/server_scripts/frost_storms.js"
-hash = "d7fddc4987b942f114b90df145250f3d5cee57204204161cef0127df40c5b545"
+hash = "9dd51c8f8c3b9471b9a385690fa8e88dbe195142d76eaf4631f743f752949129"
 
 [[files]]
 file = "kubejs/server_scripts/testwelt.js"
