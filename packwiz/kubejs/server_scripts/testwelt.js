@@ -1,4 +1,4 @@
-// Frostbound Colonies – Testwelt: flache Creative-Dimension zum Ausprobieren von Bauwerken und Maschinen
+// Testwelt: flache Creative-Dimension zum Ausprobieren von Bauwerken und Maschinen
 //
 // /testwelt bringt jeden Spieler in die Dimension frostbound:testwelt und beim zweiten Aufruf zurück an die
 // Stelle, an der er die normale Welt verlassen hat. Die Dimension kommt aus dem Datapack in
@@ -6,7 +6,7 @@
 // Beton (Oberfläche y = 16), keine Strukturen, keine Features, Biom ohne Spawns und Niederschlag, immer Mittag.
 //
 // Strenge Trennung: Jeder Spieler hat ein Survival- und ein Testwelt-Profil (Inventar mit Rüstung und Offhand,
-// Curios-Slots, Endertruhe, XP, Leben, Hunger, Effekte, Feuer, Cold-Sweat-Körpertemperatur, Spielmodus).
+// Curios-Slots, Endertruhe, XP, Leben, Hunger, Effekte, Feuer, Spielmodus).
 // Getauscht wird immer dann, wenn Dimension und aktives Profil nicht zusammenpassen: beim Dimensionswechsel,
 // Login, Respawn und zusätzlich jede Sekunde. Das gerade inaktive Profil liegt in server.persistentData.
 // Hinein und hinaus geht es nur per /testwelt: Portale, Waystones usw. von oder in die
@@ -173,7 +173,6 @@
     player.getActiveEffects().forEach(e => effects.add(e.save()))
     p.put('effects', effects)
     p.putInt('fire', player.getRemainingFireTicks())
-    if (typeof coldsweat != 'undefined') p.putDouble('temp', coldsweat.getTemperature(player, 'core'))
     p.putString('gamemode', player.gameMode.getGameModeForPlayer().getName())
     return p
   }
@@ -201,7 +200,6 @@
     food.setFoodLevel(fresh ? 20 : p.getInt('food'))
     food.setSaturation(fresh ? 5 : p.getFloat('saturation'))
     player.setRemainingFireTicks(fresh ? 0 : p.getInt('fire'))
-    if (typeof coldsweat != 'undefined') coldsweat.setTemperature(player, 'core', fresh ? 0 : p.getDouble('temp'))
     player.setGameMode(creative ? $GameType.CREATIVE : $GameType.byName(p.getString('gamemode'), $GameType.SURVIVAL))
     player.resetFallDistance()
   }

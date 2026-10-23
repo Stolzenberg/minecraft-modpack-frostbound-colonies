@@ -12,8 +12,6 @@ import glob, json, os, sys, zipfile
 # Schweben im Himmel (Luftschiffe, Himmelsinseln, Himmelsdungeons). Ganze Mods dafür sind bereits entfernt:
 # MSS (Moog's Soaring Structures) und Sky Whale Ship.
 FLOATING = [
-    "create_structures_arise:createairdrop", "create_structures_arise:createminiskyvillage",
-    "create_structures_arise:pillagersteampunkairship",
     "mvs:large_floating_island", "mvs:floating_islands",
     "dungeons_arise:heavenly_challenger", "dungeons_arise:heavenly_conqueror", "dungeons_arise:heavenly_rider",
     "dungeons_arise:mechanical_nest", "dungeons_arise:small_blimp",

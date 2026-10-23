@@ -29,7 +29,7 @@
   },
   "continents": {
     // Horizontally scales continents. Lower values = larger continents and oceans between them.
-    "continents_scale": 0.13,
+    "continents_scale": 0.08,
     // Horizontally scales erosion, primarily impacting mountains. Lower values = thicker mountain ranges and terrain between them.
     "erosion_scale": 0.18,
     // The threshold where plateau terrain becomes flatter terrain. Positive numbers favor flat terrain and negative numbers favor plateau terrain.
@@ -73,7 +73,7 @@
     "vertical_scale": 1.125
   },
   "islands": {
-    "enabled": false,
+    "enabled": true,
     "noise_multiplier": 1.0,
     "noise_offset": 0.0,
     "noise_scale": 0.11

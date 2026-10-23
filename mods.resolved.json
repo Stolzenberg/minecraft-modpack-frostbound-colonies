@@ -1,25 +1,5 @@
 [
  {
-  "slug": "create",
-  "name": "Create",
-  "projectID": 328085,
-  "fileID": 7963363,
-  "fileName": "create-1.21.1-6.0.10.jar",
-  "date": "2026-04-21",
-  "releaseType": 1,
-  "downloadUrl": "https://edge.forgecdn.net/files/7963/363/create-1.21.1-6.0.10.jar",
-  "side": "both",
-  "why": "listed",
-  "requires": [],
-  "url": "https://www.curseforge.com/minecraft/mc-mods/create",
-  "authors": [
-   "simibubi",
-   "IThundxr"
-  ],
-  "classId": 6,
-  "serverPackOnly": false
- },
- {
   "slug": "farmers-delight",
   "name": "Farmer's Delight",
   "projectID": 398521,
@@ -186,82 +166,103 @@
   "serverPackOnly": false
  },
  {
-  "slug": "colder-primal-winter",
-  "name": "Colder Primal Winter",
-  "projectID": 1709971,
-  "fileID": 8965877,
-  "fileName": "primalwinter-1.21.1-6.1.1.jar",
-  "date": "2026-09-24",
-  "releaseType": 1,
-  "downloadUrl": "https://edge.forgecdn.net/files/8965/877/primalwinter-1.21.1-6.1.1.jar",
-  "side": "both",
-  "why": "listed",
-  "requires": [],
-  "url": "https://www.curseforge.com/minecraft/mc-mods/colder-primal-winter",
-  "authors": [
-   "Wolfieboy09"
-  ],
-  "classId": 6,
-  "serverPackOnly": false
- },
- {
-  "slug": "cold-sweat",
-  "name": "Cold Sweat",
-  "projectID": 506194,
-  "fileID": 9215368,
-  "fileName": "ColdSweat-2.4.4.jar",
+  "slug": "supplementaries",
+  "name": "Supplementaries",
+  "projectID": 412082,
+  "fileID": 9211734,
+  "fileName": "supplementaries-1.21.1-4.0.2-neoforge.jar",
   "date": "2026-10-16",
   "releaseType": 1,
-  "downloadUrl": "https://edge.forgecdn.net/files/9215/368/ColdSweat-2.4.4.jar",
-  "side": "both",
-  "why": "listed",
-  "requires": [],
-  "url": "https://www.curseforge.com/minecraft/mc-mods/cold-sweat",
-  "authors": [
-   "Mikul"
-  ],
-  "classId": 6,
-  "serverPackOnly": false
- },
- {
-  "slug": "create-cold-sweat",
-  "name": "Create: Cold Sweat",
-  "projectID": 1184450,
-  "fileID": 7214552,
-  "fileName": "create_cold_sweat-1.1.2.jar",
-  "date": "2025-11-12",
-  "releaseType": 1,
-  "downloadUrl": "https://edge.forgecdn.net/files/7214/552/create_cold_sweat-1.1.2.jar",
-  "side": "both",
-  "why": "listed",
-  "requires": [
-   506194,
-   328085
-  ],
-  "url": "https://www.curseforge.com/minecraft/mc-mods/create-cold-sweat",
-  "authors": [
-   "TheOrionPax"
-  ],
-  "classId": 6,
-  "serverPackOnly": false
- },
- {
-  "slug": "snowy-spirit",
-  "name": "Snowy Spirit",
-  "projectID": 566142,
-  "fileID": 9220620,
-  "fileName": "snowyspirit-1.21.1-3.1.16-neoforge.jar",
-  "date": "2026-10-17",
-  "releaseType": 1,
-  "downloadUrl": "https://edge.forgecdn.net/files/9220/620/snowyspirit-1.21.1-3.1.16-neoforge.jar",
+  "downloadUrl": "https://edge.forgecdn.net/files/9211/734/supplementaries-1.21.1-4.0.2-neoforge.jar",
   "side": "both",
   "why": "listed",
   "requires": [
    499980
   ],
-  "url": "https://www.curseforge.com/minecraft/mc-mods/snowy-spirit",
+  "url": "https://www.curseforge.com/minecraft/mc-mods/supplementaries",
   "authors": [
    "MehVahdJukaar"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "copper-age-backport",
+  "name": "Copper Age Backport",
+  "projectID": 1386823,
+  "fileID": 8988105,
+  "fileName": "copperagebackport-neoforge-1.21.1-0.1.5.jar",
+  "date": "2026-09-27",
+  "releaseType": 2,
+  "downloadUrl": null,
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/copper-age-backport",
+  "authors": [
+   "Smallinger"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "pandas-falling-trees",
+  "name": "Panda's Falling Trees",
+  "projectID": 880630,
+  "fileID": 7858908,
+  "fileName": "fallingtrees-neoforge-1.21.1-0.14.0.jar",
+  "date": "2026-04-01",
+  "releaseType": 2,
+  "downloadUrl": "https://edge.forgecdn.net/files/7858/908/fallingtrees-neoforge-1.21.1-0.14.0.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   975460
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/pandas-falling-trees",
+  "authors": [
+   "ThePandaOliver"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "serene-seasons",
+  "name": "Serene Seasons",
+  "projectID": 291874,
+  "fileID": 6182596,
+  "fileName": "SereneSeasons-neoforge-1.21.1-10.1.0.3.jar",
+  "date": "2025-02-11",
+  "releaseType": 2,
+  "downloadUrl": "https://edge.forgecdn.net/files/6182/596/SereneSeasons-neoforge-1.21.1-10.1.0.3.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   955399
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/serene-seasons",
+  "authors": [
+   "TheAdubbz",
+   "Forstride"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "seasonal-lets-do",
+  "name": "Seasonal Let's Do",
+  "projectID": 1302716,
+  "fileID": 7886750,
+  "fileName": "seasonal_lets_do-neoforge-1.5.0+1.21.jar",
+  "date": "2026-04-06",
+  "releaseType": 1,
+  "downloadUrl": null,
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/seasonal-lets-do",
+  "authors": [
+   "xhyrom"
   ],
   "classId": 6,
   "serverPackOnly": false
@@ -286,130 +287,6 @@
   "serverPackOnly": false
  },
  {
-  "slug": "manyideas-christmas",
-  "name": "ManyIdeas Christmas",
-  "projectID": 736753,
-  "fileID": 8028898,
-  "fileName": "ManyIdeasChristmas-1.21.1-2.0.1.jar",
-  "date": "2026-05-02",
-  "releaseType": 1,
-  "downloadUrl": "https://edge.forgecdn.net/files/8028/898/ManyIdeasChristmas-1.21.1-2.0.1.jar",
-  "side": "both",
-  "why": "listed",
-  "requires": [
-   433642,
-   398351
-  ],
-  "url": "https://www.curseforge.com/minecraft/mc-mods/manyideas-christmas",
-  "authors": [
-   "GeheimagentNr1",
-   "Muse31"
-  ],
-  "classId": 6,
-  "serverPackOnly": false
- },
- {
-  "slug": "christmas-delight",
-  "name": "Christmas Delight (Farmers Delight Addon)",
-  "projectID": 1134366,
-  "fileID": 6073163,
-  "fileName": "farmers_delight_christmas_edition-V1.0.2-neoforge-1.20.1.jar",
-  "date": "2025-01-10",
-  "releaseType": 1,
-  "downloadUrl": null,
-  "side": "both",
-  "why": "listed",
-  "requires": [],
-  "url": "https://www.curseforge.com/minecraft/mc-mods/christmas-delight",
-  "authors": [
-   "ThePoupyBuTers"
-  ],
-  "classId": 6,
-  "serverPackOnly": false
- },
- {
-  "slug": "festive-delight",
-  "name": "Festive Delight - Christmas eve",
-  "projectID": 711672,
-  "fileID": 7884696,
-  "fileName": "festive_delight-2.0.0-neoforge-1.21.1.jar",
-  "date": "2026-04-06",
-  "releaseType": 1,
-  "downloadUrl": "https://edge.forgecdn.net/files/7884/696/festive_delight-2.0.0-neoforge-1.21.1.jar",
-  "side": "both",
-  "why": "listed",
-  "requires": [
-   398521
-  ],
-  "url": "https://www.curseforge.com/minecraft/mc-mods/festive-delight",
-  "authors": [
-   "To0pa"
-  ],
-  "classId": 6,
-  "serverPackOnly": false
- },
- {
-  "slug": "christmas-culinary",
-  "name": "Christmas Culinary & Decorations ",
-  "projectID": 946010,
-  "fileID": 5976953,
-  "fileName": "christmas_culinary_and_decorations-1.6.0-neoforge-1.21.1.jar",
-  "date": "2024-12-09",
-  "releaseType": 3,
-  "downloadUrl": "https://edge.forgecdn.net/files/5976/953/christmas_culinary_and_decorations-1.6.0-neoforge-1.21.1.jar",
-  "side": "both",
-  "why": "listed",
-  "requires": [
-   238222
-  ],
-  "url": "https://www.curseforge.com/minecraft/mc-mods/christmas-culinary",
-  "authors": [
-   "LillouArts"
-  ],
-  "classId": 6,
-  "serverPackOnly": false
- },
- {
-  "slug": "create-wrapped",
-  "name": "Create: Wrapped",
-  "projectID": 1394354,
-  "fileID": 7552615,
-  "fileName": "create_wrapped-1.0.3-neoforge-1.21.1.jar",
-  "date": "2026-01-30",
-  "releaseType": 1,
-  "downloadUrl": "https://edge.forgecdn.net/files/7552/615/create_wrapped-1.0.3-neoforge-1.21.1.jar",
-  "side": "both",
-  "why": "listed",
-  "requires": [
-   328085
-  ],
-  "url": "https://www.curseforge.com/minecraft/mc-mods/create-wrapped",
-  "authors": [
-   "robinfrt"
-  ],
-  "classId": 6,
-  "serverPackOnly": false
- },
- {
-  "slug": "christmas-music-discs",
-  "name": "Christmas Music Discs",
-  "projectID": 1135456,
-  "fileID": 5936162,
-  "fileName": "christmasmusicdiscs-1.21.1-v1.3.jar",
-  "date": "2024-11-25",
-  "releaseType": 1,
-  "downloadUrl": null,
-  "side": "both",
-  "why": "listed",
-  "requires": [],
-  "url": "https://www.curseforge.com/minecraft/mc-mods/christmas-music-discs",
-  "authors": [
-   "ThePoupyBuTers"
-  ],
-  "classId": 6,
-  "serverPackOnly": false
- },
- {
   "slug": "tectonic",
   "name": "Tectonic",
   "projectID": 686836,
@@ -424,6 +301,48 @@
   "url": "https://www.curseforge.com/minecraft/mc-mods/tectonic",
   "authors": [
    "Apollo"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "natural-temperature",
+  "name": "Natural Temperature",
+  "projectID": 1550903,
+  "fileID": 8713498,
+  "fileName": "naturaltemperature-1.1.10-NEOFORGE-MC-1.21.1.jar",
+  "date": "2026-08-23",
+  "releaseType": 1,
+  "downloadUrl": null,
+  "side": "server",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/natural-temperature",
+  "authors": [
+   "Caesius_Leo"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "biomes-o-plenty",
+  "name": "Biomes O' Plenty",
+  "projectID": 220318,
+  "fileID": 8288121,
+  "fileName": "BiomesOPlenty-neoforge-1.21.1-21.1.0.14.jar",
+  "date": "2026-06-20",
+  "releaseType": 2,
+  "downloadUrl": "https://edge.forgecdn.net/files/8288/121/BiomesOPlenty-neoforge-1.21.1-21.1.0.14.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   955399,
+   940057
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/biomes-o-plenty",
+  "authors": [
+   "Forstride",
+   "TheAdubbz"
   ],
   "classId": 6,
   "serverPackOnly": false
@@ -610,27 +529,6 @@
   "url": "https://www.curseforge.com/minecraft/mc-mods/explorify",
   "authors": [
    "bebebea_loste"
-  ],
-  "classId": 6,
-  "serverPackOnly": false
- },
- {
-  "slug": "create-structures-arise",
-  "name": "Create: Structures Arise",
-  "projectID": 1010066,
-  "fileID": 8837992,
-  "fileName": "Create-Structures-Arise-1.21.1-NeoForge-176.49.49.jar",
-  "date": "2026-09-08",
-  "releaseType": 1,
-  "downloadUrl": null,
-  "side": "both",
-  "why": "listed",
-  "requires": [
-   328085
-  ],
-  "url": "https://www.curseforge.com/minecraft/mc-mods/create-structures-arise",
-  "authors": [
-   "SmartStreamLabs"
   ],
   "classId": 6,
   "serverPackOnly": false
@@ -1190,87 +1088,6 @@
   "serverPackOnly": false
  },
  {
-  "slug": "weavers-paradise",
-  "name": "Weavers Paradise",
-  "projectID": 1334789,
-  "fileID": 9188785,
-  "fileName": "weaversparadise-1.6.3.1.jar",
-  "date": "2026-10-15",
-  "releaseType": 1,
-  "downloadUrl": "https://edge.forgecdn.net/files/9188/785/weaversparadise-1.6.3.1.jar",
-  "side": "both",
-  "why": "listed",
-  "requires": [
-   309927,
-   1578928
-  ],
-  "url": "https://www.curseforge.com/minecraft/mc-mods/weavers-paradise",
-  "authors": [
-   "Vortianski"
-  ],
-  "classId": 6,
-  "serverPackOnly": false
- },
- {
-  "slug": "patchouli",
-  "name": "Patchouli",
-  "projectID": 306770,
-  "fileID": 7730942,
-  "fileName": "Patchouli-1.21.1-93-NEOFORGE.jar",
-  "date": "2026-03-08",
-  "releaseType": 1,
-  "downloadUrl": "https://edge.forgecdn.net/files/7730/942/Patchouli-1.21.1-93-NEOFORGE.jar",
-  "side": "both",
-  "why": "listed",
-  "requires": [],
-  "url": "https://www.curseforge.com/minecraft/mc-mods/patchouli",
-  "authors": [
-   "Vazkii"
-  ],
-  "classId": 6,
-  "serverPackOnly": false
- },
- {
-  "slug": "leather-working-pelts-hides",
-  "name": "Leather Working - Pelts & Hides",
-  "projectID": 1374503,
-  "fileID": 7189872,
-  "fileName": "leatherworking-1.0.1.jar",
-  "date": "2025-11-05",
-  "releaseType": 1,
-  "downloadUrl": "https://edge.forgecdn.net/files/7189/872/leatherworking-1.0.1.jar",
-  "side": "both",
-  "why": "listed",
-  "requires": [],
-  "url": "https://www.curseforge.com/minecraft/mc-mods/leather-working-pelts-hides",
-  "authors": [
-   "cluelessadc"
-  ],
-  "classId": 6,
-  "serverPackOnly": false
- },
- {
-  "slug": "armor-series-norsemen",
-  "name": "Armor Series - Norsemen",
-  "projectID": 1588078,
-  "fileID": 8320921,
-  "fileName": "armor_series__norsemen-1.0.0-neoforge-1.21.1.jar",
-  "date": "2026-06-25",
-  "releaseType": 1,
-  "downloadUrl": null,
-  "side": "server",
-  "why": "listed",
-  "requires": [
-   388172
-  ],
-  "url": "https://www.curseforge.com/minecraft/mc-mods/armor-series-norsemen",
-  "authors": [
-   "Enderghast"
-  ],
-  "classId": 6,
-  "serverPackOnly": false
- },
- {
   "slug": "simple-voice-chat",
   "name": "Simple Voice Chat",
   "projectID": 416089,
@@ -1444,20 +1261,23 @@
   "serverPackOnly": false
  },
  {
-  "slug": "inventory-sorter",
-  "name": "Inventory Sorter",
-  "projectID": 240633,
-  "fileID": 7188660,
-  "fileName": "inventorysorter-1.21.1-24.0.24.jar",
-  "date": "2025-11-05",
+  "slug": "inventory-profiles-next",
+  "name": "Inventory Profiles Next",
+  "projectID": 495267,
+  "fileID": 7810574,
+  "fileName": "InventoryProfilesNext-neoforge-1.21.1-2.2.5.jar",
+  "date": "2026-03-25",
   "releaseType": 1,
-  "downloadUrl": "https://edge.forgecdn.net/files/7188/660/inventorysorter-1.21.1-24.0.24.jar",
+  "downloadUrl": "https://edge.forgecdn.net/files/7810/574/InventoryProfilesNext-neoforge-1.21.1-2.2.5.jar",
   "side": "both",
   "why": "listed",
-  "requires": [],
-  "url": "https://www.curseforge.com/minecraft/mc-mods/inventory-sorter",
+  "requires": [
+   351264,
+   679177
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/inventory-profiles-next",
   "authors": [
-   "cpw"
+   "mirinimi"
   ],
   "classId": 6,
   "serverPackOnly": false
@@ -1636,6 +1456,25 @@
    "EminGT"
   ],
   "classId": 6552,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "lambdynamiclights",
+  "name": "LambDynamicLights",
+  "projectID": 393442,
+  "fileID": 8780227,
+  "fileName": "lambdynamiclights-4.8.11+1.21.1.jar",
+  "date": "2026-08-31",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8780/227/lambdynamiclights-4.8.11%2b1.21.1.jar",
+  "side": "client",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/lambdynamiclights",
+  "authors": [
+   "LambdAurora"
+  ],
+  "classId": 6,
   "serverPackOnly": false
  },
  {
@@ -1899,7 +1738,7 @@
   "releaseType": 1,
   "downloadUrl": "https://edge.forgecdn.net/files/9122/548/moonlight-1.21.1-3.7.2-neoforge.jar",
   "side": "both",
-  "why": "dep of snowy-spirit",
+  "why": "dep of supplementaries",
   "requires": [],
   "url": "https://www.curseforge.com/minecraft/mc-mods/selene",
   "authors": [
@@ -1910,40 +1749,58 @@
   "serverPackOnly": false
  },
  {
-  "slug": "manyideas-core",
-  "name": "ManyIdeas Core",
-  "projectID": 433642,
-  "fileID": 9123199,
-  "fileName": "ManyIdeasCore-1.21.1-3.1.0.jar",
-  "date": "2026-10-10",
-  "releaseType": 1,
-  "downloadUrl": "https://edge.forgecdn.net/files/9123/199/ManyIdeasCore-1.21.1-3.1.0.jar",
+  "slug": "pandalib",
+  "name": "PandaLib",
+  "projectID": 975460,
+  "fileID": 8787579,
+  "fileName": "pandalib-neoforge-1.21.1-0.6.2.jar",
+  "date": "2026-09-01",
+  "releaseType": 2,
+  "downloadUrl": "https://edge.forgecdn.net/files/8787/579/pandalib-neoforge-1.21.1-0.6.2.jar",
   "side": "both",
-  "why": "dep of manyideas-christmas",
+  "why": "dep of pandas-falling-trees",
   "requires": [],
-  "url": "https://www.curseforge.com/minecraft/mc-mods/manyideas-core",
+  "url": "https://www.curseforge.com/minecraft/mc-mods/pandalib",
   "authors": [
-   "GeheimagentNr1",
-   "Muse31"
+   "ThePandaOliver"
   ],
   "classId": 6,
   "serverPackOnly": false
  },
  {
-  "slug": "recipes-library",
-  "name": "Recipes Library",
-  "projectID": 398351,
-  "fileID": 9123268,
-  "fileName": "RecipesLibrary-1.21.1-4.0.2.jar",
-  "date": "2026-10-10",
-  "releaseType": 1,
-  "downloadUrl": "https://edge.forgecdn.net/files/9123/268/RecipesLibrary-1.21.1-4.0.2.jar",
+  "slug": "glitchcore",
+  "name": "GlitchCore",
+  "projectID": 955399,
+  "fileID": 8109792,
+  "fileName": "GlitchCore-neoforge-1.21.1-2.1.0.2.jar",
+  "date": "2026-05-18",
+  "releaseType": 2,
+  "downloadUrl": "https://edge.forgecdn.net/files/8109/792/GlitchCore-neoforge-1.21.1-2.1.0.2.jar",
   "side": "both",
-  "why": "dep of manyideas-christmas",
+  "why": "dep of serene-seasons",
   "requires": [],
-  "url": "https://www.curseforge.com/minecraft/mc-mods/recipes-library",
+  "url": "https://www.curseforge.com/minecraft/mc-mods/glitchcore",
   "authors": [
-   "GeheimagentNr1"
+   "TheAdubbz"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "terrablender-neoforge",
+  "name": "TerraBlender (NeoForge)",
+  "projectID": 940057,
+  "fileID": 6054947,
+  "fileName": "TerraBlender-neoforge-1.21.1-4.1.0.8.jar",
+  "date": "2025-01-05",
+  "releaseType": 2,
+  "downloadUrl": "https://edge.forgecdn.net/files/6054/947/TerraBlender-neoforge-1.21.1-4.1.0.8.jar",
+  "side": "both",
+  "why": "dep of biomes-o-plenty",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/terrablender-neoforge",
+  "authors": [
+   "TheAdubbz"
   ],
   "classId": 6,
   "serverPackOnly": false
@@ -2201,25 +2058,6 @@
   "serverPackOnly": false
  },
  {
-  "slug": "vortylib",
-  "name": "VortyLib",
-  "projectID": 1578928,
-  "fileID": 9088434,
-  "fileName": "vortylib-1.2.5.3.jar",
-  "date": "2026-10-07",
-  "releaseType": 1,
-  "downloadUrl": "https://edge.forgecdn.net/files/9088/434/vortylib-1.2.5.3.jar",
-  "side": "both",
-  "why": "dep of weavers-paradise",
-  "requires": [],
-  "url": "https://www.curseforge.com/minecraft/mc-mods/vortylib",
-  "authors": [
-   "Vortianski"
-  ],
-  "classId": 6,
-  "serverPackOnly": false
- },
- {
   "slug": "searchables",
   "name": "Searchables",
   "projectID": 858542,
@@ -2234,6 +2072,46 @@
   "url": "https://www.curseforge.com/minecraft/mc-mods/searchables",
   "authors": [
    "Jaredlll08"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "kotlin-for-forge",
+  "name": "Kotlin for Forge",
+  "projectID": 351264,
+  "fileID": 8335665,
+  "fileName": "kotlinforforge-5.12.0-all.jar",
+  "date": "2026-06-28",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8335/665/kotlinforforge-5.12.0-all.jar",
+  "side": "both",
+  "why": "dep of inventory-profiles-next",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/kotlin-for-forge",
+  "authors": [
+   "thedarkcolour"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "libipn",
+  "name": "libIPN",
+  "projectID": 679177,
+  "fileID": 7810552,
+  "fileName": "libIPN-neoforge-1.21.1-6.6.3.jar",
+  "date": "2026-03-25",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/7810/552/libIPN-neoforge-1.21.1-6.6.3.jar",
+  "side": "both",
+  "why": "dep of inventory-profiles-next",
+  "requires": [
+   351264
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/libipn",
+  "authors": [
+   "mirinimi"
   ],
   "classId": 6,
   "serverPackOnly": false

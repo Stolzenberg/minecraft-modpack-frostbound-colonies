@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Minimaler RCON-Client: rcon.py "<befehl>" ["<befehl>" ...]  (Port 25575, Passwort testtest)"""
-import socket, struct, sys
+"""Minimaler RCON-Client: rcon.py "<befehl>" ["<befehl>" ...]  (Port 25575 oder RCON_PORT, Passwort testtest)"""
+import os, socket, struct, sys
 
 
 def pkt(sock, rid, typ, body):
@@ -19,7 +19,7 @@ def recv(sock):
     return buf[8:-2].decode(errors="replace")
 
 
-s = socket.create_connection(("127.0.0.1", 25575), timeout=600)
+s = socket.create_connection(("127.0.0.1", int(os.environ.get("RCON_PORT", 25575))), timeout=600)
 pkt(s, 1, 3, "testtest")
 recv(s)
 for i, cmd in enumerate(sys.argv[1:], start=10):

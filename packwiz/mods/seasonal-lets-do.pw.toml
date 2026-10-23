@@ -1,0 +1,13 @@
+name = "Seasonal Let's Do"
+filename = "seasonal_lets_do-neoforge-1.5.0+1.21.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/yFIPn94r/versions/yptLMknL/seasonal_lets_do-neoforge-1.5.0%2B1.21.jar"
+hash-format = "sha1"
+hash = "d493b8b8b3a7e5805ed43bdb5d4eb5befc0f9853"
+
+[update]
+[update.modrinth]
+mod-id = "yFIPn94r"
+version = "yptLMknL"
