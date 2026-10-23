@@ -189,6 +189,134 @@
   "serverPackOnly": false
  },
  {
+  "slug": "vegan-delight",
+  "name": "Vegan Delight",
+  "projectID": 928290,
+  "fileID": 7196142,
+  "fileName": "vegandelight-neoforge-1.21.1-2.0.0-beta4.jar",
+  "date": "2025-11-07",
+  "releaseType": 2,
+  "downloadUrl": "https://edge.forgecdn.net/files/7196/142/vegandelight-neoforge-1.21.1-2.0.0-beta4.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/vegan-delight",
+  "authors": [
+   "ChriSimo",
+   "Player_005"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "recipe-modification",
+  "name": "Recipe Modification library",
+  "projectID": 1345325,
+  "fileID": 7214826,
+  "fileName": "recipe_modification-neoforge-1.21.1-0.1.2.jar",
+  "date": "2025-11-12",
+  "releaseType": 2,
+  "downloadUrl": "https://edge.forgecdn.net/files/7214/826/recipe_modification-neoforge-1.21.1-0.1.2.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/recipe-modification",
+  "authors": [
+   "Player_005"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "lets-do-farm-charm",
+  "name": "[Let's Do] Farm & Charm",
+  "projectID": 1038103,
+  "fileID": 9203717,
+  "fileName": "letsdo-farm_and_charm-neoforge-1.1.29.jar",
+  "date": "2026-10-16",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/9203/717/letsdo-farm_and_charm-neoforge-1.1.29.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   419699
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/lets-do-farm-charm",
+  "authors": [
+   "satisfy",
+   "Tsuyumori"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "lets-do-bakery-farm-charm-compat",
+  "name": "[Let's Do] Bakery - Farm&Charm Compat",
+  "projectID": 1038130,
+  "fileID": 9234083,
+  "fileName": "letsdo-bakery-neoforge-2.1.11.jar",
+  "date": "2026-10-17",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/9234/83/letsdo-bakery-neoforge-2.1.11.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   419699,
+   1038103
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/lets-do-bakery-farm-charm-compat",
+  "authors": [
+   "satisfy"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "lets-do-candlelight-farm-charm-compat",
+  "name": "[Let's Do] Candlelight - Farm&Charm Compat",
+  "projectID": 1038117,
+  "fileID": 9150310,
+  "fileName": "letsdo-candlelight-neoforge-2.1.15.jar",
+  "date": "2026-10-12",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/9150/310/letsdo-candlelight-neoforge-2.1.15.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   1038103,
+   419699
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/lets-do-candlelight-farm-charm-compat",
+  "authors": [
+   "satisfy"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "handcrafted",
+  "name": "Handcrafted",
+  "projectID": 538214,
+  "fileID": 6330030,
+  "fileName": "handcrafted-neoforge-1.21.1-4.0.3.jar",
+  "date": "2025-03-22",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/6330/30/handcrafted-neoforge-1.21.1-4.0.3.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [
+   570073
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/handcrafted",
+  "authors": [
+   "terrariumearth",
+   "AlexNijjar",
+   "kekie6"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
   "slug": "colder-primal-winter",
   "name": "Colder Primal Winter",
   "projectID": 1709971,
@@ -1826,6 +1954,48 @@
   "serverPackOnly": false
  },
  {
+  "slug": "architectury-api",
+  "name": "Architectury API",
+  "projectID": 419699,
+  "fileID": 8492726,
+  "fileName": "architectury-13.0.11-neoforge.jar",
+  "date": "2026-07-23",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8492/726/architectury-13.0.11-neoforge.jar",
+  "side": "both",
+  "why": "dep of lets-do-farm-charm",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/architectury-api",
+  "authors": [
+   "shedaniel",
+   "Juicebus",
+   "MaxNeedsSnacks",
+   "st0x0ef"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "resourceful-lib",
+  "name": "Resourceful Lib",
+  "projectID": 570073,
+  "fileID": 5973188,
+  "fileName": "resourcefullib-neoforge-1.21-3.0.12.jar",
+  "date": "2024-12-08",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/5973/188/resourcefullib-neoforge-1.21-3.0.12.jar",
+  "side": "both",
+  "why": "dep of handcrafted",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/resourceful-lib",
+  "authors": [
+   "ThatGravyBoat",
+   "epic_oreo"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
   "slug": "selene",
   "name": "Moonlight Lib",
   "projectID": 499980,
@@ -2055,48 +2225,6 @@
   "authors": [
    "shedaniel",
    "LinkieIsBetterThanK9"
-  ],
-  "classId": 6,
-  "serverPackOnly": false
- },
- {
-  "slug": "resourceful-lib",
-  "name": "Resourceful Lib",
-  "projectID": 570073,
-  "fileID": 5973188,
-  "fileName": "resourcefullib-neoforge-1.21-3.0.12.jar",
-  "date": "2024-12-08",
-  "releaseType": 1,
-  "downloadUrl": "https://edge.forgecdn.net/files/5973/188/resourcefullib-neoforge-1.21-3.0.12.jar",
-  "side": "both",
-  "why": "dep of friends-and-foes-forge",
-  "requires": [],
-  "url": "https://www.curseforge.com/minecraft/mc-mods/resourceful-lib",
-  "authors": [
-   "ThatGravyBoat",
-   "epic_oreo"
-  ],
-  "classId": 6,
-  "serverPackOnly": false
- },
- {
-  "slug": "architectury-api",
-  "name": "Architectury API",
-  "projectID": 419699,
-  "fileID": 8492726,
-  "fileName": "architectury-13.0.11-neoforge.jar",
-  "date": "2026-07-23",
-  "releaseType": 1,
-  "downloadUrl": "https://edge.forgecdn.net/files/8492/726/architectury-13.0.11-neoforge.jar",
-  "side": "both",
-  "why": "dep of critters-and-companions",
-  "requires": [],
-  "url": "https://www.curseforge.com/minecraft/mc-mods/architectury-api",
-  "authors": [
-   "shedaniel",
-   "Juicebus",
-   "MaxNeedsSnacks",
-   "st0x0ef"
   ],
   "classId": 6,
   "serverPackOnly": false

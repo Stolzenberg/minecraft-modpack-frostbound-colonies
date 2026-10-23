@@ -12,7 +12,7 @@ Basis ist *Skyward Frontiers* (`../skyward-frontiers`): gleiche Struktur- und Mo
 | `dist/FrostboundColonies-1.0.0.zip` | Client-Pack für die CurseForge-App (veraltet: Stand 1.0.0, wird nicht mehr gebaut) |
 | `dist/FrostboundColonies-1.0.0-Server.zip` | Server-ZIP ohne Docker (veraltet: Stand 1.0.0, wird nicht mehr gebaut) |
 | `mods.resolved.json` | Exakte Projekt- und Datei-IDs aller Mods (Lock-Datei) |
-| `packwiz/` | packwiz-Pack, aus dem die Prism-Instanzen ihre Updates holen. Configs, KubeJS-Skripte und das Schneeverwehungs-Datapack (`kubejs/data/`) werden direkt hier gepflegt (Quelle); `*.pw.toml`, `index.toml` und `pack.toml` erzeugt `tools/packwiz.py`, die nicht von Hand bearbeiten. Mods, die als identische Datei auf Modrinth liegen (86 von 109), werden von dort geladen, der Rest von CurseForge |
+| `packwiz/` | packwiz-Pack, aus dem die Prism-Instanzen ihre Updates holen. Configs, KubeJS-Skripte und das Schneeverwehungs-Datapack (`kubejs/data/`) werden direkt hier gepflegt (Quelle); `*.pw.toml`, `index.toml` und `pack.toml` erzeugt `tools/packwiz.py`, die nicht von Hand bearbeiten. Mods, die als identische Datei auf Modrinth liegen (92 von 115), werden von dort geladen, der Rest von CurseForge |
 | `tools/` | `scale_structures.py` (Strukturdichte senken), `disable_structures.py` (schwebende Strukturen abschalten), `modlist.txt` (Modliste, alle Versionen gepinnt), `build.py` (Abhängigkeiten auflösen), `package.py` (ZIPs bauen), `packwiz.py` (packwiz-Pack und Prism-Instanz bauen), `packwiz-installer-bootstrap.jar` (v0.0.3, steckt in der Prism-Instanz), `coldsweat_frost.py` (Temperatur-Configs erzeugen), `coldsweat-defaults/` (Cold-Sweat-Standardwerte als Eingabe), `test/` (Testserver-Werkzeuge; `surface.py` zählt Schnee/Eis an der Oberfläche je Biom) |
 | `server-overrides/` | Configs nur für den Server (AntiXray), `tools/packwiz.py` kopiert sie nach `packwiz/` |
 | `frostbound-tweaks/` | Quelltext der eigenen Mod *Frostbound Tweaks* für Client und Server (NeoForge 1.21.1, bauen mit `./gradlew build`, braucht JDK 21, z. B. per `JAVA_HOME`) |
@@ -95,6 +95,11 @@ Kälte ist der eigentliche Gegner. **Cold Sweat** gibt dem Spieler eine Körpert
 - **Schonfrist:** Nach dem ersten Spawn ist man 30 Minuten (den ersten halben Tag) immun gegen Temperatureffekte, um Unterschlupf und Feuer zu bauen.
 - Kolonisten von MineColonies frieren nicht, nur Spieler.
 
+## Küche, Landwirtschaft, Einrichtung
+- **Let's Do Farm & Charm:** neue Feldfrüchte (Gerste, Hafer, Mais, Salat, Tomaten, Zwiebeln, Erdbeeren u. a.), Herd, Kochtopf, Vorratsblöcke und Futtertröge. Bakery (Brote, Kuchen, Cupcakes, Backstation) und Candlelight (Gerichte, Geschirr, Tischdeko) bauen darauf auf. Für 1.21.1 gibt es Bakery und Candlelight nur als „Farm & Charm Compat“-Fassung, deshalb diese Projekte. Die gemeinsame Bibliothek Foundation steckt per JarJar in den Jars.
+- **Vegan Delight** (Farmer's-Delight-Addon): Sojabohnen, Tofu, Sojamilch und pflanzliche Ersatzzutaten. Version 2.0.0-beta4 statt 1.4.4, weil in 1.4.4 die 13 Create-Rezepte (Pressen, Mischen, Befüllen) nicht laden. Beide Versionen schreiben ihre Truhen-Loot-Einträge im alten Format (`lootTable` statt `table`), Farmer's Delight 1.3.4 verwirft sie. Korrigierte Kopien liegen in `kubejs/data/vegandelight/loot_modifiers/` und überschreiben die aus dem Jar. Die 2.0 braucht die Recipe Modification library, die nicht als Abhängigkeit eingetragen ist und deshalb in der Modliste steht (mit `id=`, weil die CurseForge-Suche den Slug nicht findet).
+- **Handcrafted:** Möbel (Stühle, Tische, Bänke, Regale, Schränke, Betten, Kissen, Deko).
+
 ## Weihnachten
 - **Deko:** Macaw's Holidays (Weihnachtsbäume, Lichterketten, Girlanden, Socken, Geschenke), Snowy Spirit (Lebkuchenhäuser, Zuckerstangen, Kränze, Schlitten, Schneekugel, Lebkuchen-Golems), ManyIdeas Christmas (Baum, Kamine, Kranz, Stern), Christmas Culinary (Adventskalender, Lichter, Geschenke).
 - **Essen für Farmer's Delight:** Christmas Delight (heiße Schokolade in vier Varianten, Eierpunsch, Schokolade, Eis), Festive Delight (Lebkuchenmänner, Festtagshähnchen, Weihnachtstee, Zimt), Christmas Culinary (Weihnachtsgerichte aus aller Welt).
@@ -119,6 +124,7 @@ Eine flache Creative-Dimension zum Ausprobieren von Bauwerken und Create-Maschin
 - Wetterzyklus: Phasenwechsel, `/frost`-Befehle und Persistenz über einen Neustart funktionieren. Temperaturmessung über Cold Sweats KubeJS-Schnittstelle liefert die erwarteten Werte.
 - Inventory Sorter 24.0.24: Server aus der neuen ZIP frisch installiert, startet ohne neue Fehler, `/invsorter` antwortet. Sortieren im Client ist nicht getestet.
 - Coffee Delight 1.4.1, Create Cobblestone 1.5.0, Simple Voice Chat 2.6.22 und CoreProtectNeo 24.1: Testserver (Kopie der Server-Mods, frische Welt) startet ohne neue Fehler, Voice-Chat-Server lauscht auf Port 24454, CoreProtect meldet „Using MySQL for data storage“ und legt seine Tabellen in MariaDB an. Voice Chat mit echten Clients und CoreProtect-Rollbacks sind nicht getestet.
+- Farm & Charm 1.1.29, Bakery 2.1.11, Candlelight 2.1.15, Vegan Delight 2.0.0-beta4 und Handcrafted 4.0.3: Testserver (frisch aus dem packwiz-Stand, neue Welt) startet ohne neue Fehler, Blöcke aller fünf Mods lassen sich setzen, Vegan-Delight-Sojabohnen landen mit dem Loot-Fix in Dorftruhen (30 von 30 Proben im verschneiten Dorfhaus). Auf rund 6.000 generierten Chunks (viel Ozean) kamen wilde Sojabohnen 27-mal vor, Farm-&-Charm-Wildpflanzen nur einmal (Zwiebeln). F&C setzt sie nur selten (1 von 40 Chunks je Sorte) und nur in bestimmten Biomen (Gerste: Ebene, Savanne, Fluss; Hafer: Taiga, Wiese). Saatgut kann also knapp sein. Im Client nicht getestet (Modelle, JEI, Bedienung der Stationen).
 - Hearth-Rezept und Milch-Tag werden geladen (KubeJS: 1 Rezept hinzugefügt, keine Parse-Fehler).
 - Hearth mit Frostbound Tweaks 1.1.0: geschlossener Raum (9 × 5 × 9 innen) mit Hearth, Schornstein durchs Dach und abzweigender Rauchabzug-Leitung (15 Blöcke, im Freien) in einen zweiten Raum. Mit Mod sind beide Räume komplett mit warmer Luft gefüllt, über dem Dach und zwischen den Gebäuden nicht. Gegenprobe ohne Mod: im ersten Raum nur die Rohrblöcke, der zweite Raum warm. Eine Trennwand neben dem Hearth schneidet den Raumteil ab, nach dem Abreißen ist er nach wenigen Sekunden wieder warm. Geprüft über die Pfade des Hearth, nicht mit einem echten Spieler.
 - Schneeverwehungen: 16.129 Chunks (2 × 2 km, zweiter Seed) ohne neue Fehler generiert, Schichtverteilung wie oben.
@@ -154,7 +160,7 @@ Eine flache Creative-Dimension zum Ausprobieren von Bauwerken und Create-Maschin
 ## Wichtig: kein Chunky
 **Chunky nicht ins Pack aufnehmen.** Distant Horizons 3.3.3 und Chunky 1.4.23 stürzen zusammen beim Erstellen einer neuen Welt ab (siehe Skyward Frontiers). Zum Vorgenerieren auf dem Server Chunky nur vorübergehend und ohne DH verwenden.
 
-## Mods und Shader (86 gelistet: 84 im Client, AntiXray und CoreProtectNeo nur auf dem Server, dazu 1 eigene Client-Mod und 24 Bibliotheken)
+## Mods und Shader (91 gelistet: 89 im Client, AntiXray und CoreProtectNeo nur auf dem Server, dazu 1 eigene Client-Mod und 24 Bibliotheken)
 
 **Kern: MineColonies**
 
@@ -170,6 +176,18 @@ Eine flache Creative-Dimension zum Ausprobieren von Bauwerken und Create-Maschin
 - [Create](https://www.curseforge.com/minecraft/mc-mods/create) – `create-1.21.1-6.0.10.jar`
 - [Farmer's Delight](https://www.curseforge.com/minecraft/mc-mods/farmers-delight) – `FarmersDelight-1.21.1-1.3.4.jar`
 - [Coffee Delight](https://www.curseforge.com/minecraft/mc-mods/coffee-delight) – `coffee_delight-1.4.1.jar`
+- [Vegan Delight](https://www.curseforge.com/minecraft/mc-mods/vegan-delight) – `vegandelight-neoforge-1.21.1-2.0.0-beta4.jar`
+- [Recipe Modification library](https://www.curseforge.com/minecraft/mc-mods/recipe-modification) – `recipe_modification-neoforge-1.21.1-0.1.2.jar`
+
+**Küche & Landwirtschaft: Let's Do**
+
+- [[Let's Do] Farm & Charm](https://www.curseforge.com/minecraft/mc-mods/lets-do-farm-charm) – `letsdo-farm_and_charm-neoforge-1.1.29.jar`
+- [[Let's Do] Bakery - Farm&Charm Compat](https://www.curseforge.com/minecraft/mc-mods/lets-do-bakery-farm-charm-compat) – `letsdo-bakery-neoforge-2.1.11.jar`
+- [[Let's Do] Candlelight - Farm&Charm Compat](https://www.curseforge.com/minecraft/mc-mods/lets-do-candlelight-farm-charm-compat) – `letsdo-candlelight-neoforge-2.1.15.jar`
+
+**Einrichtung**
+
+- [Handcrafted](https://www.curseforge.com/minecraft/mc-mods/handcrafted) – `handcrafted-neoforge-1.21.1-4.0.3.jar`
 
 **Ewiger Winter**
 

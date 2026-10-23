@@ -4,6 +4,7 @@
 usage: build.py <modlist.txt> <mods.resolved.json>
 
 Optionen pro Zeile: pin=<fileID>  side=client|server  class=<CF-Klasse, 6=Mod, 6552=Shader>  pack=server
+                    id=<projectID> (falls die CurseForge-Suche den Slug nicht findet)
 Abhängigkeiten ohne pin behalten die Datei aus der bestehenden mods.resolved.json (Lock),
 nur neue Abhängigkeiten werden auf die neueste NeoForge-1.21.1-Datei aufgelöst.
 """
@@ -30,7 +31,10 @@ def main():
     lock = {m["projectID"]: m["fileID"] for m in json.load(open(lock_path))} if os.path.exists(lock_path) else {}
     mods, queue = {}, []
     for slug, opts in parse(modlist):
-        res = get("/mods/search", {"gameId": 432, "classId": int(opts.get("class", 6)), "slug": slug})["data"]
+        if "id" in opts:
+            res = [get(f"/mods/{opts['id']}")["data"]]
+        else:
+            res = get("/mods/search", {"gameId": 432, "classId": int(opts.get("class", 6)), "slug": slug})["data"]
         if not res:
             sys.exit(f"nicht gefunden: {slug}")
         queue.append((res[0], opts, "listed"))

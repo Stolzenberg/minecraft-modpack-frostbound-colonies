@@ -1,0 +1,13 @@
+name = "[Let's Do] Candlelight - Farm&Charm Compat"
+filename = "letsdo-candlelight-neoforge-2.1.15.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/qwbArkQk/versions/4QhmIK8c/letsdo-candlelight-neoforge-2.1.15.jar"
+hash-format = "sha1"
+hash = "1d73e2765367f1b221ce6785225a22b0b42b435f"
+
+[update]
+[update.modrinth]
+mod-id = "qwbArkQk"
+version = "4QhmIK8c"
