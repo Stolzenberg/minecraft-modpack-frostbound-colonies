@@ -2,7 +2,7 @@
 
 Modpack für **Minecraft 1.21.1 / NeoForge 21.1.256**: eine Welt für immer (*Forever World*), in der die Jahreszeiten dem echten Kalender folgen. Ein Frühling dauert drei echte Monate, im Winter schneit es in den gemäßigten Breiten, im Sommer stehen die Felder voll. Die Biome liegen in Klimazonen (Norden kalt, Süden heiß) auf großen Kontinenten und Inseln. Dazu Farmer's-Delight- und Let's-Do-Küche, Supplementaries, der sortierende Copper Golem aus 1.21.9, umstürzende Bäume, viele Strukturen, Mobs und Bosse.
 
-Bis Version 1.0.0 hieß das Pack *Frostbound Colonies* (ewiger Winter mit Primal Winter, Cold Sweat, Create und MineColonies), das Repo `minecraft-modpack-frostbound-colonies`. GitHub liefert unter der alten Adresse weiter aus (auch die Raw-URLs), bestehende Prism-Instanzen und `PACKWIZ_URL`-Einträge funktionieren also weiter, sollten aber bei Gelegenheit auf die neue Adresse umgestellt werden: Der alte Name darf dafür auf GitHub nicht neu vergeben werden. Die interne Mod *Frostbound Tweaks* (Mod-ID `frostbound_tweaks`) behält ihren Namen, damit Configs und Testwelt-Daten gültig bleiben.
+Bis Version 1.0.0 hieß das Pack *Frostbound Colonies* (ewiger Winter mit Primal Winter, Cold Sweat, Create und MineColonies), das Repo `minecraft-modpack-frostbound-colonies`. GitHub liefert unter der alten Adresse weiter aus (auch die Raw-URLs), bestehende Prism-Instanzen und `PACKWIZ_URL`-Einträge funktionieren also weiter. Das gilt nur, solange niemand auf GitHub ein Repo mit dem alten Namen anlegt, deshalb den Server bei Gelegenheit auf die neue `PACKWIZ_URL` umstellen. Die interne Mod *Frostbound Tweaks* (Mod-ID `frostbound_tweaks`) behält ihren Namen, damit Configs und Testwelt-Daten gültig bleiben.
 
 ## Dateien
 
