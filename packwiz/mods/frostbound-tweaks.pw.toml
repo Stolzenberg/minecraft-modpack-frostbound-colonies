@@ -1,8 +1,8 @@
 name = "Frostbound Tweaks"
-filename = "frostbound-tweaks-1.3.0.jar"
+filename = "frostbound-tweaks-2.0.0.jar"
 side = "both"
 
 [download]
-url = "https://raw.githubusercontent.com/Stolzenberg/minecraft-modpack-frostbound-colonies/main/extra-mods/frostbound-tweaks-1.3.0.jar"
+url = "https://raw.githubusercontent.com/Stolzenberg/minecraft-modpack-frostbound-colonies/main/extra-mods/frostbound-tweaks-2.0.0.jar"
 hash-format = "sha1"
-hash = "bc082019cf2236a36e1983a8458b6dae72c77b92"
+hash = "9a0affad50e05f4b6b3e9cb5f6d924e262a4a25f"

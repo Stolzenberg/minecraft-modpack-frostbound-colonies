@@ -1,39 +1,39 @@
 # slug  pin=<fileID>  [side=client|server]  [class=<CF-Klasse>]  [pack=server]  [id=<projectID>]
 # Basis: Skyward Frontiers 1.0.0 (gleiche Versionen für alle übernommenen Mods), ohne Himmels-/Luftschiff-Mods.
-# Alle Versionen gepinnt (so getestet). Entfernt nach Tests: biomes-o-plenty (Biome werden von Primal Winter nicht
-# eingefroren), towns-and-towers (Blöcke außerhalb der Chunks), minecolonies-compatibility (Tweaks-Mixin-Absturz),
+# Alle Versionen gepinnt (so getestet). Entfernt nach Tests: towns-and-towers (Blöcke außerhalb der Chunks),
+# minecolonies-compatibility (Tweaks-Mixin-Absturz),
 # primal-winter (Original, Server-Absturz), particle-rain (Konflikt-Risiko mit Primal-Winter-Wetter-Rendering),
 # terralith (zu kleinteilige Biome, durch Tectonic ersetzt).
 # Bewusst entfernt: mss-moogs-soaring-structures, sky-whale-ship (keine schwebenden Strukturen, siehe disable_structures.py).
 # Nicht mehr genutzt (2026-10-23): minecolonies mit stylecolonies, christmascolonies, createcolonies, jadecolonies,
 # domum-ornamentum (und den Abhängigkeiten structurize, blockui, multi-piston, towntalk).
-# --- Kern: Create + Farmer's Delight ---
-create                                   pin=7963363
+# Ewiger Winter abgeschafft (2026-10-23, Jahreszeiten statt Dauerwinter): colder-primal-winter, cold-sweat,
+# create-cold-sweat; Create samt create-wrapped und create-structures-arise; Weihnachten bis auf macaws-holidays
+# (snowy-spirit, manyideas-christmas, christmas-delight, festive-delight, christmas-culinary, christmas-music-discs);
+# Kleidung (weavers-paradise mit patchouli, leather-working-pelts-hides, armor-series-norsemen).
+# --- Kern: Farmer's Delight ---
 farmers-delight                          pin=8765184
 coffee-delight                           pin=7027805 # Kaffee-Addon für Farmer's Delight
-vegan-delight                            pin=7196142 # Sojabohnen, Tofu, pflanzliche Ersatzzutaten. 2.0.0-beta4: in 1.4.4 laden 13 Create-Rezepte nicht. Loot-Fix: packwiz/kubejs/data/vegandelight/
+vegan-delight                            pin=7196142 # Sojabohnen, Tofu, pflanzliche Ersatzzutaten. Loot-Fix: packwiz/kubejs/data/vegandelight/
 recipe-modification                      pin=7214826 id=1345325 # von Vegan Delight 2.0 benötigt (nicht als Abhängigkeit eingetragen, CF-Suche findet den Slug nicht)
 # --- Küche & Landwirtschaft: Let's Do (Foundation steckt per JarJar in den Jars) ---
 lets-do-farm-charm                       pin=9203717 # Felder, Vorratsblöcke, Herd und Kochtopf; Basis für Bakery und Candlelight
 lets-do-bakery-farm-charm-compat         pin=9234083 # Bakery (1.21.1 nur als Farm-&-Charm-Fassung)
 lets-do-candlelight-farm-charm-compat    pin=9150310 # Candlelight: Gerichte, Geschirr, Tischdeko (1.21.1 nur als Farm-&-Charm-Fassung)
-# --- Einrichtung ---
+# --- Einrichtung & Technik ---
 handcrafted                              pin=6330030 # Möbel (Stühle, Tische, Regale, Betten), braucht Resourceful Lib
-# --- Ewiger Winter ---
-colder-primal-winter                     pin=8965877     # gepflegter Fork von Primal Winter (Original 6.0.2 stürzt auf dedizierten Servern ab)
-cold-sweat                               pin=9215368
-create-cold-sweat                        pin=7214552
+supplementaries                          pin=9211734 # Vanilla+-Blöcke und -Mechanik (Krüge, Wegweiser, Wasserhähne, Federschleudern …), braucht Moonlight Lib
+copper-age-backport                      pin=8988105 # Copper Golem aus 1.21.9: sortiert Items aus Kupfertruhen in Truhen; F&F-Golem ist per Config aus
+pandas-falling-trees                     pin=7858908 # mit der Axt gefällte Bäume kippen um und zerfallen in Drops (Config: config/fallingtrees-common.json)
+# --- Jahreszeiten (Saison folgt dem Kalender, siehe Frostbound Tweaks; Config: config/sereneseasons/) ---
+serene-seasons                           pin=6182596 # Biom-Tags: packwiz/kubejs/data/sereneseasons/
+seasonal-lets-do                         pin=7886750 # Let's-Do-Feldfrüchte respektieren die Jahreszeiten
 # --- Weihnachten ---
-snowy-spirit                             pin=9220620
 macaws-holidays                          pin=7304374
-manyideas-christmas                      pin=8028898
-christmas-delight                        pin=6073163
-festive-delight                          pin=7884696
-christmas-culinary                       pin=5976953
-create-wrapped                           pin=7552615
-christmas-music-discs                    pin=5936162
 # --- Welt / Biome ---
-tectonic                                 pin=8855043 # Gelände: große Kontinente und Gebirge, große Biome (Config: packwiz/config/tectonic.json)
+tectonic                                 pin=8855043 # Gelände: große Kontinente mit Inseln, Gebirge, große Biome (Config: packwiz/config/tectonic.json)
+natural-temperature                      pin=8713498 # Biome nach Klimazonen (Nord kalt, Süd heiß), keine Wüste neben Schnee (Config: packwiz/config/naturaltemperature-common.toml)
+biomes-o-plenty                          pin=8288121 # 50+ zusätzliche Biome (über TerraBlender); Saison-Tags für BoP-Biome: packwiz/kubejs/data/sereneseasons/
 lithostitched                            pin=9170709 # von Tectonic benötigt (nicht als CurseForge-Abhängigkeit eingetragen)
 yeetusexperimentus                       pin=5444189 side=client
 # --- Strukturen / Entdecken ---
@@ -44,7 +44,6 @@ mns-moogs-nether-structures              pin=8902210
 moogs-end-structures                     pin=8902211
 when-dungeons-arise                      pin=7150870
 explorify                                pin=8082824
-create-structures-arise                  pin=8837992
 dungeon-and-taverns                      pin=5768823
 yungs-better-dungeons-neoforge           pin=5954804
 repurposed-structures                    pin=8688394
@@ -72,12 +71,7 @@ frost-bear                               pin=8507529
 paragliders                              pin=7795089
 gravestone-mod                           pin=8671622
 sophisticated-backpacks                  pin=9154769
-betterdays                               pin=7978626 # 3x längere Tage (Config: packwiz/config/betterdays-common.toml)
-# --- Kleidung: Felle & Stoffe (Kälteschutz über Cold Sweat, siehe coldsweat_frost.py) ---
-weavers-paradise                         pin=9188785 # Stoffe: Baumwolle/Seide/Wolle spinnen & weben, Kleidung als Curios
-patchouli                                pin=7730942 # Anleitungsbuch für Weavers Paradise (optionale Abhängigkeit)
-leather-working-pelts-hides              pin=7189872 # Felle & Häute von Tieren, Gerbgestell
-armor-series-norsemen                    pin=8320921 # Fellrüstungen (Wolf, Bär, Puma) und Schädelhelme
+betterdays                               pin=7978626 # 4x längere Tage (Config: packwiz/config/betterdays-common.toml)
 # --- Multiplayer ---
 simple-voice-chat                        pin=8601207 # Proximity-Voice-Chat, Server braucht UDP-Port 24454
 coreprotectneo                           pin=8917394 side=server pack=server # Block-Logging und Rollbacks, MariaDB auf dem Server (Config nur dort, enthält Passwort)

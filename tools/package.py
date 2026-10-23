@@ -10,10 +10,10 @@ usage: package.py <mods.resolved.json> <packwiz-Ordner> <Ausgabe-Ordner>
 """
 import html, json, os, sys, urllib.parse, zipfile
 
-NAME, VERSION, AUTHOR = "Frostbound Colonies", "1.0.0", "Tim"
+NAME, VERSION, AUTHOR = "Proud Mountain SMP", "2.0.0", "Tim"
 SLUG = NAME.replace(" ", "")
 MC, NEOFORGE = "1.21.1", "21.1.256"
-CLIENT_ONLY_CONFIGS = ("config/iris.properties", "config/coldsweat/client.toml", "config/primalwinter-client.toml")
+CLIENT_ONLY_CONFIGS = ("config/iris.properties",)
 
 all_mods = sorted(json.load(open(sys.argv[1])), key=lambda m: m["name"].lower())
 mods = [m for m in all_mods if not m.get("serverPackOnly")]  # Client-Manifest
@@ -103,8 +103,8 @@ Get-Content mods.txt | Where-Object {{ $_ }} | ForEach-Object {{
 }}
 Write-Host "Fertig. EULA in eula.txt akzeptieren, dann start.bat ausfuehren."
 """
-server_properties = """# Frostbound Colonies: normale Weltgenerierung (Terralith + BOP), Primal Winter friert die Overworld ein
-motd=Frostbound Colonies - Siedeln im ewigen Winter
+server_properties = """# Proud Mountain SMP: Tectonic + Natural Temperature (Klimazonen) + Biomes O' Plenty, Jahreszeiten nach Kalender
+motd=Proud Mountain SMP - eine Welt, vier Jahreszeiten
 view-distance=10
 simulation-distance=8
 spawn-protection=0

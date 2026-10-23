@@ -4,8 +4,6 @@
   "package": "de.frostbound.tweaks.mixin",
   "compatibilityLevel": "JAVA_21",
   "client": [
-    "LevelRendererMixin",
-    "PrimalWinterFogMixin",
     "OptionsMixin"
   ],
   "injectors": {

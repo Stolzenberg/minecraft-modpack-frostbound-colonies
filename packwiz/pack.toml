@@ -1,12 +1,12 @@
-name = "Frostbound Colonies"
+name = "Proud Mountain SMP"
 author = "Tim"
-version = "1.0.0"
+version = "2.0.0"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "185f82300b70f92dc31f731c3e7cca82ffb95bc7e1c5aa0e96fce1f69e8eda36"
+hash = "491befdf870b73767662789446e21ec1beff6f71c9bede7f073623845084eb53"
 
 [versions]
 minecraft = "1.21.1"
