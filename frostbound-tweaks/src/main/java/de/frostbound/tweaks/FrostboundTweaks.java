@@ -7,6 +7,7 @@ import net.neoforged.fml.common.Mod;
  * Colder Primal Winter zeichnet Schneefall, Schneegeräusche und Nebel sonst dauerhaft,
  * unabhängig vom Wetter. Hier hängt beides am echten Regen-/Schneelevel der Welt (nur Client).
  * Der Hearth von Cold Sweat heizt seinen Raum selbst statt nur über den Rauchabzug (Server und Client).
+ * Mitgelieferte Resource Packs werden einmal eingeschaltet, siehe DefaultResourcePacks (nur Client).
  */
 @Mod(FrostboundTweaks.MOD_ID)
 public final class FrostboundTweaks {

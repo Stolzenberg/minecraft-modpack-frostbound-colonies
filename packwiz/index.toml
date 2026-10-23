@@ -30,6 +30,10 @@ file = "config/create_structures_arise-server.toml"
 hash = "17833736148fe7eb755985f5737d17f97ae27df4d812ded768b454bc66d2fe39"
 
 [[files]]
+file = "config/frostbound_tweaks/default_resourcepacks.txt"
+hash = "dd6a4d4212883d5c890201a891288ddd5f82bfe08d321523238749ef25a9d48a"
+
+[[files]]
 file = "config/iris.properties"
 hash = "fd63c707c5e749fa250137ccb1b6955e0b29f1521c292bc2675f49f45d71fc28"
 preserve = true
@@ -1735,6 +1739,50 @@ file = "kubejs/data/snowyspirit/worldgen/structure_set/gingerbread_house.json"
 hash = "f350c956fba94f86ff05e010c18533321d2af3a00f0448cb2b963fed69f26f33"
 
 [[files]]
+file = "kubejs/data/vegandelight/loot_modifiers/add_loot_abandoned_mineshaft.json"
+hash = "e932fdf1774e500d3d780ba3ddb9b37bdcabfe1cfe2490e26f31340f735ab0d4"
+
+[[files]]
+file = "kubejs/data/vegandelight/loot_modifiers/add_loot_bastion_hoglin_stable.json"
+hash = "72244202399fa6bb4e9d621a42cf9cfe2afd5a1949b56ede3a74b670afe7599e"
+
+[[files]]
+file = "kubejs/data/vegandelight/loot_modifiers/add_loot_pillager_outpost.json"
+hash = "d58fc9c9714f7f993ffce90ba11ac8fa22ef2b62e2a0d5684edd4aaa2b7e795e"
+
+[[files]]
+file = "kubejs/data/vegandelight/loot_modifiers/add_loot_shipwreck_supply.json"
+hash = "d19f620fb676bbb0b34027f82601694c72cb1367422b1d01fe997cc6b403c295"
+
+[[files]]
+file = "kubejs/data/vegandelight/loot_modifiers/add_loot_simple_dungeon.json"
+hash = "fe662281ae9dae5796587da0041c8fcb558f67675db5393ad87efb169fd210a2"
+
+[[files]]
+file = "kubejs/data/vegandelight/loot_modifiers/add_loot_village_butcher.json"
+hash = "adc0a5e0a9a227b24546c99f20e647ef4f00a165599aed28930371c67049c8dd"
+
+[[files]]
+file = "kubejs/data/vegandelight/loot_modifiers/add_loot_village_desert_house.json"
+hash = "309a2ae29529108a992d28c8da509f956ef63e65e7123830533c160b05a7a2f2"
+
+[[files]]
+file = "kubejs/data/vegandelight/loot_modifiers/add_loot_village_plains_house.json"
+hash = "855a77721f01bed30a5c46ae415dc9c3ba716efb9354d8f201f6ac14ebe313b8"
+
+[[files]]
+file = "kubejs/data/vegandelight/loot_modifiers/add_loot_village_savanna_house.json"
+hash = "d28f7a928884e18bd7ce4b560f43ef173449ca97b683b3f7eb86e63428b6943e"
+
+[[files]]
+file = "kubejs/data/vegandelight/loot_modifiers/add_loot_village_snowy_house.json"
+hash = "de81958ed9a4522928c7cf9d909947a9b9c4f9c4c60ae44c82436fbcc27f090f"
+
+[[files]]
+file = "kubejs/data/vegandelight/loot_modifiers/add_loot_village_taiga_house.json"
+hash = "76286c339280e176b04fd27dd88032312803af36178aaf174e5a3dda796dde4e"
+
+[[files]]
 file = "kubejs/server_scripts/frost_clothing.js"
 hash = "7bc7c51cc87d43e87c91d70a540f01e532f96a8806c74fddeea086cc6c6dfc0a"
 
@@ -1931,6 +1979,16 @@ hash = "4f691d906039608bd379742b2aaec4bb292409189c6010a781c49dd9ca126bfd"
 metafile = true
 
 [[files]]
+file = "mods/entity-model-features.pw.toml"
+hash = "69d19296ce9d1fb2ea800838c65cac06a8df8039b7435d1a105134eb32cdea12"
+metafile = true
+
+[[files]]
+file = "mods/entity-texture-features-fabric.pw.toml"
+hash = "b97cf21120c385515370d14fd240824e520dd39c0463b101fc5008338f9ad4ab"
+metafile = true
+
+[[files]]
 file = "mods/entityculling.pw.toml"
 hash = "079208a58185a182b3c39cdfaab8c320f41127718482099f53a69238022fe938"
 metafile = true
@@ -1977,7 +2035,7 @@ metafile = true
 
 [[files]]
 file = "mods/frostbound-tweaks.pw.toml"
-hash = "a2dbb6f6fe2b143291767e6b009632c5ff614ae0b8bece63c059d514f2073aa9"
+hash = "105cd3847be55332781a2fc8f9b8086d1f5efd5eb8bb2d390c8e6288697ac4ad"
 metafile = true
 
 [[files]]
@@ -1988,6 +2046,11 @@ metafile = true
 [[files]]
 file = "mods/gravestone-mod.pw.toml"
 hash = "f6845360da0d77ba7f0f710d443ee847510135ea0145d969d6a91e541ea29f39"
+metafile = true
+
+[[files]]
+file = "mods/handcrafted.pw.toml"
+hash = "69ddcae358b0791745c56da7da32e7a8a0b0bed3624d24c244b0e5d67896e50e"
 metafile = true
 
 [[files]]
@@ -2033,6 +2096,21 @@ metafile = true
 [[files]]
 file = "mods/lendercataclysm.pw.toml"
 hash = "37422b90103838b2ff7d3e0d058b264b4af8f479f1462defd4b596a65bbcfe63"
+metafile = true
+
+[[files]]
+file = "mods/lets-do-bakery-farm-charm-compat.pw.toml"
+hash = "96cdfc5939680cd20aa129dc2c53f9ffcecc50ef99812f1ecdca7be1985d7766"
+metafile = true
+
+[[files]]
+file = "mods/lets-do-candlelight-farm-charm-compat.pw.toml"
+hash = "7a4b0b024cc1fbd8478fc69cfc5862bb6af8d95bc6700174f525b8a0303511f9"
+metafile = true
+
+[[files]]
+file = "mods/lets-do-farm-charm.pw.toml"
+hash = "1ad1c715fef541d26db102c4a8da0d48bcdf23ca9c55eca2d33a7ef34d82b0d9"
 metafile = true
 
 [[files]]
@@ -2156,6 +2234,11 @@ hash = "bb760c352ba777738292084afddc94a50b025b37b18d11fc023987644a734a18"
 metafile = true
 
 [[files]]
+file = "mods/recipe-modification.pw.toml"
+hash = "6d112451c4eee09793eb49f05ea2601e93a3a942f545b1bbc393825d1a908b04"
+metafile = true
+
+[[files]]
 file = "mods/recipes-library.pw.toml"
 hash = "de4d85e4514b46d4370314e36b9eb0959a9a2b0cacb2ca89f7aa7b225d3c2792"
 metafile = true
@@ -2246,6 +2329,11 @@ hash = "a7074e8e499d34f5ce633dbd33f818e376dd1941ec5b1d97a33acd019df69b5a"
 metafile = true
 
 [[files]]
+file = "mods/vegan-delight.pw.toml"
+hash = "92a55f2707622b1e04e329d09d28a4b06f110c9689429d7350bc684600ae4201"
+metafile = true
+
+[[files]]
 file = "mods/vortylib.pw.toml"
 hash = "f176310a7cabe299741d052b94490a2645703f98da491a943d9bee01b82e59d4"
 metafile = true
@@ -2293,6 +2381,31 @@ metafile = true
 [[files]]
 file = "mods/yungs-better-dungeons-neoforge.pw.toml"
 hash = "c91789ffa5614360a43e487dc6925cc56db8ba77c72622d66984d02090c47088"
+metafile = true
+
+[[files]]
+file = "resourcepacks/fancy-crops.pw.toml"
+hash = "2a225e6b531ed8ee21417f7c8632c84eb0f56f8e2a62dfa2c93410ecf81f48fd"
+metafile = true
+
+[[files]]
+file = "resourcepacks/fresh-animations-extensions.pw.toml"
+hash = "4ef38979d1a8d483946d2bb4bcec62245a57da065a0b6e7c559cc29e7544af49"
+metafile = true
+
+[[files]]
+file = "resourcepacks/fresh-animations.pw.toml"
+hash = "089e80bb52a7728e5bccf9642970b96b80f027ee09177afa0983f678993ca566"
+metafile = true
+
+[[files]]
+file = "resourcepacks/fresh-moves.pw.toml"
+hash = "df0371eb3d3059a3dce516a6b124561729ca417ad9cfee1c43657f646a27705c"
+metafile = true
+
+[[files]]
+file = "resourcepacks/motschens-better-leaves.pw.toml"
+hash = "cc051154c623aadc332dd8427a824e21a975185e6193a27d6baae533b73a38a9"
 metafile = true
 
 [[files]]

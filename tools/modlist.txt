@@ -1,4 +1,4 @@
-# slug  pin=<fileID>  [side=client|server]  [class=<CF-Klasse>]  [pack=server]
+# slug  pin=<fileID>  [side=client|server]  [class=<CF-Klasse>]  [pack=server]  [id=<projectID>]
 # Basis: Skyward Frontiers 1.0.0 (gleiche Versionen für alle übernommenen Mods), ohne Himmels-/Luftschiff-Mods.
 # Alle Versionen gepinnt (so getestet). Entfernt nach Tests: biomes-o-plenty (Biome werden von Primal Winter nicht
 # eingefroren), towns-and-towers (Blöcke außerhalb der Chunks), minecolonies-compatibility (Tweaks-Mixin-Absturz),
@@ -16,6 +16,14 @@ domum-ornamentum                         pin=8784713   # Release 1.0.231 ist zu 
 create                                   pin=7963363
 farmers-delight                          pin=8765184
 coffee-delight                           pin=7027805 # Kaffee-Addon für Farmer's Delight
+vegan-delight                            pin=7196142 # Sojabohnen, Tofu, pflanzliche Ersatzzutaten. 2.0.0-beta4: in 1.4.4 laden 13 Create-Rezepte nicht. Loot-Fix: packwiz/kubejs/data/vegandelight/
+recipe-modification                      pin=7214826 id=1345325 # von Vegan Delight 2.0 benötigt (nicht als Abhängigkeit eingetragen, CF-Suche findet den Slug nicht)
+# --- Küche & Landwirtschaft: Let's Do (Foundation steckt per JarJar in den Jars) ---
+lets-do-farm-charm                       pin=9203717 # Felder, Vorratsblöcke, Herd und Kochtopf; Basis für Bakery und Candlelight
+lets-do-bakery-farm-charm-compat         pin=9234083 # Bakery (1.21.1 nur als Farm-&-Charm-Fassung)
+lets-do-candlelight-farm-charm-compat    pin=9150310 # Candlelight: Gerichte, Geschirr, Tischdeko (1.21.1 nur als Farm-&-Charm-Fassung)
+# --- Einrichtung ---
+handcrafted                              pin=6330030 # Möbel (Stühle, Tische, Regale, Betten), braucht Resourceful Lib
 # --- Ewiger Winter ---
 colder-primal-winter                     pin=8965877     # gepflegter Fork von Primal Winter (Original 6.0.2 stürzt auf dedizierten Servern ab)
 cold-sweat                               pin=9215368
@@ -87,6 +95,13 @@ xaeros-world-map                         pin=9067277 side=client
 mouse-tweaks                             pin=5637846 side=client
 controlling                              pin=6368976 side=client
 inventory-sorter                         pin=7188660   # Mittelklick sortiert; weicht dem Mausrad von Mouse Tweaks aus
+# --- Grafik: Resource Packs (Frostbound Tweaks schaltet sie einmal ein, config/frostbound_tweaks/default_resourcepacks.txt) ---
+entity-model-features                    pin=9188526 side=client   # EMF (+ ETF als Abhängigkeit), für Fresh Animations/Moves
+fancy-crops                              pin=7094029 side=client class=12
+motschens-better-leaves                  pin=8882877 side=client class=12
+fresh-animations                         pin=7670377 side=client class=12   # 1.10.4: Extensions 1.8.1 passen nicht zur 1.11 (Modelle umgebaut)
+fresh-animations-extensions              pin=7953813 side=client class=12
+fresh-moves                              pin=6105669 side=client class=12   # Spieler-Animationen, Fassung ohne animierte Augen (braucht keinen angepassten Skin)
 # --- Performance / Stabilität ---
 sodium                                   pin=8756580 side=client
 irisshaders                              pin=8242804 side=client

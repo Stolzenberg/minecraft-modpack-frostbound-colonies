@@ -1,0 +1,8 @@
+# Resource Packs, die Frostbound Tweaks einmal einschaltet (Reihenfolge von unten nach oben).
+# Wer ein Pack abwählt, behält das so. Format: Schlüssel Pack-ID (file/<Dateiname in resourcepacks/>).
+# Bei einem Pack-Update nur die Pack-ID ändern, der Schlüssel bleibt: Die neue Datei ersetzt dann die alte.
+fancy_crops file/Fancy Crops v1.3.zip
+better_leaves file/Better-Leaves-9.6.zip
+fresh_animations file/FreshAnimations_v1.10.4.zip
+fresh_animations_extensions file/FA+All_Extensions-v1.8.1.zip
+fresh_moves file/-1.21.2 Fresh Moves v3.1 (No Animated Eyes).zip
