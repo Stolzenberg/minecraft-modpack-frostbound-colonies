@@ -4,12 +4,13 @@ license = "MIT"
 
 [[mods]]
 modId = "frostbound_tweaks"
-version = "1.1.0"
+version = "1.2.0"
 displayName = "Frostbound Tweaks"
 authors = "Tim"
 description = '''
 Anpassungen für Frostbound Colonies: Schneefall, Schneegeräusche und Nebel von Colder Primal Winter nur bei echtem Niederschlag (Client).
 Der Cold-Sweat-Hearth heizt seinen Raum selbst, der Rauchabzug oben ist Schornstein bzw. Lüftungsrohr (Server und Client).
+Mitgelieferte Resource Packs werden einmal eingeschaltet und lassen sich danach abwählen (Client).
 '''
 # Client und Server brauchen sie nicht gegenseitig: ohne Mod im Client fehlen nur die Partikel an den Hearth-Seiten
 displayTest = "IGNORE_ALL_VERSION"

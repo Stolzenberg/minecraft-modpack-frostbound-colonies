@@ -95,6 +95,13 @@ xaeros-world-map                         pin=9067277 side=client
 mouse-tweaks                             pin=5637846 side=client
 controlling                              pin=6368976 side=client
 inventory-sorter                         pin=7188660   # Mittelklick sortiert; weicht dem Mausrad von Mouse Tweaks aus
+# --- Grafik: Resource Packs (Frostbound Tweaks schaltet sie einmal ein, config/frostbound_tweaks/default_resourcepacks.txt) ---
+entity-model-features                    pin=9188526 side=client   # EMF (+ ETF als Abhängigkeit), für Fresh Animations/Moves
+fancy-crops                              pin=7094029 side=client class=12
+motschens-better-leaves                  pin=8882877 side=client class=12
+fresh-animations                         pin=7670377 side=client class=12   # 1.10.4: Extensions 1.8.1 passen nicht zur 1.11 (Modelle umgebaut)
+fresh-animations-extensions              pin=7953813 side=client class=12
+fresh-moves                              pin=6105669 side=client class=12   # Spieler-Animationen, Fassung ohne animierte Augen (braucht keinen angepassten Skin)
 # --- Performance / Stabilität ---
 sodium                                   pin=8756580 side=client
 irisshaders                              pin=8242804 side=client

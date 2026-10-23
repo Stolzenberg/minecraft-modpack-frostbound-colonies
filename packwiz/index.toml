@@ -30,6 +30,10 @@ file = "config/create_structures_arise-server.toml"
 hash = "17833736148fe7eb755985f5737d17f97ae27df4d812ded768b454bc66d2fe39"
 
 [[files]]
+file = "config/frostbound_tweaks/default_resourcepacks.txt"
+hash = "dd6a4d4212883d5c890201a891288ddd5f82bfe08d321523238749ef25a9d48a"
+
+[[files]]
 file = "config/iris.properties"
 hash = "fd63c707c5e749fa250137ccb1b6955e0b29f1521c292bc2675f49f45d71fc28"
 preserve = true
@@ -1975,6 +1979,16 @@ hash = "4f691d906039608bd379742b2aaec4bb292409189c6010a781c49dd9ca126bfd"
 metafile = true
 
 [[files]]
+file = "mods/entity-model-features.pw.toml"
+hash = "69d19296ce9d1fb2ea800838c65cac06a8df8039b7435d1a105134eb32cdea12"
+metafile = true
+
+[[files]]
+file = "mods/entity-texture-features-fabric.pw.toml"
+hash = "b97cf21120c385515370d14fd240824e520dd39c0463b101fc5008338f9ad4ab"
+metafile = true
+
+[[files]]
 file = "mods/entityculling.pw.toml"
 hash = "079208a58185a182b3c39cdfaab8c320f41127718482099f53a69238022fe938"
 metafile = true
@@ -2021,7 +2035,7 @@ metafile = true
 
 [[files]]
 file = "mods/frostbound-tweaks.pw.toml"
-hash = "a2dbb6f6fe2b143291767e6b009632c5ff614ae0b8bece63c059d514f2073aa9"
+hash = "105cd3847be55332781a2fc8f9b8086d1f5efd5eb8bb2d390c8e6288697ac4ad"
 metafile = true
 
 [[files]]
@@ -2367,6 +2381,31 @@ metafile = true
 [[files]]
 file = "mods/yungs-better-dungeons-neoforge.pw.toml"
 hash = "c91789ffa5614360a43e487dc6925cc56db8ba77c72622d66984d02090c47088"
+metafile = true
+
+[[files]]
+file = "resourcepacks/fancy-crops.pw.toml"
+hash = "2a225e6b531ed8ee21417f7c8632c84eb0f56f8e2a62dfa2c93410ecf81f48fd"
+metafile = true
+
+[[files]]
+file = "resourcepacks/fresh-animations-extensions.pw.toml"
+hash = "4ef38979d1a8d483946d2bb4bcec62245a57da065a0b6e7c559cc29e7544af49"
+metafile = true
+
+[[files]]
+file = "resourcepacks/fresh-animations.pw.toml"
+hash = "089e80bb52a7728e5bccf9642970b96b80f027ee09177afa0983f678993ca566"
+metafile = true
+
+[[files]]
+file = "resourcepacks/fresh-moves.pw.toml"
+hash = "df0371eb3d3059a3dce516a6b124561729ca417ad9cfee1c43657f646a27705c"
+metafile = true
+
+[[files]]
+file = "resourcepacks/motschens-better-leaves.pw.toml"
+hash = "cc051154c623aadc332dd8427a824e21a975185e6193a27d6baae533b73a38a9"
 metafile = true
 
 [[files]]

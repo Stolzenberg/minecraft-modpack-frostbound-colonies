@@ -22,7 +22,7 @@ MC, NEOFORGE = "1.21.1", "21.1.256"
 PACK_URL = "https://raw.githubusercontent.com/Stolzenberg/minecraft-modpack-frostbound-colonies/main/packwiz/pack.toml"
 SERVER = (NAME, "server.proud-mountain.com")  # Eintrag in der Serverliste (Name, Adresse)
 # Eigene Mods aus extra-mods/ (Quelle im gleichnamigen Unterordner): Datei -> (Name, Seite)
-EXTRA_MODS = {"frostbound-tweaks-1.1.0.jar": ("Frostbound Tweaks", "both")}
+EXTRA_MODS = {"frostbound-tweaks-1.2.0.jar": ("Frostbound Tweaks", "both")}
 EXTRA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "extra-mods")
 RAW_BASE = PACK_URL.rsplit("/packwiz/", 1)[0]
 # Persönliche Einstellungen: nur bei der Erstinstallation schreiben, Updates überschreiben sie nicht

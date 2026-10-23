@@ -1594,6 +1594,122 @@
   "serverPackOnly": false
  },
  {
+  "slug": "entity-model-features",
+  "name": "[EMF] Entity Model Features [Fabric & Forge]",
+  "projectID": 844662,
+  "fileID": 9188526,
+  "fileName": "entity_model_features-3.3.12-1.21-neoforge.jar",
+  "date": "2026-10-15",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/9188/526/entity_model_features-3.3.12-1.21-neoforge.jar",
+  "side": "client",
+  "why": "listed",
+  "requires": [
+   568563
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/entity-model-features",
+  "authors": [
+   "Traben"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "fancy-crops",
+  "name": "(Bee's) Fancy Crops",
+  "projectID": 884709,
+  "fileID": 7094029,
+  "fileName": "Fancy Crops v1.3.zip",
+  "date": "2025-10-11",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/7094/29/Fancy%20Crops%20v1.3.zip",
+  "side": "client",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/texture-packs/fancy-crops",
+  "authors": [
+   "bebebea_loste"
+  ],
+  "classId": 12,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "motschens-better-leaves",
+  "name": "Motschen's Better Leaves",
+  "projectID": 380969,
+  "fileID": 8882877,
+  "fileName": "Better-Leaves-9.6.zip",
+  "date": "2026-09-14",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8882/877/Better-Leaves-9.6.zip",
+  "side": "client",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/texture-packs/motschens-better-leaves",
+  "authors": [
+   "Motschen"
+  ],
+  "classId": 12,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "fresh-animations",
+  "name": "Fresh Animations",
+  "projectID": 453763,
+  "fileID": 7670377,
+  "fileName": "FreshAnimations_v1.10.4.zip",
+  "date": "2026-02-24",
+  "releaseType": 1,
+  "downloadUrl": null,
+  "side": "client",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/texture-packs/fresh-animations",
+  "authors": [
+   "FreshLX"
+  ],
+  "classId": 12,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "fresh-animations-extensions",
+  "name": "Fresh Animations: Extensions",
+  "projectID": 813608,
+  "fileID": 7953813,
+  "fileName": "FA+All_Extensions-v1.8.1.zip",
+  "date": "2026-04-20",
+  "releaseType": 1,
+  "downloadUrl": null,
+  "side": "client",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/texture-packs/fresh-animations-extensions",
+  "authors": [
+   "FreshLX"
+  ],
+  "classId": 12,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "fresh-moves",
+  "name": "Fresh Moves",
+  "projectID": 990406,
+  "fileID": 6105669,
+  "fileName": "-1.21.2 Fresh Moves v3.1 (No Animated Eyes).zip",
+  "date": "2025-01-20",
+  "releaseType": 2,
+  "downloadUrl": "https://edge.forgecdn.net/files/6105/669/-1.21.2%20Fresh%20Moves%20v3.1%20(No%20Animated%20Eyes).zip",
+  "side": "client",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/texture-packs/fresh-moves",
+  "authors": [
+   "Ithan"
+  ],
+  "classId": 12,
+  "serverPackOnly": false
+ },
+ {
   "slug": "sodium",
   "name": "Sodium",
   "projectID": 394468,
@@ -2340,6 +2456,25 @@
   "url": "https://www.curseforge.com/minecraft/mc-mods/searchables",
   "authors": [
    "Jaredlll08"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "entity-texture-features-fabric",
+  "name": "[ETF] Entity Texture Features - [Fabric & Forge]",
+  "projectID": 568563,
+  "fileID": 9188408,
+  "fileName": "entity_texture_features-7.2.6-1.21-neoforge.jar",
+  "date": "2026-10-15",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/9188/408/entity_texture_features-7.2.6-1.21-neoforge.jar",
+  "side": "client",
+  "why": "dep of entity-model-features",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/entity-texture-features-fabric",
+  "authors": [
+   "Traben"
   ],
   "classId": 6,
   "serverPackOnly": false

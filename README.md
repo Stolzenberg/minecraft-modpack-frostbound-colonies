@@ -12,7 +12,7 @@ Basis ist *Skyward Frontiers* (`../skyward-frontiers`): gleiche Struktur- und Mo
 | `dist/FrostboundColonies-1.0.0.zip` | Client-Pack für die CurseForge-App (veraltet: Stand 1.0.0, wird nicht mehr gebaut) |
 | `dist/FrostboundColonies-1.0.0-Server.zip` | Server-ZIP ohne Docker (veraltet: Stand 1.0.0, wird nicht mehr gebaut) |
 | `mods.resolved.json` | Exakte Projekt- und Datei-IDs aller Mods (Lock-Datei) |
-| `packwiz/` | packwiz-Pack, aus dem die Prism-Instanzen ihre Updates holen. Configs, KubeJS-Skripte und das Schneeverwehungs-Datapack (`kubejs/data/`) werden direkt hier gepflegt (Quelle); `*.pw.toml`, `index.toml` und `pack.toml` erzeugt `tools/packwiz.py`, die nicht von Hand bearbeiten. Mods, die als identische Datei auf Modrinth liegen (92 von 115), werden von dort geladen, der Rest von CurseForge |
+| `packwiz/` | packwiz-Pack, aus dem die Prism-Instanzen ihre Updates holen. Configs, KubeJS-Skripte und das Schneeverwehungs-Datapack (`kubejs/data/`) werden direkt hier gepflegt (Quelle); `*.pw.toml`, `index.toml` und `pack.toml` erzeugt `tools/packwiz.py`, die nicht von Hand bearbeiten. Mods, die als identische Datei auf Modrinth liegen (99 von 122), werden von dort geladen, der Rest von CurseForge |
 | `tools/` | `scale_structures.py` (Strukturdichte senken), `disable_structures.py` (schwebende Strukturen abschalten), `modlist.txt` (Modliste, alle Versionen gepinnt), `build.py` (Abhängigkeiten auflösen), `package.py` (ZIPs bauen), `packwiz.py` (packwiz-Pack und Prism-Instanz bauen), `packwiz-installer-bootstrap.jar` (v0.0.3, steckt in der Prism-Instanz), `coldsweat_frost.py` (Temperatur-Configs erzeugen), `coldsweat-defaults/` (Cold-Sweat-Standardwerte als Eingabe), `test/` (Testserver-Werkzeuge; `surface.py` zählt Schnee/Eis an der Oberfläche je Biom) |
 | `server-overrides/` | Configs nur für den Server (AntiXray), `tools/packwiz.py` kopiert sie nach `packwiz/` |
 | `frostbound-tweaks/` | Quelltext der eigenen Mod *Frostbound Tweaks* für Client und Server (NeoForge 1.21.1, bauen mit `./gradlew build`, braucht JDK 21, z. B. per `JAVA_HOME`) |
@@ -28,7 +28,7 @@ Neu bauen: `python3 tools/build.py tools/modlist.txt mods.resolved.json`, dann `
 3. Instanz starten. Vor jedem Start gleicht `packwiz-installer` die Instanz mit `packwiz/` in diesem Repo ab und lädt nur Geändertes. Neue Mods kommen dazu, entfernte werden gelöscht. In der Serverliste steht schon „Frostbound Colonies“ (`server.proud-mountain.com`), das kommt aus der `servers.dat` in der ZIP und wird nur beim Import angelegt.
 4. Beim ersten Start erscheint ein Fenster für 4 Mods, deren Autoren Downloads über Launcher gesperrt haben und die es nicht auf Modrinth gibt: CreateColonies (`createcolonies-2.0.7.jar`), Christmas Delight (`farmers_delight_christmas_edition-V1.0.2-neoforge-1.20.1.jar`, „1.20.1“ im Namen ist richtig), Christmas Music Discs (`christmasmusicdiscs-1.21.1-v1.3.jar`) und Armor Series - Norsemen (`armor_series__norsemen-1.0.0-neoforge-1.21.1.jar`, **nicht** die Forge-1.20.1-Datei daneben, sonst trennt der Server die Verbindung). Jeden Link im Browser öffnen, genau diese Datei herunterladen und mit unverändertem Dateinamen nach `minecraft/mods/` der Instanz legen (in Prism: Rechtsklick auf die Instanz → *Ordner*, `mods` ggf. anlegen), danach im Fenster weiter. Das ist nur nötig, wenn eine dieser Mods eine neue Version bekommt.
 
-Was ein Update **nicht** anfasst: `options.txt` (Grafik, Tasten, Sound), Welten, Serverliste, Screenshots, Minimap-Wegpunkte, `config/iris.properties` (eigene Shader-Einstellungen) und `config/coldsweat/client.toml` (Cold-Sweat-Anzeige, Standard **°C**, umschaltbar unter *Optionen → Cold Sweat*). Beide sind als `preserve` markiert und werden nur bei der Erstinstallation geschrieben. Mitgelieferte Gameplay-Configs und KubeJS-Skripte werden bei Änderungen überschrieben, damit alle mit denselben Regeln spielen.
+Was ein Update **nicht** anfasst: `options.txt` (Grafik, Tasten, Sound), Welten, Serverliste, Screenshots, Minimap-Wegpunkte, `config/iris.properties` (eigene Shader-Einstellungen) und `config/coldsweat/client.toml` (Cold-Sweat-Anzeige, Standard **°C**, umschaltbar unter *Optionen → Cold Sweat*). Beide sind als `preserve` markiert und werden nur bei der Erstinstallation geschrieben. Mitgelieferte Gameplay-Configs und KubeJS-Skripte werden bei Änderungen überschrieben, damit alle mit denselben Regeln spielen. Einzige Ausnahme in `options.txt`: Neu mitgelieferte [Resource Packs](#resource-packs) werden einmal eingeschaltet, abwählen bleibt danach dauerhaft.
 
 **Update veröffentlichen:** Neu bauen (siehe oben), committen, pushen. GitHub liefert die neue Version nach spätestens ca. 5 Minuten aus, beim nächsten Start ziehen alle Instanzen nach.
 
@@ -106,6 +106,14 @@ Kälte ist der eigentliche Gegner. **Cold Sweat** gibt dem Spieler eine Körpert
 - **Create Wrapped:** Geschenke mit Create automatisch verpacken. **Christmas Music Discs:** Weihnachtslieder.
 - **ChristmasColonies:** Winterdorf-Baustil für MineColonies, dazu weitere Stile aus Stylecolonies.
 
+## Resource Packs
+Mitgeliefert und beim ersten Start mit dem Pack **eingeschaltet** (von unten nach oben): Fancy Crops (buschigere Felder, Varianten der Pflanzentexturen, passend zu Farmer's Delight), Motschen's Better Leaves (dichte, buschige Blätter), Fresh Animations (lebendigere Mob-Animationen), Fresh Animations: Extensions (Details, Köcher, leuchtende Augen, animierte Truhen u. a., liegt über Fresh Animations) und Fresh Moves (Spieler-Animationen).
+- **Nichts wird erzwungen:** Wer ein Pack unter *Optionen → Ressourcenpakete* abwählt oder umsortiert, behält das so, auch nach Updates. Das Einschalten übernimmt *Frostbound Tweaks* (`DefaultResourcePacks`): Die Liste steht in `config/frostbound_tweaks/default_resourcepacks.txt`, schon eingeschaltete Packs vermerkt die Mod in `config/frostbound_tweaks/applied_resourcepacks.txt` (nicht im Pack, bleibt bei Updates). Neue Packs in der Liste werden bei bestehenden Instanzen einmal nachgeschaltet. Bekommt ein Pack eine neue Datei, bleibt der Schlüssel in der Liste gleich und nur die Pack-ID ändert sich: Die neue Datei ersetzt die alte an ihrer Stelle, ein abgewähltes Pack bleibt aus.
+- Die Packs liegen über den Mod-Ressourcen, damit Better Leaves auch die Blätter von Mods (z. B. Let's Do) umgestalten kann.
+- Fresh Animations, Extensions und Fresh Moves brauchen die Client-Mods **Entity Model Features** und **Entity Texture Features**, ohne Packs ändern die nichts. Fresh Animations bleibt bei **1.10.4**: Die Extensions 1.8.1 überschreiben 18 Modelldateien, die es in Fresh Animations 1.11 nicht mehr gibt (dort zusammengelegt). 1.11 bringt Animationen für Eisbären und Pandas, also wechseln, sobald es passende Extensions gibt.
+- Fresh Moves ist die Fassung ohne animierte Augen. Die andere braucht einen eigens angepassten Skin mit zusätzlichen Pixeln.
+- Alle fünf werden von Modrinth geladen, kein manueller Download.
+
 ## Testwelt (Creative)
 Eine flache Creative-Dimension zum Ausprobieren von Bauwerken und Create-Maschinen, offen für alle Spieler.
 - **`/testwelt`** bringt dich hinein (beim ersten Mal nach 0/16/0, danach an die letzte Stelle in der Testwelt). Ein zweites `/testwelt` bringt dich zurück an die Stelle, an der du die normale Welt verlassen hast. Nicht möglich bis 10 s nach erlittenem Schaden, im Fallen, Brennen oder im Bett.
@@ -126,6 +134,7 @@ Eine flache Creative-Dimension zum Ausprobieren von Bauwerken und Create-Maschin
 - Coffee Delight 1.4.1, Create Cobblestone 1.5.0, Simple Voice Chat 2.6.22 und CoreProtectNeo 24.1: Testserver (Kopie der Server-Mods, frische Welt) startet ohne neue Fehler, Voice-Chat-Server lauscht auf Port 24454, CoreProtect meldet „Using MySQL for data storage“ und legt seine Tabellen in MariaDB an. Voice Chat mit echten Clients und CoreProtect-Rollbacks sind nicht getestet.
 - Farm & Charm 1.1.29, Bakery 2.1.11, Candlelight 2.1.15, Vegan Delight 2.0.0-beta4 und Handcrafted 4.0.3: Testserver (frisch aus dem packwiz-Stand, neue Welt) startet ohne neue Fehler, Blöcke aller fünf Mods lassen sich setzen, Vegan-Delight-Sojabohnen landen mit dem Loot-Fix in Dorftruhen (30 von 30 Proben im verschneiten Dorfhaus). Auf rund 6.000 generierten Chunks (viel Ozean) kamen wilde Sojabohnen 27-mal vor, Farm-&-Charm-Wildpflanzen nur einmal (Zwiebeln). F&C setzt sie nur selten (1 von 40 Chunks je Sorte) und nur in bestimmten Biomen (Gerste: Ebene, Savanne, Fluss; Hafer: Taiga, Wiese). Saatgut kann also knapp sein. Im Client nicht getestet (Modelle, JEI, Bedienung der Stationen).
 - Hearth-Rezept und Milch-Tag werden geladen (KubeJS: 1 Rezept hinzugefügt, keine Parse-Fehler).
+- Resource Packs einschalten (Frostbound Tweaks 1.2.0): Die Auswahllogik `DefaultResourcePacks.select` mit der echten Pack-Liste in 12 Fällen geprüft (Neuinstallation, bestehende Instanz mit eigenem Pack, abgewähltes Pack bleibt aus, Pack-Update ersetzt die alte Datei an ihrer Stelle bzw. bleibt aus, nachgereichtes Pack wird richtig einsortiert, fehlende Datei). Noch nicht im echten Client getestet.
 - Hearth mit Frostbound Tweaks 1.1.0: geschlossener Raum (9 × 5 × 9 innen) mit Hearth, Schornstein durchs Dach und abzweigender Rauchabzug-Leitung (15 Blöcke, im Freien) in einen zweiten Raum. Mit Mod sind beide Räume komplett mit warmer Luft gefüllt, über dem Dach und zwischen den Gebäuden nicht. Gegenprobe ohne Mod: im ersten Raum nur die Rohrblöcke, der zweite Raum warm. Eine Trennwand neben dem Hearth schneidet den Raumteil ab, nach dem Abreißen ist er nach wenigen Sekunden wieder warm. Geprüft über die Pfade des Hearth, nicht mit einem echten Spieler.
 - Schneeverwehungen: 16.129 Chunks (2 × 2 km, zweiter Seed) ohne neue Fehler generiert, Schichtverteilung wie oben.
 - Im Log stehen nur bekannte, harmlose Meldungen: fehlende Advancements von Dungeons Arise, leere Items in Struktur-Truhen, „Cold Sweat requires primalwinter 6.0.2 or lower for compat“ (die eingebaute Kompatibilität wird durch die eigene Config ersetzt).
@@ -160,7 +169,7 @@ Eine flache Creative-Dimension zum Ausprobieren von Bauwerken und Create-Maschin
 ## Wichtig: kein Chunky
 **Chunky nicht ins Pack aufnehmen.** Distant Horizons 3.3.3 und Chunky 1.4.23 stürzen zusammen beim Erstellen einer neuen Welt ab (siehe Skyward Frontiers). Zum Vorgenerieren auf dem Server Chunky nur vorübergehend und ohne DH verwenden.
 
-## Mods und Shader (91 gelistet: 89 im Client, AntiXray und CoreProtectNeo nur auf dem Server, dazu 1 eigene Client-Mod und 24 Bibliotheken)
+## Mods, Shader und Resource Packs (97 gelistet: 95 im Client, AntiXray und CoreProtectNeo nur auf dem Server, dazu 1 eigene Mod und 25 Bibliotheken)
 
 **Kern: MineColonies**
 
@@ -278,6 +287,15 @@ Eine flache Creative-Dimension zum Ausprobieren von Bauwerken und Create-Maschin
 - [Controlling](https://www.curseforge.com/minecraft/mc-mods/controlling) – `Controlling-neoforge-1.21.1-19.0.5.jar`
 - [Inventory Sorter](https://www.curseforge.com/minecraft/mc-mods/inventory-sorter) – `inventorysorter-1.21.1-24.0.24.jar`
 
+**Grafik: Resource Packs** (siehe [Resource Packs](#resource-packs))
+
+- [Entity Model Features](https://www.curseforge.com/minecraft/mc-mods/entity-model-features) – `entity_model_features-3.3.12-1.21-neoforge.jar`
+- [(Bee's) Fancy Crops](https://www.curseforge.com/minecraft/texture-packs/fancy-crops) – `Fancy Crops v1.3.zip`
+- [Motschen's Better Leaves](https://www.curseforge.com/minecraft/texture-packs/motschens-better-leaves) – `Better-Leaves-9.6.zip`
+- [Fresh Animations](https://www.curseforge.com/minecraft/texture-packs/fresh-animations) – `FreshAnimations_v1.10.4.zip`
+- [Fresh Animations: Extensions](https://www.curseforge.com/minecraft/texture-packs/fresh-animations-extensions) – `FA+All_Extensions-v1.8.1.zip`
+- [Fresh Moves](https://www.curseforge.com/minecraft/texture-packs/fresh-moves) – `-1.21.2 Fresh Moves v3.1 (No Animated Eyes).zip`
+
 **Performance / Stabilität**
 
 - [Sodium](https://www.curseforge.com/minecraft/mc-mods/sodium) – `sodium-neoforge-0.8.13+mc1.21.1.jar`
@@ -297,8 +315,8 @@ Eine flache Creative-Dimension zum Ausprobieren von Bauwerken und Create-Maschin
 
 **Eigene Mods**
 
-- Frostbound Tweaks (`frostbound-tweaks/`, Jar in `extra-mods/`) – `frostbound-tweaks-1.1.0.jar` *(Client und Server)*
+- Frostbound Tweaks (`frostbound-tweaks/`, Jar in `extra-mods/`) – `frostbound-tweaks-1.2.0.jar` *(Client und Server)*
 
 **Automatisch mitinstallierte Bibliotheken**
 
-Architectury API, Balm, Better Advanced Tooltips, BlockUI, CERBON's API [Forge | Fabric | NeoForge], Cloth Config API (Fabric/Forge/NeoForge), Curios API, GeckoLib, Lionfish API, ManyIdeas Core, Moog's Structure Lib (moogs_structures), Moonlight Lib, Multi-Piston, Puzzles Lib, Recipes Library, Resourceful Config, Resourceful Lib, Searchables, Sophisticated Core, Structurize, TownTalk, VortyLib, YUNG's API (NeoForge) [1.20.4-1.21.1 ONLY], YetAnotherConfigLib
+Architectury API, Balm, Better Advanced Tooltips, BlockUI, CERBON's API [Forge | Fabric | NeoForge], Cloth Config API (Fabric/Forge/NeoForge), Curios API, Entity Texture Features, GeckoLib, Lionfish API, ManyIdeas Core, Moog's Structure Lib (moogs_structures), Moonlight Lib, Multi-Piston, Puzzles Lib, Recipes Library, Resourceful Config, Resourceful Lib, Searchables, Sophisticated Core, Structurize, TownTalk, VortyLib, YUNG's API (NeoForge) [1.20.4-1.21.1 ONLY], YetAnotherConfigLib
