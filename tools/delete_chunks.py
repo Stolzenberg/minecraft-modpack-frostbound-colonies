@@ -3,7 +3,7 @@
 
 usage: delete_chunks.py <Weltordner> <Auswahl.csv> <Sicherungsordner> [--apply]
 
-Auswahl im MCA-Selector-Format (regionX;regionZ;chunkX;chunkZ, siehe skylands_chunks.py). Ohne --apply wird nur
+Auswahl im MCA-Selector-Format (regionX;regionZ;chunkX;chunkZ, z. B. per „Export selection“ aus MCA Selector). Ohne --apply wird nur
 angezeigt, was passieren würde. Mit --apply werden alle betroffenen .mca-Dateien zuerst in den Sicherungsordner
 kopiert, dann die Einträge der Chunks im Dateikopf (Position + Zeitstempel) auf 0 gesetzt. Minecraft behandelt die
 Chunks danach als nie generiert. Das Spiel muss dabei geschlossen sein (session.lock wird nicht geprüft).
