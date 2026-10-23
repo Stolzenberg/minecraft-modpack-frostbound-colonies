@@ -1,0 +1,56 @@
+#Raumwärme: Wärmequellen heizen den geschlossenen Raum, in dem sie stehen (braucht Cold Sweat).
+#Temperaturen in °F (Cold Sweat rechnet intern mit 1 MC-Einheit = 45 °F).
+[raumwaerme]
+	#Raumwärme an/aus
+	aktiv = true
+	#Höchstens so oft (Ticks) wird der Raum um einen stillstehenden Spieler neu vermessen
+	# Default: 40
+	# Range: 20 ~ 1200
+	messabstand = 40
+	#Größere Räume (Luftblöcke) gelten als nicht beheizbar, z. B. Höhlen
+	# Default: 2000
+	# Range: 50 ~ 20000
+	max_volumen = 2000
+	#Kleinere Räume zählen mit diesem Volumen (sonst heizt eine Kerze eine Besenkammer auf)
+	# Default: 30
+	# Range: 1 ~ 1000
+	min_volumen = 30
+	#Luftblöcke mit Himmelssicht, die der Raum berührt (offene Tür = 2). Jedes Leck kostet
+	#1/Grenze der Wärme, ab der Grenze ist der Raum offen und heizt nicht mehr
+	# Default: 16
+	# Range: 1 ~ 1000
+	leck_grenze = 16
+	#Höchste Raumwärme in °F
+	# Default: 60.0
+	# Range: 0.0 ~ 500.0
+	max_waerme = 60.0
+	#Über diese Umgebungstemperatur (°F, absolut) heizt die Raumwärme nicht hinaus
+	#(68 °F = 20 °C; Wärme direkt am Ofen kann darüber liegen)
+	# Default: 68.0
+	# Range: -100.0 ~ 200.0
+	raumtemperatur_grenze = 68.0
+	#Wärmespeicher: Zeitkonstante beim Aufheizen in Minuten (nach dieser Zeit 63 % geladen)
+	# Default: 2.0
+	# Range: 0.05 ~ 120.0
+	aufheizen_minuten = 2.0
+	#Wärmespeicher: Zeitkonstante beim Abkühlen in Minuten (nach dieser Zeit noch 37 %)
+	# Default: 4.0
+	# Range: 0.05 ~ 240.0
+	abkuehlen_minuten = 4.0
+	#Jeder Speichermasse-Block direkt um die Quelle (3×3×3) verlängert das Abkühlen um diesen Anteil
+	# Default: 0.25
+	# Range: 0.0 ~ 10.0
+	masse_bonus = 0.25
+	#Höchstens so viele Speichermasse-Blöcke zählen
+	# Default: 12
+	# Range: 0 ~ 26
+	masse_max = 12
+	#Wärmequellen: "blöcke;leistung;speichert[;zustand]"
+	#  blöcke: IDs oder #Tags, durch Kommas getrennt
+	#  leistung: °F × Luftblöcke (3000 heizt 75 Luftblöcke, eine 5×5-Hütte, um 40 °F)
+	#  speichert: true = Wärmespeicher (lädt sich beim Brennen auf, kühlt danach langsam ab)
+	#  zustand: z. B. "blaze=kindled" (mehrere mit Komma). Blöcke mit "lit" zählen nur brennend,
+	#  Kerzen ("candles") und Kerzenkränze ("lit_count") je brennender Kerze
+	quellen = ["minecraft:furnace,minecraft:blast_furnace,minecraft:smoker;3000;true", "farmersdelight:stove,farm_and_charm:stove,handcrafted:oven;2500;true", "candlelight:bamboo_stove,candlelight:basalt_stove,candlelight:cobblestone_stove,candlelight:deepslate_stove,candlelight:end_stove,candlelight:granite_stove,candlelight:mud_stove,candlelight:quartz_stove,candlelight:red_nether_bricks_stove,candlelight:sandstone_stove,candlelight:stone_bricks_stove;2500;true", "minecraft:campfire;4000;true", "manyideas_christmas:fireplace_oak,manyideas_christmas:fireplace_spruce,manyideas_christmas:fireplace_birch,manyideas_christmas:fireplace_jungle,manyideas_christmas:fireplace_acacia,manyideas_christmas:fireplace_dark_oak,manyideas_christmas:fireplace_crimson,manyideas_christmas:fireplace_warped;5000;true;y=0,z=1", "cold_sweat:hearth_bottom;12000;true", "create:blaze_burner;2500;false;blaze=kindled", "create:blaze_burner;4000;false;blaze=seething", "minecraft:torch,minecraft:wall_torch;150;false", "minecraft:lantern;200;false", "candlelight:lamp;200;false", "#minecraft:candles,#minecraft:candle_cakes;50;false", "manyideas_christmas:wreath_candle;50;false"]
+	#Speichermasse um Wärmespeicher (IDs oder #Tags): Ziegel und Stein halten die Wärme wie ein Kachelofen
+	speichermasse = ["minecraft:bricks", "minecraft:mud_bricks", "minecraft:stone_bricks", "minecraft:mossy_stone_bricks", "minecraft:cracked_stone_bricks", "minecraft:chiseled_stone_bricks", "minecraft:stone", "minecraft:cobblestone", "minecraft:mossy_cobblestone", "minecraft:smooth_stone", "minecraft:cobbled_deepslate", "minecraft:polished_deepslate", "minecraft:deepslate_bricks", "minecraft:deepslate_tiles", "minecraft:nether_bricks", "minecraft:red_nether_bricks", "minecraft:polished_blackstone_bricks", "#minecraft:terracotta", "minecraft:clay"]

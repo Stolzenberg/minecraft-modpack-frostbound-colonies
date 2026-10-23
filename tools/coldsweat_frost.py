@@ -13,20 +13,27 @@ usage: coldsweat_frost.py <Ordner mit Standard-Configs> <Ausgabe-Ordner> [<lates
 """
 import os, re, sys
 
-SCALE, SHIFT = 0.5, -5
+SCALE, SHIFT = 0.5, 5  # SHIFT war -5; +10 °F überall für entspannteres Spiel (2026-10-23)
 # Unverändert: Nether/End und Höhlenbiome (Höhlen bleiben ein milder Rückzugsort)
 KEEP = {"minecraft:soul_sand_valley", "minecraft:small_end_islands", "minecraft:deep_dark", "minecraft:lush_caves"}
 # Biome-Mods, die nicht im Pack sind (BOP würde von Primal Winter nicht eingefroren, Terralith ist durch Tectonic ersetzt)
 DROP_NAMESPACES = {"biomesoplenty", "terralith"}
 
 # Zusätzliche Wärmequellen: Weihnachtskamine (ManyIdeas, brennen immer; nur der mittlere untere Block zählt),
-# brennende Kerzen und Öfen. Format: [block, temp, reichweite, einheit, maxEffekt, "zustand", "", limit]
+# brennende Kerzen, Fackeln, Laternen, Öfen und Herde. Format: [block, temp, reichweite, einheit, maxEffekt, "zustand", "", limit]
+# Das ist nur die Wärme direkt am Block (durch Wände gedämpft); ganze Räume heizt die Raumwärme von Frostbound Tweaks.
 FIREPLACES = ",".join(f"manyideas_christmas:fireplace_{w}" for w in
                       ("oak", "spruce", "birch", "jungle", "acacia", "dark_oak", "crimson", "warped"))
+STOVES = ",".join(["farmersdelight:stove", "farm_and_charm:stove", "handcrafted:oven"] +
+                  [f"candlelight:{s}_stove" for s in ("bamboo", "basalt", "cobblestone", "deepslate", "end", "granite",
+                                                      "mud", "quartz", "red_nether_bricks", "sandstone", "stone_bricks")])
 EXTRA_BLOCKS = [
     f'["{FIREPLACES}", 60, 6, "f", 85, "y=0,z=1", "", 400]',
     '["#minecraft:candles", 4, 2, "f", 8, "lit=true", "", 400]',
+    '["minecraft:torch,minecraft:wall_torch", 4, 2, "f", 8, "", "", 400]',
+    '["minecraft:lantern,candlelight:lamp", 5, 2, "f", 10, "", "", 400]',
     '["minecraft:furnace,minecraft:blast_furnace,minecraft:smoker", 25, 3, "f", 40, "lit=true", "", 400]',
+    f'["{STOVES}", 25, 3, "f", 40, "lit=true", "", 400]',
 ]
 # Vorhandene Wärmequellen verstärken (Faktor auf Temperatur, Faktor auf maxEffekt): Die Biome sind ca. 40 °F kälter
 # als in Vanilla-Cold-Sweat, deshalb müssen Feuer stärker heizen. Gemessen: Lagerfeuer +25 °F -> direkt daneben nur

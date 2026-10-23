@@ -23,11 +23,15 @@ hash = "882fa266ad78b4e832514d7df542126d867a5022cb212faddff5ae36ba0a5b0c"
 
 [[files]]
 file = "config/coldsweat/world.toml"
-hash = "746bea82df37c3b94de2d4dfdf76441b8a574982dc42f06a22026037686abd1c"
+hash = "99b92340a821b5200adbee2685a5b612c43a265ea7155162c88b998293f07e7b"
 
 [[files]]
 file = "config/create_structures_arise-server.toml"
 hash = "17833736148fe7eb755985f5737d17f97ae27df4d812ded768b454bc66d2fe39"
+
+[[files]]
+file = "config/frostbound_tweaks-common.toml"
+hash = "752909e9022f0d6826ae5793eaa53475e95cf4da95624dfa9d44d728f2f55491"
 
 [[files]]
 file = "config/frostbound_tweaks/default_resourcepacks.txt"
@@ -2035,7 +2039,7 @@ metafile = true
 
 [[files]]
 file = "mods/frostbound-tweaks.pw.toml"
-hash = "105cd3847be55332781a2fc8f9b8086d1f5efd5eb8bb2d390c8e6288697ac4ad"
+hash = "dc24cd10ea2cab1aed27ca118df71c6737f182b5442612ca6c79dd7bdcc8bc98"
 metafile = true
 
 [[files]]
