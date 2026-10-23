@@ -19,7 +19,7 @@ from cf import post
 NAME, VERSION, AUTHOR = "Proud Mountain SMP", "2.0.0", "Tim"  # wie in package.py
 SLUG = NAME.replace(" ", "")
 MC, NEOFORGE = "1.21.1", "21.1.256"
-PACK_URL = "https://raw.githubusercontent.com/Stolzenberg/minecraft-modpack-frostbound-colonies/main/packwiz/pack.toml"
+PACK_URL = "https://raw.githubusercontent.com/Stolzenberg/minecraft-modpack-proud-mountain-smp/main/packwiz/pack.toml"
 SERVER = (NAME, "server.proud-mountain.com")  # Eintrag in der Serverliste (Name, Adresse)
 # Eigene Mods aus extra-mods/ (Quelle im gleichnamigen Unterordner): Datei -> (Name, Seite)
 EXTRA_MODS = {"frostbound-tweaks-2.0.0.jar": ("Frostbound Tweaks", "both")}

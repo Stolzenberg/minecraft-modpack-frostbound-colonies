@@ -2,7 +2,7 @@
 
 Modpack für **Minecraft 1.21.1 / NeoForge 21.1.256**: eine Welt für immer (*Forever World*), in der die Jahreszeiten dem echten Kalender folgen. Ein Frühling dauert drei echte Monate, im Winter schneit es in den gemäßigten Breiten, im Sommer stehen die Felder voll. Die Biome liegen in Klimazonen (Norden kalt, Süden heiß) auf großen Kontinenten und Inseln. Dazu Farmer's-Delight- und Let's-Do-Küche, Supplementaries, der sortierende Copper Golem aus 1.21.9, umstürzende Bäume, viele Strukturen, Mobs und Bosse.
 
-Bis Version 1.0.0 hieß das Pack *Frostbound Colonies* (ewiger Winter mit Primal Winter, Cold Sweat, Create und MineColonies). Repo-Name, Pack-URL und die interne Mod *Frostbound Tweaks* tragen noch den alten Namen, damit bestehende Prism-Instanzen ihre Updates weiter finden.
+Bis Version 1.0.0 hieß das Pack *Frostbound Colonies* (ewiger Winter mit Primal Winter, Cold Sweat, Create und MineColonies), das Repo `minecraft-modpack-frostbound-colonies`. GitHub liefert unter der alten Adresse weiter aus (auch die Raw-URLs), bestehende Prism-Instanzen und `PACKWIZ_URL`-Einträge funktionieren also weiter, sollten aber bei Gelegenheit auf die neue Adresse umgestellt werden: Der alte Name darf dafür auf GitHub nicht neu vergeben werden. Die interne Mod *Frostbound Tweaks* (Mod-ID `frostbound_tweaks`) behält ihren Namen, damit Configs und Testwelt-Daten gültig bleiben.
 
 ## Dateien
 
@@ -22,7 +22,7 @@ Neu bauen: `python3 tools/build.py tools/modlist.txt mods.resolved.json`, dann `
 ## Installation (Prism Launcher mit Auto-Update)
 
 1. [Prism Launcher](https://prismlauncher.org) installieren und mit dem Microsoft-Konto anmelden.
-2. [`ProudMountainSMP-Prism.zip`](https://github.com/Stolzenberg/minecraft-modpack-frostbound-colonies/raw/main/dist/ProudMountainSMP-Prism.zip) herunterladen und in Prism über *Instanz hinzufügen* → *Importieren* laden (oder die ZIP ins Prism-Fenster ziehen).
+2. [`ProudMountainSMP-Prism.zip`](https://github.com/Stolzenberg/minecraft-modpack-proud-mountain-smp/raw/main/dist/ProudMountainSMP-Prism.zip) herunterladen und in Prism über *Instanz hinzufügen* → *Importieren* laden (oder die ZIP ins Prism-Fenster ziehen).
 3. Instanz starten. Vor jedem Start gleicht `packwiz-installer` die Instanz mit `packwiz/` in diesem Repo ab und lädt nur Geändertes. Neue Mods kommen dazu, entfernte werden gelöscht. In der Serverliste steht schon „Proud Mountain SMP“ (`server.proud-mountain.com`), das kommt aus der `servers.dat` in der ZIP und wird nur beim Import angelegt.
 
 Alle Mods kommen von Modrinth oder CurseForge mit erlaubtem Launcher-Download, es ist **kein manueller Download** mehr nötig.
@@ -33,7 +33,7 @@ Was ein Update **nicht** anfasst: `options.txt` (Grafik, Tasten, Sound), Welten,
 
 **Update veröffentlichen:** Neu bauen (siehe oben), committen, pushen. GitHub liefert die neue Version nach spätestens ca. 5 Minuten aus, beim nächsten Start ziehen alle Instanzen nach.
 
-**Server (Docker, `itzg/minecraft-server`):** `PACKWIZ_URL=https://raw.githubusercontent.com/Stolzenberg/minecraft-modpack-frostbound-colonies/main/packwiz/pack.toml` setzen (zusammen mit `TYPE=NEOFORGE`, `VERSION`, `NEOFORGE_VERSION`). Der Container gleicht bei jedem Start ab und installiert nur die Server-Seite (ohne Client-Mods, mit AntiXray und CoreProtect). Nach einem Push `docker compose restart mc`. Ändert sich die NeoForge-Version, auch `NEOFORGE_VERSION` anpassen. Außerdem nötig: UDP-Port 24454 für Simple Voice Chat veröffentlichen (`24454:24454/udp`) und ein MariaDB-Container für CoreProtect, siehe [Server: Voice Chat und CoreProtect](#server-voice-chat-und-coreprotect). Ohne Docker: `java -jar packwiz-installer-bootstrap.jar -g -s server <URL>` im Serverordner vor dem Start.
+**Server (Docker, `itzg/minecraft-server`):** `PACKWIZ_URL=https://raw.githubusercontent.com/Stolzenberg/minecraft-modpack-proud-mountain-smp/main/packwiz/pack.toml` setzen (zusammen mit `TYPE=NEOFORGE`, `VERSION`, `NEOFORGE_VERSION`). Der Container gleicht bei jedem Start ab und installiert nur die Server-Seite (ohne Client-Mods, mit AntiXray und CoreProtect). Nach einem Push `docker compose restart mc`. Ändert sich die NeoForge-Version, auch `NEOFORGE_VERSION` anpassen. Außerdem nötig: UDP-Port 24454 für Simple Voice Chat veröffentlichen (`24454:24454/udp`) und ein MariaDB-Container für CoreProtect, siehe [Server: Voice Chat und CoreProtect](#server-voice-chat-und-coreprotect). Ohne Docker: `java -jar packwiz-installer-bootstrap.jar -g -s server <URL>` im Serverordner vor dem Start.
 
 **Umstieg von 1.0.0 auf dem Server: neue Welt nötig.** Die Klimazonen, Kontinente und BoP-Biome gibt es nur in neu generierten Chunks, die alte Welt ist zudem voller Primal-Winter-Schnee und -Eis, und Blöcke und Items von Create, Cold Sweat, den Weihnachts- und Kleidungs-Mods verschwinden beim Laden. Vor dem Wechsel die alte Welt sichern (Rucksäcke von Sophisticated Backpacks liegen in `data/`, Wegpunkte im Client), dann `world/` wegräumen und mit dem neuen Stand starten. `level-seed` nach Belieben setzen, Seed geheim halten.
 

@@ -1797,7 +1797,7 @@ metafile = true
 
 [[files]]
 file = "mods/frostbound-tweaks.pw.toml"
-hash = "8757866f15b3ab78ae6cda60c1519b48c376a2c9392d067736082781d8d38aaf"
+hash = "d775e51da8c4ebe6cf8cc0806362ea393cfa823c8beb1609c7cc35fa1296785e"
 metafile = true
 
 [[files]]
