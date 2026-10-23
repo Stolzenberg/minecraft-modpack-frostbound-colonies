@@ -1,6 +1,6 @@
 // Frostbound Colonies – Rezepte
 //
-// Der Hearth (Cold Sweat) ist der "Generator" der Kolonie: Er heizt ein ganzes Gebäude und lässt sich über
+// Der Hearth (Cold Sweat) ist der "Generator" der Siedlung: Er heizt ein ganzes Gebäude und lässt sich über
 // Rohre (Smokestacks) verteilen. Im Original braucht er Netherziegel und Seelensand. Hier gibt es zusätzlich
 // ein Overworld-Rezept, damit die erste Wärmequelle nicht an einem Nether-Ausflug hängt.
 

@@ -1,6 +1,6 @@
 # Frostbound Colonies 1.0.0
 
-CurseForge-Modpack für **Minecraft 1.21.1 / NeoForge 21.1.256**, inspiriert von *Frostpunk*: Ein ewiger Winter hat die ganze Welt erfasst. Du gründest eine **MineColonies**-Kolonie, hältst sie mit Feuer, Kaminen und dem Hearth warm, versorgst sie mit **Farmer's Delight**-Eintöpfen und automatisierst mit **Create**. Draußen warten verschneite Ruinen, Dungeons und Bosse. Weihnachts-Mods bringen Deko und Festtagsessen dazu.
+CurseForge-Modpack für **Minecraft 1.21.1 / NeoForge 21.1.256**, inspiriert von *Frostpunk*: Ein ewiger Winter hat die ganze Welt erfasst. Du baust dir eine Siedlung auf, hältst sie mit Feuer, Kaminen und dem Hearth warm, versorgst sie mit **Farmer's Delight**-Eintöpfen und automatisierst mit **Create**. Draußen warten verschneite Ruinen, Dungeons und Bosse. Weihnachts-Mods bringen Deko und Festtagsessen dazu.
 
 Basis ist *Skyward Frontiers* (`../skyward-frontiers`): gleiche Struktur- und Mob-Mods, gleiche QoL-, Performance- und Grafik-Mods in denselben Versionen, gleiche Toolchain.
 
@@ -26,7 +26,7 @@ Neu bauen: `python3 tools/build.py tools/modlist.txt mods.resolved.json`, dann `
 1. [Prism Launcher](https://prismlauncher.org) installieren und mit dem Microsoft-Konto anmelden.
 2. [`FrostboundColonies-Prism.zip`](https://github.com/Stolzenberg/minecraft-modpack-frostbound-colonies/raw/main/dist/FrostboundColonies-Prism.zip) herunterladen und in Prism über *Instanz hinzufügen* → *Importieren* laden (oder die ZIP ins Prism-Fenster ziehen).
 3. Instanz starten. Vor jedem Start gleicht `packwiz-installer` die Instanz mit `packwiz/` in diesem Repo ab und lädt nur Geändertes. Neue Mods kommen dazu, entfernte werden gelöscht. In der Serverliste steht schon „Frostbound Colonies“ (`server.proud-mountain.com`), das kommt aus der `servers.dat` in der ZIP und wird nur beim Import angelegt.
-4. Beim ersten Start erscheint ein Fenster für 4 Mods, deren Autoren Downloads über Launcher gesperrt haben und die es nicht auf Modrinth gibt: CreateColonies (`createcolonies-2.0.7.jar`), Christmas Delight (`farmers_delight_christmas_edition-V1.0.2-neoforge-1.20.1.jar`, „1.20.1“ im Namen ist richtig), Christmas Music Discs (`christmasmusicdiscs-1.21.1-v1.3.jar`) und Armor Series - Norsemen (`armor_series__norsemen-1.0.0-neoforge-1.21.1.jar`, **nicht** die Forge-1.20.1-Datei daneben, sonst trennt der Server die Verbindung). Jeden Link im Browser öffnen, genau diese Datei herunterladen und mit unverändertem Dateinamen nach `minecraft/mods/` der Instanz legen (in Prism: Rechtsklick auf die Instanz → *Ordner*, `mods` ggf. anlegen), danach im Fenster weiter. Das ist nur nötig, wenn eine dieser Mods eine neue Version bekommt.
+4. Beim ersten Start erscheint ein Fenster für 3 Mods, deren Autoren Downloads über Launcher gesperrt haben und die es nicht auf Modrinth gibt: Christmas Delight (`farmers_delight_christmas_edition-V1.0.2-neoforge-1.20.1.jar`, „1.20.1“ im Namen ist richtig), Christmas Music Discs (`christmasmusicdiscs-1.21.1-v1.3.jar`) und Armor Series - Norsemen (`armor_series__norsemen-1.0.0-neoforge-1.21.1.jar`, **nicht** die Forge-1.20.1-Datei daneben, sonst trennt der Server die Verbindung). Jeden Link im Browser öffnen, genau diese Datei herunterladen und mit unverändertem Dateinamen nach `minecraft/mods/` der Instanz legen (in Prism: Rechtsklick auf die Instanz → *Ordner*, `mods` ggf. anlegen), danach im Fenster weiter. Das ist nur nötig, wenn eine dieser Mods eine neue Version bekommt.
 
 Was ein Update **nicht** anfasst: `options.txt` (Grafik, Tasten, Sound), Welten, Serverliste, Screenshots, Minimap-Wegpunkte, `config/iris.properties` (eigene Shader-Einstellungen) und `config/coldsweat/client.toml` (Cold-Sweat-Anzeige, Standard **°C**, umschaltbar unter *Optionen → Cold Sweat*). Beide sind als `preserve` markiert und werden nur bei der Erstinstallation geschrieben. Mitgelieferte Gameplay-Configs und KubeJS-Skripte werden bei Änderungen überschrieben, damit alle mit denselben Regeln spielen. Einzige Ausnahme in `options.txt`: Neu mitgelieferte [Resource Packs](#resource-packs) werden einmal eingeschaltet, abwählen bleibt danach dauerhaft.
 
@@ -45,7 +45,7 @@ Was ein Update **nicht** anfasst: `options.txt` (Grafik, Tasten, Sound), Welten,
     - Mobs können nur auf einer einzelnen Schicht spawnen (ab 2 Schichten kollidiert die Schneeschicht). Deshalb bleibt bewusst der Großteil einschichtig. Primal Winters eigene Option `enableSnowAccumulationDuringWorldgen` ist aus: Sie legt 86 % des Schnees mehrschichtig und unterdrückt damit fast alle Spawns (im Test 0 statt 18 Eisbären).
     - Feinjustierung: Die Schwellen stehen als 100er-Liste in `worldgen/configured_feature/snow_drift.json` (mehr Einträge mit höheren `layers` = mehr Verwehungen). `firstOctave` (−4 ≈ 16 Blöcke) bestimmt die Größe der Verwehungen.
     - Kosten: Vorgenerierung ca. 68 statt 80 Chunks/s.
-  - Schnee häuft sich bei Schneefall nicht über eine Schicht hinaus an (`enableSnowAccumulationDuringWeather = false`), damit Kolonie-Wege und Baustellen frei bleiben.
+  - Schnee häuft sich bei Schneefall nicht über eine Schicht hinaus an (`enableSnowAccumulationDuringWeather = false`), damit Wege und Baustellen frei bleiben.
 - **3× längere Tage** (Better Days, `config/betterdays-common.toml`: `daySpeed`/`nightSpeed` = 0,333): Ein Minecraft-Tag dauert 60 statt 20 Minuten (30 Minuten Tag, 30 Minuten Nacht). Gemessen: 200 statt 600 Ticks Tageszeit in 30 Sekunden. Beim Schlafen läuft die Zeit sanft schneller bis zum Morgen statt zu springen. Pflanzen wachsen weiter in Echtzeit, pro Tag also dreimal so viel.
 - **Wetter** (`kubejs/server_scripts/frost_storms.js`): Primal Winter würde dauerhaftes Gewitter setzen, also Monster auch am Tag. Stattdessen gilt ein Zyklus:
   - Es schneit ruhig 10–20 Minuten am Stück (⅙–⅓ der längeren Tage), tagsüber ist es hell und sicher.
@@ -69,7 +69,7 @@ Kälte ist der eigentliche Gegner. **Cold Sweat** gibt dem Spieler eine Körpert
   - **Weihnachtskamine** (ManyIdeas Christmas, alle Holzarten) als dauerhafte Wärmequelle (+60 °F).
   - **Create Blaze Burner** heizen je nach Stufe (+12 bis +72 °F).
   - Eis kühlt die Umgebung (Cold-Sweat-Standard): An gefrorenen Seen und Meeren ist es noch kälter.
-  - Der **Hearth** ist der „Generator“ der Kolonie: Er füllt den Raum, in dem er steht, mit warmer Luft (bis 20 Blöcke weit, nicht unter freiem Himmel). Er läuft mit Kohle, Holz oder Lava und heizt, solange ein Redstone-Signal anliegt (`Automatic Hearth` ist aus).
+  - Der **Hearth** ist der „Generator“ der Siedlung: Er füllt den Raum, in dem er steht, mit warmer Luft (bis 20 Blöcke weit, nicht unter freiem Himmel). Er läuft mit Kohle, Holz oder Lava und heizt, solange ein Redstone-Signal anliegt (`Automatic Hearth` ist aus).
     - **Schornstein:** Ein Rauchabzug oben durchs Dach ist nur Abzug, der Raum bleibt trotzdem warm. In Cold Sweat selbst kam die Luft nur oben aus dem Hearth und verpuffte mit Schornstein im Freien; *Frostbound Tweaks* lässt sie zusätzlich an allen vier Seiten des Hearth austreten (`HearthRadiantMixin`).
     - **Lüftung zu anderen Gebäuden:** Rauchabzüge und Create-Fluidrohre leiten die warme Luft weiter, auch draußen durch den Schnee. Ein Rohrstück, an das Rohre aus zwei Richtungen anschließen, wird von selbst zum Knick und verteilt die Luft in alle angeschlossenen Rohre, so zweigt man vom Schornstein eine Leitung ab; wo sie im nächsten Gebäude endet, breitet sich die Luft wieder bis zu 20 Blöcke aus. Grenzen: höchstens 96 Blöcke vom Hearth entfernt und 12.000 beheizte Blöcke insgesamt (`config/coldsweat/world.toml`).
     - **Zusätzliches Overworld-Rezept:** Rauchabzug oben, 3 Ziegelblöcke in der Mitte, unten Eisen – Hochofen – Eisen (`frost_recipes.js`). Das Originalrezept mit Netherziegeln funktioniert weiterhin.
@@ -80,14 +80,13 @@ Kälte ist der eigentliche Gegner. **Cold Sweat** gibt dem Spieler eine Körpert
     - **Wärmespeicher (Nachwärme):** Öfen, Herde, Lagerfeuer, Kamine und der Hearth laden sich beim Brennen auf (nach 2 Minuten 63 %, nach 6 Minuten 95 %) und geben die Wärme nach dem Ausgehen langsam ab (Zeitkonstante 4 Minuten). Jeder **Speichermasse**-Block direkt um die Feuerstelle (3 × 3 × 3: Ziegel, Lehmziegel, Stein, Bruchstein, Steinziegel, Tiefenschiefer, Netherziegel, Terrakotta, Ton; höchstens 12) verlängert das um 25 %, bis auf 16 Minuten wie bei einem Kachelofen. Gemessen: Ofen in Steinwand (11 Masseblöcke), voll geladen, nach 4 Minuten aus noch 73 % (+29 °F statt +38 °F). Der Speicher steht je Blockposition in der Welt (`data/frostbound_room_heat.dat`) und übersteht Neustarts. An- und Ausgehen wird auch ohne Spieler in der Nähe erfasst. Fackeln, Laternen und Kerzen speichern nichts.
     - **`/raumwaerme`** (für alle Spieler): vermisst den Raum an der eigenen Position und zeigt Luftvolumen, Lecks, jede Quelle mit Ladestand und Speichermasse sowie die Raumwärme.
     - Die Raumwärme wirkt als eigener Cold-Sweat-Modifier `frostbound_tweaks:room_heat` auf die Umgebungstemperatur, ist also auch auf dem Thermometer zu sehen. Gerechnet wird nur auf dem Server und nur für Spieler, im Stand höchstens alle 2 Sekunden, in Bewegung jede Sekunde.
-  - **Warme Speisen** heizen für eine Weile auf: Suppen und Eintöpfe (Farmer's Delight, MineColonies, Vanilla) +15 für 2 Min., heiße Getränke (Kakao, Cider, Weihnachtstee, Zimt-Eierpunsch, heiße Schokolade) +20 für 1 Min., Braten und Festtagsplatten +10 für 1 Min.
+  - **Warme Speisen** heizen für eine Weile auf: Suppen und Eintöpfe (Farmer's Delight, Vanilla) +15 für 2 Min., heiße Getränke (Kakao, Cider, Weihnachtstee, Zimt-Eierpunsch, heiße Schokolade) +20 für 1 Min., Braten und Festtagsplatten +10 für 1 Min.
   - **Wasserschlauch** mit heißem Wasser (am Lagerfeuer füllen).
 - **Warme Kleidung** (Kälteschutz-Punkte; Lederrüstung hat 23, Ziegenpelz 46 für das ganze Set):
   - Lederrüstung isoliert von Haus aus, Ziegenpelz-Kleidung (Ziegen scheren) schützt am stärksten.
   - **Fellrüstungen** (Armor Series – Norsemen, Schmiedetisch): Wolf-, Bär-, Eisbär- und Puma-Sets wärmen wie Ziegenpelz (46), Elch-, Hirsch- und Hörner-Sets halb so viel (23). Die Werte für Rüstung und Schaden entsprechen dem Material im Rezept.
   - **Kleidung aus Stoff** (Weavers Paradise): Baumwolle anbauen, Wolle und Seide zu Garn spinnen, zu Stoff weben und daraus Kleidung nähen. Getragen wird sie in eigenen Curios-Slots **zusätzlich** zur Rüstung, eine Lage unter dem Panzer. Wolle wärmt: Uschanka 5, Wollpullover 6, Wollhose 4, Bommelmütze/Weste/Poncho/Wollumhang je 3, Handwärmer/Lederhandschuhe/Strümpfe je 2. Baumwolle und Seide geben 1 Punkt. Anleitung im Patchouli-Buch, das man beim ersten Betreten bekommt.
   - **Felle** (Leather Working – Pelts & Hides): Tiere lassen statt Leder Felle und Häute fallen, die man auf dem **Gerbgestell** zu Leder gerbt (braucht Licht, dauert wie Pflanzenwachstum). Am **Nähtisch** (2 Wolle über 4 Bretter) lassen sie sich auch direkt in jede Rüstung einnähen: Eisbärfell 3, Wolf-, Fuchs- und Ziegenfell je 2, Schaffell 1,5, Wolle 1,5, Leder 1.
-  - Achtung: Weil Kühe kein Leder mehr fallen lassen, liefern auch die Kuhhirten von MineColonies Häute statt Leder. Leder entsteht nur noch über das Gerbgestell.
 - **So wirkt Kleidung** (`kubejs/server_scripts/frost_clothing.js`): In Cold Sweat verlangsamt Isolierung das Auskühlen nur (Rate × 0,1^(Punkte/40)), stoppt es aber nie, solange es draußen unter der Kältegrenze (50 °F) ist. Weil hier fast alles darunter liegt, senkt jeder Kälteschutz-Punkt zusätzlich die eigene Kältegrenze um 0,9 °F (über den Basiswert des Attributs `cold_sweat:freezing_point`). Außerdem ist die Abkühlrate halbiert (`Rate Multiplier` = 0,5). Richtwerte für die Ebene:
 
   Die Zeiten stammen noch von vor der Anhebung um 10 °F (nachts jetzt eher 0 °F, tagsüber 30 °F) und sind deshalb etwas zu streng.
@@ -102,7 +101,6 @@ Kälte ist der eigentliche Gegner. **Cold Sweat** gibt dem Spieler eine Körpert
 
   Getestet am Chamäleon: Bei 0 °F kühlt es mit normaler Grenze in etwa einer Minute auf −100 (Erfrieren beginnt) aus, mit gesenkter Grenze bleibt es bei 0. Nicht getestet: das Auslesen des Kälteschutzes beim echten Spieler. Stellschrauben: `SHIFT_PER_POINT` im Skript, `RATE_MULTIPLIER` in `tools/coldsweat_frost.py`.
 - **Schonfrist:** Nach dem ersten Spawn ist man 30 Minuten (den ersten halben Tag) immun gegen Temperatureffekte, um Unterschlupf und Feuer zu bauen.
-- Kolonisten von MineColonies frieren nicht, nur Spieler.
 
 ## Küche, Landwirtschaft, Einrichtung
 - **Let's Do Farm & Charm:** neue Feldfrüchte (Gerste, Hafer, Mais, Salat, Tomaten, Zwiebeln, Erdbeeren u. a.), Herd, Kochtopf, Vorratsblöcke und Futtertröge. Bakery (Brote, Kuchen, Cupcakes, Backstation) und Candlelight (Gerichte, Geschirr, Tischdeko) bauen darauf auf. Für 1.21.1 gibt es Bakery und Candlelight nur als „Farm & Charm Compat“-Fassung, deshalb diese Projekte. Die gemeinsame Bibliothek Foundation steckt per JarJar in den Jars.
@@ -113,7 +111,6 @@ Kälte ist der eigentliche Gegner. **Cold Sweat** gibt dem Spieler eine Körpert
 - **Deko:** Macaw's Holidays (Weihnachtsbäume, Lichterketten, Girlanden, Socken, Geschenke), Snowy Spirit (Lebkuchenhäuser, Zuckerstangen, Kränze, Schlitten, Schneekugel, Lebkuchen-Golems), ManyIdeas Christmas (Baum, Kamine, Kranz, Stern), Christmas Culinary (Adventskalender, Lichter, Geschenke).
 - **Essen für Farmer's Delight:** Christmas Delight (heiße Schokolade in vier Varianten, Eierpunsch, Schokolade, Eis), Festive Delight (Lebkuchenmänner, Festtagshähnchen, Weihnachtstee, Zimt), Christmas Culinary (Weihnachtsgerichte aus aller Welt).
 - **Create Wrapped:** Geschenke mit Create automatisch verpacken. **Christmas Music Discs:** Weihnachtslieder.
-- **ChristmasColonies:** Winterdorf-Baustil für MineColonies, dazu weitere Stile aus Stylecolonies.
 
 ## Resource Packs
 Mitgeliefert und beim ersten Start mit dem Pack **eingeschaltet** (von unten nach oben): Fancy Crops (buschigere Felder, Varianten der Pflanzentexturen, passend zu Farmer's Delight), Motschen's Better Leaves (dichte, buschige Blätter), Fresh Animations (lebendigere Mob-Animationen), Fresh Animations: Extensions (Details, Köcher, leuchtende Augen, animierte Truhen u. a., liegt über Fresh Animations) und Fresh Moves (Spieler-Animationen).
@@ -128,11 +125,11 @@ Eine flache Creative-Dimension zum Ausprobieren von Bauwerken und Create-Maschin
 - **`/testwelt`** bringt dich hinein (beim ersten Mal nach 0/16/0, danach an die letzte Stelle in der Testwelt). Ein zweites `/testwelt` bringt dich zurück an die Stelle, an der du die normale Welt verlassen hast. Nicht möglich bis 10 s nach erlittenem Schaden, im Fallen, Brennen oder im Bett.
 - **Welt** (Datapack `kubejs/data/frostbound/`: `dimension/`, `dimension_type/`, `worldgen/biome/testwelt.json`): Grundgestein und 15 Schichten grauer Beton, Oberfläche y = 16, Bauhöhe bis 319. Keine Strukturen, keine Features, immer Mittag, kein Niederschlag (das Wetter teilt sich die Dimension mit der Overworld, das Skript hält das Regenlevel auf 0). Alle teilen sich dieselbe Fläche, CoreProtect protokolliert auch hier. Wer im Creative das Grundgestein abbaut und fällt, landet wieder auf der Oberfläche. Die Dimension entsteht in bestehenden Welten beim nächsten Serverstart.
 - **Strenge Trennung** (`kubejs/server_scripts/testwelt.js`): Jeder Spieler hat ein Survival- und ein Testwelt-Profil mit Inventar samt Rüstung und Offhand, Curios-Slots (Kleidung, Rucksack), Endertruhe, XP, Leben, Hunger, Effekten, Feuer, Cold-Sweat-Temperatur und Spielmodus. Getauscht wird, sobald Dimension und Profil nicht zusammenpassen: beim Dimensionswechsel, Login, Respawn und zusätzlich jede Sekunde. Das inaktive Profil liegt in `world/kubejs_persistent_data.nbt` (Schlüssel `frostbound_testwelt`, nach UUID).
-  - Hinein und hinaus geht es nur per `/testwelt`. Jede andere Reise von oder in die Testwelt wird abgebrochen: Portale, Waystones, MineColonies-Teleport, Enderperlen, Items, Loren, Create-Züge. Ausnahme: Vanillas `/tp` für Nicht-Spieler (nur OPs) löst kein Event aus.
-  - Gesperrt: alle Mobs (natürliche Spawns, Spawn-Eier, Spawner, Golems, Bosse), MineColonies-Rathaus (eine Testkolonie wäre eine echte Kolonie des Spielers), Waystones (globales Netz), Paraglider-Statuen, Herzcontainer und Ausdauergefäße (dauerhafte Upgrades), Endportalrahmen und Respawnpunkte. Netherportale lassen sich in eigenen Dimensionen ohnehin nicht zünden.
+  - Hinein und hinaus geht es nur per `/testwelt`. Jede andere Reise von oder in die Testwelt wird abgebrochen: Portale, Waystones, Enderperlen, Items, Loren, Create-Züge. Ausnahme: Vanillas `/tp` für Nicht-Spieler (nur OPs) löst kein Event aus.
+  - Gesperrt: alle Mobs (natürliche Spawns, Spawn-Eier, Spawner, Golems, Bosse), Waystones (globales Netz), Paraglider-Statuen, Herzcontainer und Ausdauergefäße (dauerhafte Upgrades), Endportalrahmen und Respawnpunkte. Netherportale lassen sich in eigenen Dimensionen ohnehin nicht zünden.
   - Stirbst du in der Testwelt, wirst du mit dem Survival-Profil an deinen Ausgangspunkt gebracht.
   - Nicht getrennt: Advancements, Statistiken und freigeschaltete Rezepte.
-- **Getestet** (Testserver, Fake-Spieler): Profilwechsel hin und zurück, mehrfach und über einen Serverneustart (Inventar, Rüstung, Offhand, Endertruhe, Curios, XP, Leben, Hunger, Effekte, Spielmodus). Gelände (Grundgestein, Beton, Luft ab y = 16). Zombie, Kuh und Wither werden verworfen, Rüstungsständer und Loren bleiben. Ein Item im Endportal bleibt in der Testwelt (Gegenprobe Overworld → Nether klappt). Rathaus, Endportalrahmen und Statue werden abgelehnt, ein Waystone wird einen Tick später entfernt, Herzcontainer und Ausdauergefäß werden nicht verbraucht. Das Regenlevel bleibt bei Schneefall bei 0. **Nicht getestet:** `/testwelt` mit einem echten Spieler (der Fake-Spieler kann ohne Netzwerkverbindung nicht die Dimension wechseln), Tod und Respawn, die Platzierung per MineColonies-Build-Tool.
+- **Getestet** (Testserver, Fake-Spieler): Profilwechsel hin und zurück, mehrfach und über einen Serverneustart (Inventar, Rüstung, Offhand, Endertruhe, Curios, XP, Leben, Hunger, Effekte, Spielmodus). Gelände (Grundgestein, Beton, Luft ab y = 16). Zombie, Kuh und Wither werden verworfen, Rüstungsständer und Loren bleiben. Ein Item im Endportal bleibt in der Testwelt (Gegenprobe Overworld → Nether klappt). Endportalrahmen und Statue werden abgelehnt, ein Waystone wird einen Tick später entfernt, Herzcontainer und Ausdauergefäß werden nicht verbraucht. Das Regenlevel bleibt bei Schneefall bei 0. **Nicht getestet:** `/testwelt` mit einem echten Spieler (der Fake-Spieler kann ohne Netzwerkverbindung nicht die Dimension wechseln), Tod und Respawn.
 
 ## Getestet (Headless-Server, Java 21)
 - 2 × 35.721 Chunks vorgeneriert (3 × 3 km, mit Chunky nur auf dem Testserver) ohne Absturz oder Hänger, ca. 80 Chunks/s.
@@ -152,12 +149,12 @@ Eine flache Creative-Dimension zum Ausprobieren von Bauwerken und Create-Maschin
   - Der Primal-Winter-Nebel ist bei Schneefall sehr dicht, die Sicht reicht nur gut 100 Blöcke. Distant Horizons bringt deshalb vor allem in den klaren Phasen des Wetterzyklus etwas. Stellschraube: `fogDensity` in `config/primalwinter-common.toml`.
   - Der Whiteout sieht mit Shadern kaum anders aus als normaler Schneefall. Spürbar sind nur die Wirkungen (Monster am Tag, Auskühlen) und die Titel-Warnung.
   - In der Luft schweben vereinzelt blassrosa Kreuz-Partikel, vermutlich Primal-Winter-Schneepartikel unter dem Shader.
-- **Nicht getestet:** das Zusammenspiel mit echten Spielern (Unterkühlung im Freien, Hearth-Reichweite, Auskühlen im Sturm) und eine echte Kolonie mit Kolonisten. Die Abkühlrate im Sturm (`CHILL_PER_SECOND` in `frost_storms.js`) und die Temperaturformel (`SCALE`/`SHIFT` in `tools/coldsweat_frost.py`) sind die ersten Stellschrauben, falls es sich zu hart oder zu leicht anfühlt.
+- **Nicht getestet:** das Zusammenspiel mit echten Spielern (Unterkühlung im Freien, Hearth-Reichweite, Auskühlen im Sturm). Die Abkühlrate im Sturm (`CHILL_PER_SECOND` in `frost_storms.js`) und die Temperaturformel (`SCALE`/`SHIFT` in `tools/coldsweat_frost.py`) sind die ersten Stellschrauben, falls es sich zu hart oder zu leicht anfühlt.
 
 ## Bewusst nicht enthalten
 - **Biomes O' Plenty:** BOP-Biome werden über TerraBlender erst nach Primal Winter registriert und bleiben deshalb grün (im Test 50–90 % unbedeckte Fläche in Marsch, Wetland, Highland usw.).
 - **Primal Winter (Original 6.0.2):** stürzt auf dedizierten Servern ab (Issue #115, Projekt archiviert). Stattdessen der gepflegte Fork *Colder Primal Winter* 6.1.1.
-- **MineColonies Compatibility / Tweaks:** Ein Mixin von Tweaks 3.30 passt nicht zu MineColonies 1.1.1403 und bringt den Server beim Start zum Absturz.
+- **MineColonies** samt Stylecolonies, ChristmasColonies, CreateColonies, JadeColonies und Domum Ornamentum: war anfangs der Kern des Packs, wird seit 2026-10-23 nicht mehr genutzt.
 - **Towns and Towers:** setzt Blöcke außerhalb der erlaubten Chunks (abgeschnittene Bauten), bekannter Server-Deadlock.
 - **Particle Rain:** ersetzt dasselbe Wetter-Rendering, das Primal Winter verändert. Das Konfliktrisiko lässt sich ohne Client-Test nicht ausschließen.
 - **MSS (Moog's Soaring Structures), Sky Whale Ship** und die schwebenden Bauwerke anderer Mods: Himmelsbauwerke passen nicht zur Frostpunk-Stimmung.
@@ -172,23 +169,14 @@ Eine flache Creative-Dimension zum Ausprobieren von Bauwerken und Create-Maschin
 ## Server: Voice Chat und CoreProtect
 - **Simple Voice Chat** (Client und Server): Sprechen in der Nähe, Hörweite 48 Blöcke, Flüstern 24. Im Spiel öffnet `V` das Menü (Mikrofon, Gruppen), Sprechen per Push-to-Talk (Standard: Feststelltaste). Der Server spricht auf **UDP 24454** (Standard in `config/voicechat/voicechat-server.properties`, `voice_host` leer: Clients nutzen dieselbe Adresse wie für das Spiel). Im Docker-Compose ist `24454:24454/udp` veröffentlicht. Wer ohne VPN von außen verbindet, braucht zusätzlich eine UDP-Portfreigabe 24454 im Router.
 - **CoreProtectNeo 24.1** (nur Server, `pack=server`): protokolliert Blockänderungen, Truhenzugriffe usw. und erlaubt Rollbacks. Befehle für OPs: `/co i` (Inspektor: Block anklicken), `/co lookup u:<Spieler> t:1d`, `/co rollback u:<Spieler> t:1h r:20`, `/co restore …`.
-  - Daten in **MariaDB 11.4** (eigener Dienst `db` im Compose, nur im internen Docker-Netz, Daten in `./db`). Gründe: Create und MineColonies erzeugen sehr viele Block-Ereignisse, und eine SQLite-Datei in `data/` würde jedes Backup aufblähen und während des Schreibens inkonsistent gesichert.
+  - Daten in **MariaDB 11.4** (eigener Dienst `db` im Compose, nur im internen Docker-Netz, Daten in `./db`). Gründe: Create erzeugt sehr viele Block-Ereignisse, und eine SQLite-Datei in `data/` würde jedes Backup aufblähen und während des Schreibens inkonsistent gesichert.
   - Die Config `data/coreprotect/config.yml` liegt **nur auf dem Server** und nicht im Repo, weil sie das DB-Passwort enthält: `use-mysql: true`, `mysql-host: db`, `mysql-database`/`mysql-username: coreprotect`, `mysql-password` = `DB_PASSWORD` aus der `.env`, `table-prefix: co_`, `language: de`. Ohne diese Datei legt CoreProtect beim ersten Start eine SQLite-Config an.
   - Die Datenbank ist **nicht** in den tar-Backups des Backup-Containers enthalten.
 
 ## Wichtig: kein Chunky
 **Chunky nicht ins Pack aufnehmen.** Distant Horizons 3.3.3 und Chunky 1.4.23 stürzen zusammen beim Erstellen einer neuen Welt ab (siehe Skyward Frontiers). Zum Vorgenerieren auf dem Server Chunky nur vorübergehend und ohne DH verwenden.
 
-## Mods, Shader und Resource Packs (97 gelistet: 95 im Client, AntiXray und CoreProtectNeo nur auf dem Server, dazu 1 eigene Mod und 25 Bibliotheken)
-
-**Kern: MineColonies**
-
-- [MineColonies](https://www.curseforge.com/minecraft/mc-mods/minecolonies) – `minecolonies-1.1.1403-1.21.1.jar`
-- [Stylecolonies](https://www.curseforge.com/minecraft/mc-mods/stylecolonies) – `stylecolonies-1.15.64-1.21.1.jar`
-- [ChristmasColonies](https://www.curseforge.com/minecraft/mc-mods/christmascolonies) – `christmascolonies-1.21.1-1.9.jar`
-- [CreateColonies](https://www.curseforge.com/minecraft/mc-mods/createcolonies) – `createcolonies-2.0.7.jar`
-- [JadeColonies](https://www.curseforge.com/minecraft/mc-mods/jadecolonies) – `jadecolonies-1.21.1-1.6.1.jar`
-- [Domum Ornamentum](https://www.curseforge.com/minecraft/mc-mods/domum-ornamentum) – `domum-ornamentum-1.0.236-snapshot-main.jar`
+## Mods, Shader und Resource Packs (91 gelistet: 89 im Client, AntiXray und CoreProtectNeo nur auf dem Server, dazu 1 eigene Mod und 21 Bibliotheken)
 
 **Kern: Create + Farmer's Delight**
 
@@ -329,4 +317,4 @@ Eine flache Creative-Dimension zum Ausprobieren von Bauwerken und Create-Maschin
 
 **Automatisch mitinstallierte Bibliotheken**
 
-Architectury API, Balm, Better Advanced Tooltips, BlockUI, CERBON's API [Forge | Fabric | NeoForge], Cloth Config API (Fabric/Forge/NeoForge), Curios API, Entity Texture Features, GeckoLib, Lionfish API, ManyIdeas Core, Moog's Structure Lib (moogs_structures), Moonlight Lib, Multi-Piston, Puzzles Lib, Recipes Library, Resourceful Config, Resourceful Lib, Searchables, Sophisticated Core, Structurize, TownTalk, VortyLib, YUNG's API (NeoForge) [1.20.4-1.21.1 ONLY], YetAnotherConfigLib
+Architectury API, Balm, Better Advanced Tooltips, CERBON's API [Forge | Fabric | NeoForge], Cloth Config API (Fabric/Forge/NeoForge), Curios API, Entity Texture Features, GeckoLib, Lionfish API, ManyIdeas Core, Moog's Structure Lib (moogs_structures), Moonlight Lib, Puzzles Lib, Recipes Library, Resourceful Config, Resourceful Lib, Searchables, Sophisticated Core, VortyLib, YUNG's API (NeoForge) [1.20.4-1.21.1 ONLY], YetAnotherConfigLib

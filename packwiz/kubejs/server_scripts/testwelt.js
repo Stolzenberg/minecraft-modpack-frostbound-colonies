@@ -9,10 +9,9 @@
 // Curios-Slots, Endertruhe, XP, Leben, Hunger, Effekte, Feuer, Cold-Sweat-Körpertemperatur, Spielmodus).
 // Getauscht wird immer dann, wenn Dimension und aktives Profil nicht zusammenpassen: beim Dimensionswechsel,
 // Login, Respawn und zusätzlich jede Sekunde. Das gerade inaktive Profil liegt in server.persistentData.
-// Hinein und hinaus geht es nur per /testwelt: Portale, Waystones, MineColonies-Teleport usw. von oder in die
+// Hinein und hinaus geht es nur per /testwelt: Portale, Waystones usw. von oder in die
 // Testwelt werden blockiert, auch für Items, Tiere und Fahrzeuge. In der Testwelt außerdem gesperrt:
 //   - Mobs aller Art (natürliche Spawns, Spawn-Eier, Spawner, Golems, Bosse)
-//   - MineColonies-Rathaus (eine Testkolonie wäre eine echte Kolonie des Spielers)
 //   - Waystones (globales Netz), Paraglider-Statuen und -Upgrades (Herz/Ausdauer gelten dauerhaft),
 //     Endportalrahmen, Netherportale, Respawnpunkte
 // Advancements und Statistiken sind nicht getrennt.
@@ -23,7 +22,7 @@
   const SPAWN = [0.5, 16, 0.5]
   const VOID_Y = -8 // wer darunter fällt (Bedrock im Creative abgebaut), landet wieder auf der Oberfläche
   const HURT_COOLDOWN = 200 // nach Schaden 10 s kein Betreten (keine Flucht aus Kämpfen)
-  const BLOCKED_BLOCKS = [/^minecolonies:blockhuttownhall$/, /^waystones:/, /^paraglider:.*statue$/, /^minecraft:end_portal_frame$/]
+  const BLOCKED_BLOCKS = [/^waystones:/, /^paraglider:.*statue$/, /^minecraft:end_portal_frame$/]
   const BLOCKED_ITEMS = ['paraglider:heart_container', 'paraglider:stamina_vessel', 'paraglider:anti_vessel', 'paraglider:essence']
   const TAG_COMPOUND = 10
 
@@ -372,18 +371,12 @@
     let id = String(event.block.id)
     if (!BLOCKED_BLOCKS.some(r => r.test(id))) return
     if (event.player) notice(event.player, 'Dieser Block ist in der Testwelt gesperrt.')
-    // Das Build-Tool von MineColonies meldet die Platzierung erst danach und ignoriert den Abbruch
+    // Bau-Werkzeuge mancher Mods melden die Platzierung erst danach und ignorieren den Abbruch
     let level = event.level
     let pos = event.block.pos
     event.server.scheduleInTicks(1, () => {
       if (String(level.getBlock(pos).id) == id) level.removeBlock(pos, false)
     })
-    event.cancel()
-  })
-
-  BlockEvents.rightClicked(event => {
-    if (!isTest(event.level) || String(event.block.id) != 'minecolonies:blockhuttownhall') return
-    notice(event.player, 'In der Testwelt lassen sich keine Kolonien gründen.')
     event.cancel()
   })
 
