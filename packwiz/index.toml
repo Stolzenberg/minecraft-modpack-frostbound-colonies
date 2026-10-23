@@ -17,6 +17,10 @@ file = "config/friendsandfoes.json"
 hash = "c224d3d5efae206d363e801babb1a65903cc83f80ac45ec440108ed12f8ec5d2"
 
 [[files]]
+file = "config/inventoryprofilesnext/inventoryprofiles.json"
+hash = "9b203fe4c2bc375b922d1e3d7ece1a67e5265c753dbba978064cffee1d2ab407"
+
+[[files]]
 file = "config/iris.properties"
 hash = "fd63c707c5e749fa250137ccb1b6955e0b29f1521c292bc2675f49f45d71fc28"
 preserve = true
