@@ -1,0 +1,13 @@
+name = "Continuity: NeoForged"
+filename = "ContinuityNeoForge-3.0.9+1.21.1.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/AOAMhINn/versions/kgny9dWp/ContinuityNeoForge-3.0.9%2B1.21.1.jar"
+hash-format = "sha1"
+hash = "16e1d3b5aa7552639d1a56aedd041d71d1af25f7"
+
+[update]
+[update.modrinth]
+mod-id = "AOAMhINn"
+version = "kgny9dWp"

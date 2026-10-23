@@ -368,6 +368,25 @@
   "serverPackOnly": false
  },
  {
+  "slug": "streams-reflowing",
+  "name": "Streams Reflowing",
+  "projectID": 1581408,
+  "fileID": 9216744,
+  "fileName": "StreamsReflowing-1.21.1-neoforge-2.15.2.jar",
+  "date": "2026-10-16",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/9216/744/StreamsReflowing-1.21.1-neoforge-2.15.2.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/streams-reflowing",
+  "authors": [
+   "NiceJohn"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
   "slug": "yeetusexperimentus",
   "name": "Yeetus Experimentus",
   "projectID": 635427,
@@ -1299,6 +1318,25 @@
   "url": "https://www.curseforge.com/minecraft/mc-mods/entity-model-features",
   "authors": [
    "Traben"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "continuity-neoforged",
+  "name": "Continuity: NeoForged",
+  "projectID": 1679396,
+  "fileID": 9273913,
+  "fileName": "ContinuityNeoForge-3.0.9+1.21.1.jar",
+  "date": "2026-10-21",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/9273/913/ContinuityNeoForge-3.0.9%2b1.21.1.jar",
+  "side": "client",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/continuity-neoforged",
+  "authors": [
+   "aspctt"
   ],
   "classId": 6,
   "serverPackOnly": false

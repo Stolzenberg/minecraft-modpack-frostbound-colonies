@@ -35,6 +35,7 @@ tectonic                                 pin=8855043 # Gelände: große Kontinen
 natural-temperature                      pin=8713498 # Biome nach Klimazonen (Nord kalt, Süd heiß), keine Wüste neben Schnee (Config: packwiz/config/naturaltemperature-common.toml)
 biomes-o-plenty                          pin=8288121 # 50+ zusätzliche Biome (über TerraBlender); Saison-Tags für BoP-Biome: packwiz/kubejs/data/sereneseasons/
 lithostitched                            pin=9170709 # von Tectonic benötigt (nicht als CurseForge-Abhängigkeit eingetragen)
+streams-reflowing                        pin=9216744 # Bäche folgen dem Gelände bergab, Seen auf verschiedenen Höhen, Flüsse mit Strömung (Worldgen, Client und Server)
 yeetusexperimentus                       pin=5444189 side=client
 # --- Strukturen / Entdecken ---
 moogs-voyager-structures                 pin=8970306
@@ -70,7 +71,7 @@ frost-bear                               pin=8507529
 # --- Überleben ---
 paragliders                              pin=7795089
 gravestone-mod                           pin=8671622
-sophisticated-backpacks                  pin=9154769
+sophisticated-backpacks                  pin=9154769 # Slots verkleinert (packwiz/config/sophisticatedbackpacks-server.toml); Nemo's Backpacks gibt es erst ab 1.21.5
 betterdays                               pin=7978626 # 4x längere Tage (Config: packwiz/config/betterdays-common.toml)
 # --- Multiplayer ---
 simple-voice-chat                        pin=8601207 # Proximity-Voice-Chat, Server braucht UDP-Port 24454
@@ -86,6 +87,7 @@ controlling                              pin=6368976 side=client
 inventory-profiles-next                  pin=7810574   # Sortieren (Knöpfe/Tasten), Auffüllen gebrochener Werkzeuge, Profile; ersetzt Inventory Sorter (2026-10-23)
 # --- Grafik: Resource Packs (Proud Mountain Tweaks schaltet sie einmal ein, config/proudmountain_tweaks/default_resourcepacks.txt) ---
 entity-model-features                    pin=9188526 side=client   # EMF (+ ETF als Abhängigkeit), für Fresh Animations/Moves
+continuity-neoforged                     pin=9273913 side=client id=1679396   # Connected Textures für Block Overlays (Modrinth-Pack, MODRINTH_FILES in packwiz.py); nativer NeoForge-Port, die offizielle NeoForge-Fassung braucht Sinytra Connector
 fancy-crops                              pin=7094029 side=client class=12
 motschens-better-leaves                  pin=8882877 side=client class=12
 fresh-animations                         pin=7670377 side=client class=12   # 1.10.4: Extensions 1.8.1 passen nicht zur 1.11 (Modelle umgebaut)

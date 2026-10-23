@@ -1,0 +1,13 @@
+name = "Block Overlays"
+filename = "Overlays V75 MC1.20-1.21.11.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/ZYV3OmS5/versions/Ao5BMsy0/Overlays%20V75%20MC1.20-1.21.11.zip"
+hash-format = "sha1"
+hash = "1bf7668d53b2fdb7bd42b5718c45a8e7e4e0ec56"
+
+[update]
+[update.modrinth]
+mod-id = "ZYV3OmS5"
+version = "Ao5BMsy0"

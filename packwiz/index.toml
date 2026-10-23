@@ -27,15 +27,19 @@ hash = "a0b15ca2628e3bab45f748ae16591aa0ecc6da11a9caf178b58ec90febe75577"
 
 [[files]]
 file = "config/proudmountain_tweaks/default_resourcepacks.txt"
-hash = "e2df4e63c61e6725b951c642ec0417f8ba102b0c88bac73e4b6c8498494e12dc"
+hash = "e885f1c15f0763070b7e5a659d917e1d71387c90d7c074d22e0f4a86740c9916"
 
 [[files]]
 file = "config/sereneseasons/seasons.toml"
 hash = "f6f1749a9e2400daa67150f9f5d8ef0916feed5aa5b58628fc2283b59089c4d9"
 
 [[files]]
+file = "config/sophisticatedbackpacks-server.toml"
+hash = "2e49cfa87ea3b7fc8d8142bfc6fd7e3863db5e9adfc120701d36a0b0a4271d11"
+
+[[files]]
 file = "config/tectonic.json"
-hash = "6f0499dc71f949ed269491b919eb11925ae3ff0217f777a38b2a1c12fd3e0659"
+hash = "c44645599a7c0c0315131e7e0c4189b7957b6b1eae534e443c795bbafc20dd2a"
 
 [[files]]
 file = "kubejs/data/betterdungeons/worldgen/structure_set/skeleton_dungeons.json"
@@ -1692,6 +1696,11 @@ hash = "f4bbdff0945bdb3e7fab428b7e8c1f9f67b2317df67672fbe751a8a91e3ae6f0"
 metafile = true
 
 [[files]]
+file = "mods/continuity-neoforged.pw.toml"
+hash = "ba5261b40405424dab88dbeebaf5dc228ccb9954d498a70de45d2885a7579856"
+metafile = true
+
+[[files]]
 file = "mods/controlling.pw.toml"
 hash = "74449ecd91aebba8bf19e6ad1bfe81782219e6a77344ec6a8156e966886f0b38"
 metafile = true
@@ -2067,6 +2076,11 @@ hash = "edd5a3fb941be40f232e8bf07789a0c2cc3f8cfbcacc600ad03471ea3c7e8c13"
 metafile = true
 
 [[files]]
+file = "mods/streams-reflowing.pw.toml"
+hash = "3c4f1652690fe3656a6e2a93004e2ccc8d5155d2c4cea07fcfbde4f1a1c9e7f4"
+metafile = true
+
+[[files]]
 file = "mods/supplementaries.pw.toml"
 hash = "37291194472db7b31429debfb5bba2d7812f48b19dd07915444a7551727aa837"
 metafile = true
@@ -2124,6 +2138,11 @@ metafile = true
 [[files]]
 file = "mods/yungs-better-dungeons-neoforge.pw.toml"
 hash = "c91789ffa5614360a43e487dc6925cc56db8ba77c72622d66984d02090c47088"
+metafile = true
+
+[[files]]
+file = "resourcepacks/block-overlays.pw.toml"
+hash = "e257807f81230b7f13979378e6656a447cfbe6d13fa673775bb76591fec7d681"
 metafile = true
 
 [[files]]
