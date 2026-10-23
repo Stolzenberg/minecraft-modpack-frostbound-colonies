@@ -53,10 +53,11 @@
     server.persistentData.put(DATA_KEY, s)
   }
 
+  // Meldung über der Hotbar (Actionbar) statt als Titel mitten im Bild
   function announce(server, title, subtitle, color) {
-    server.runCommandSilent(`title @a times 10 80 20`)
-    server.runCommandSilent(`title @a subtitle {"text":"${subtitle}","color":"gray"}`)
-    server.runCommandSilent(`title @a title {"text":"${title}","color":"${color}"}`)
+    let parts = [{ text: title, color: color, bold: true }]
+    if (subtitle) parts.push({ text: ' – ' + subtitle, color: 'gray' })
+    server.runCommandSilent(`title @a actionbar ${JSON.stringify(parts)}`)
   }
 
   function weatherNow(level) {
