@@ -17,10 +17,6 @@ file = "config/friendsandfoes.json"
 hash = "c224d3d5efae206d363e801babb1a65903cc83f80ac45ec440108ed12f8ec5d2"
 
 [[files]]
-file = "config/frostbound_tweaks/default_resourcepacks.txt"
-hash = "dd6a4d4212883d5c890201a891288ddd5f82bfe08d321523238749ef25a9d48a"
-
-[[files]]
 file = "config/iris.properties"
 hash = "fd63c707c5e749fa250137ccb1b6955e0b29f1521c292bc2675f49f45d71fc28"
 preserve = true
@@ -28,6 +24,10 @@ preserve = true
 [[files]]
 file = "config/naturaltemperature-common.toml"
 hash = "a0b15ca2628e3bab45f748ae16591aa0ecc6da11a9caf178b58ec90febe75577"
+
+[[files]]
+file = "config/proudmountain_tweaks/default_resourcepacks.txt"
+hash = "e2df4e63c61e6725b951c642ec0417f8ba102b0c88bac73e4b6c8498494e12dc"
 
 [[files]]
 file = "config/sereneseasons/seasons.toml"
@@ -243,23 +243,23 @@ hash = "964a4490c49ca4224ca3a5db0eb4f8dd2ebc8a6f8f3a879d6044a9757290d637"
 
 [[files]]
 file = "kubejs/data/dungeons_arise/worldgen/structure/heavenly_challenger.json"
-hash = "2acf34d7615af27716ebdec8ee73b9ccfdbce85717576012e13679debefb0187"
+hash = "86205caf9073947a059bab91ca9c5b4801729809207de0d1ca9a3c4b5a01ab47"
 
 [[files]]
 file = "kubejs/data/dungeons_arise/worldgen/structure/heavenly_conqueror.json"
-hash = "aabb55a5308ce2ec078537db6721405d32b46e235f47c668392b975869db4355"
+hash = "6c27e1fb5a5c44f68ed3947fb7cc21cdc3552f7243fe7672ee5b9b809558419b"
 
 [[files]]
 file = "kubejs/data/dungeons_arise/worldgen/structure/heavenly_rider.json"
-hash = "96812c866f8f7d245a71253b301cb2d997e299cdc44679a3ad1fcec045e78c99"
+hash = "ae292840e350f6746afb184baf9e535f46dfcb9c734254e978e349e70b23e87c"
 
 [[files]]
 file = "kubejs/data/dungeons_arise/worldgen/structure/mechanical_nest.json"
-hash = "35eec22944f4a14a3b2e57777542b2cfd776066e04072b2167b9a20379cee270"
+hash = "3befdf7d33524b0ffcc7485052097762638d0ff1546961e5faba2a87af8e2ea8"
 
 [[files]]
 file = "kubejs/data/dungeons_arise/worldgen/structure/small_blimp.json"
-hash = "6fb19d632fdfea74d2048d59778c02d6eae12726480685853c375e3573d6116a"
+hash = "f017d4c898051da88ceba6470e80f1ab2ef97c421b64754c4ef37554c0d7ca15"
 
 [[files]]
 file = "kubejs/data/dungeons_arise/worldgen/structure_set/major_structures.json"
@@ -348,22 +348,6 @@ hash = "63baabe4f3553eb1fb16bf3c8e8af77cf0aef70a9da2576136dd299e92c7bfed"
 [[files]]
 file = "kubejs/data/friendsandfoes/worldgen/structure_set/illusioner_training_grounds.json"
 hash = "9c94991c91ef3d4033b6fbf8f977ed60737941363f04191e4a56ec4fb64b3d95"
-
-[[files]]
-file = "kubejs/data/frostbound/dimension/testwelt.json"
-hash = "1115f14bbae20e755586a98ac6bc2cb58535ec455f751c1e0f3c0760b8baebab"
-
-[[files]]
-file = "kubejs/data/frostbound/dimension_type/testwelt.json"
-hash = "6d868d02da4835e1461e8945e9827fd861529f12dc704fd982cef7131021a166"
-
-[[files]]
-file = "kubejs/data/frostbound/tags/worldgen/biome/none.json"
-hash = "33975eff3c2c6cf9000bce7825e1256f756eb8a353be7e9b7011bb4298f97a65"
-
-[[files]]
-file = "kubejs/data/frostbound/worldgen/biome/testwelt.json"
-hash = "a7072d7d60bb9be9c2851fcb8adc1ad6bfe1d3d68cac8706ee2499358ba5d37b"
 
 [[files]]
 file = "kubejs/data/mes/worldgen/structure_set/astral_hideaway.json"
@@ -783,11 +767,11 @@ hash = "20d73a5772fe348e9f0b06e57952835f835df506d96cb74b729bb7f25e4a3350"
 
 [[files]]
 file = "kubejs/data/mvs/worldgen/structure/floating_islands.json"
-hash = "00959318911048a27c2541505c998a27ccf73ba05f57d2d6bc10c7fc97ddd006"
+hash = "10307579e394a7250c391bc43a8659cb8e74a7a7305a08799e9a5b68a7dbe918"
 
 [[files]]
 file = "kubejs/data/mvs/worldgen/structure/large_floating_island.json"
-hash = "7347d81265ff056fcb63b4def0cd552ad498281f6dbe33a08e01a9c60e672a45"
+hash = "8e5649d8302af715337954af4a19886a06d3c2793a7fee1fdb9dab2381a8599f"
 
 [[files]]
 file = "kubejs/data/mvs/worldgen/structure_set/acacia_log_pile.json"
@@ -1394,6 +1378,22 @@ file = "kubejs/data/paraglider/worldgen/structure_set/underground_horned_statue.
 hash = "048a9e52e9c63d8e9737f116956580476ed25d01beb7c9229385e65d5d15d143"
 
 [[files]]
+file = "kubejs/data/proudmountain/dimension/testwelt.json"
+hash = "adc4b3e26e5c42a0e723f89e6f3f6c5cf74ab07a3699717707292362d19e4053"
+
+[[files]]
+file = "kubejs/data/proudmountain/dimension_type/testwelt.json"
+hash = "6d868d02da4835e1461e8945e9827fd861529f12dc704fd982cef7131021a166"
+
+[[files]]
+file = "kubejs/data/proudmountain/tags/worldgen/biome/none.json"
+hash = "33975eff3c2c6cf9000bce7825e1256f756eb8a353be7e9b7011bb4298f97a65"
+
+[[files]]
+file = "kubejs/data/proudmountain/worldgen/biome/testwelt.json"
+hash = "a7072d7d60bb9be9c2851fcb8adc1ad6bfe1d3d68cac8706ee2499358ba5d37b"
+
+[[files]]
 file = "kubejs/data/repurposed_structures/worldgen/structure_set/ancient_cities_end.json"
 hash = "387d079fdc0da79d3dc5bc5a394afc23d327d52e1fae55f884226586c7af7de1"
 
@@ -1619,7 +1619,7 @@ hash = "76286c339280e176b04fd27dd88032312803af36178aaf174e5a3dda796dde4e"
 
 [[files]]
 file = "kubejs/server_scripts/testwelt.js"
-hash = "050faa97bdeee9d35abc74639889f3da4e82f8ed5b0761a5323ccfa8109362aa"
+hash = "3a1e5d8f013f3568fbc1610cf58338b69501f9c2542331f2190bc1f1436b644f"
 
 [[files]]
 file = "mods/alltheleaks.pw.toml"
@@ -1789,11 +1789,6 @@ metafile = true
 [[files]]
 file = "mods/frost-bear.pw.toml"
 hash = "1ad39f6a2f2fb661f39646134b251c3c99d3aa2fb4554ad6c4102280ebaf0d20"
-metafile = true
-
-[[files]]
-file = "mods/frostbound-tweaks.pw.toml"
-hash = "d775e51da8c4ebe6cf8cc0806362ea393cfa823c8beb1609c7cc35fa1296785e"
 metafile = true
 
 [[files]]
@@ -1984,6 +1979,11 @@ metafile = true
 [[files]]
 file = "mods/paragliders.pw.toml"
 hash = "bc415f1176e3429b5a0b5b0525769ce7e640c78730265a24dc8937937f5dc6f3"
+metafile = true
+
+[[files]]
+file = "mods/proud-mountain-tweaks.pw.toml"
+hash = "7478bf446b8901deb92c73ea00256b8540c539c140fefbb8b6470771d3c2682b"
 metafile = true
 
 [[files]]

@@ -1,4 +1,4 @@
-package de.frostbound.tweaks.seasons;
+package de.proudmountain.tweaks.seasons;
 
 import net.minecraft.server.level.ServerLevel;
 import net.neoforged.neoforge.common.NeoForge;

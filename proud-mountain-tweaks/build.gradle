@@ -3,16 +3,16 @@ plugins {
     id 'net.neoforged.moddev' version '2.0.148'
 }
 
-version = '2.0.0'
-group = 'de.frostbound'
-base { archivesName = 'frostbound-tweaks' }
+version = '2.1.0'
+group = 'de.proudmountain'
+base { archivesName = 'proud-mountain-tweaks' }
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
 neoForge {
     version = '21.1.256'
     mods {
-        frostbound_tweaks { sourceSet sourceSets.main }
+        proudmountain_tweaks { sourceSet sourceSets.main }
     }
 }
 

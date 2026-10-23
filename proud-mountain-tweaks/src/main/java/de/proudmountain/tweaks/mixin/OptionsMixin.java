@@ -1,6 +1,6 @@
-package de.frostbound.tweaks.mixin;
+package de.proudmountain.tweaks.mixin;
 
-import de.frostbound.tweaks.DefaultResourcePacks;
+import de.proudmountain.tweaks.DefaultResourcePacks;
 import net.minecraft.client.Options;
 import net.minecraft.server.packs.repository.PackRepository;
 import org.spongepowered.asm.mixin.Mixin;
@@ -21,12 +21,12 @@ public abstract class OptionsMixin {
     public List<String> resourcePacks;
 
     @Inject(method = "loadSelectedResourcePacks", at = @At("HEAD"))
-    private void frostbound$defaultResourcePacks(PackRepository repository, CallbackInfo ci) {
+    private void proudmountain$defaultResourcePacks(PackRepository repository, CallbackInfo ci) {
         DefaultResourcePacks.apply(resourcePacks, repository);
     }
 
     @Inject(method = "save", at = @At("RETURN"))
-    private void frostbound$rememberDefaultResourcePacks(CallbackInfo ci) {
+    private void proudmountain$rememberDefaultResourcePacks(CallbackInfo ci) {
         DefaultResourcePacks.saved();
     }
 }

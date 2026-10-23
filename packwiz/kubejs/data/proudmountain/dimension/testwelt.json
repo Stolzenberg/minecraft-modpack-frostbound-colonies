@@ -1,9 +1,9 @@
 {
-  "type": "frostbound:testwelt",
+  "type": "proudmountain:testwelt",
   "generator": {
     "type": "minecraft:flat",
     "settings": {
-      "biome": "frostbound:testwelt",
+      "biome": "proudmountain:testwelt",
       "features": false,
       "lakes": false,
       "layers": [

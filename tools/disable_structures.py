@@ -4,7 +4,7 @@
 usage: disable_structures.py <Ordner mit Mod-Jars> <packwiz/kubejs/data>
 
 Die Kopien landen unter kubejs/data/<namespace>/worldgen/structure/ und überschreiben die Originale. "biomes" zeigt
-auf #frostbound:none (leerer Tag), dadurch wird die Struktur nirgends mehr platziert. Alle übrigen Felder bleiben
+auf #proudmountain:none (leerer Tag), dadurch wird die Struktur nirgends mehr platziert. Alle übrigen Felder bleiben
 unverändert, damit /locate und Advancements weiter gültige Einträge finden.
 """
 import glob, json, os, sys, zipfile
@@ -16,7 +16,7 @@ FLOATING = [
     "dungeons_arise:heavenly_challenger", "dungeons_arise:heavenly_conqueror", "dungeons_arise:heavenly_rider",
     "dungeons_arise:mechanical_nest", "dungeons_arise:small_blimp",
 ]
-EMPTY_TAG = "frostbound:none"
+EMPTY_TAG = "proudmountain:none"
 
 
 def main():

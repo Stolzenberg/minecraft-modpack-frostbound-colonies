@@ -22,7 +22,7 @@ MC, NEOFORGE = "1.21.1", "21.1.256"
 PACK_URL = "https://raw.githubusercontent.com/Stolzenberg/minecraft-modpack-proud-mountain-smp/main/packwiz/pack.toml"
 SERVER = (NAME, "server.proud-mountain.com")  # Eintrag in der Serverliste (Name, Adresse)
 # Eigene Mods aus extra-mods/ (Quelle im gleichnamigen Unterordner): Datei -> (Name, Seite)
-EXTRA_MODS = {"frostbound-tweaks-2.0.0.jar": ("Frostbound Tweaks", "both")}
+EXTRA_MODS = {"proud-mountain-tweaks-2.1.0.jar": ("Proud Mountain Tweaks", "both")}
 EXTRA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "extra-mods")
 RAW_BASE = PACK_URL.rsplit("/packwiz/", 1)[0]
 # Persönliche Einstellungen: nur bei der Erstinstallation schreiben, Updates überschreiben sie nicht
@@ -52,7 +52,7 @@ def modrinth(hashes):
     """SHA1 -> (Download-URL, Projekt-ID, Versions-ID) für alle Dateien, die identisch auf Modrinth liegen."""
     req = urllib.request.Request("https://api.modrinth.com/v2/version_files", method="POST",
                                  data=json.dumps({"hashes": hashes, "algorithm": "sha1"}).encode(),
-                                 headers={"Content-Type": "application/json", "User-Agent": "frostbound-colonies-packwiz"})
+                                 headers={"Content-Type": "application/json", "User-Agent": "proud-mountain-smp-packwiz"})
     with urllib.request.urlopen(req, timeout=120) as r:
         res = json.load(r)
     return {h: (next(f["url"] for f in v["files"] if f["hashes"]["sha1"] == h), v["project_id"], v["id"])

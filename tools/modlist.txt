@@ -25,7 +25,7 @@ handcrafted                              pin=6330030 # Möbel (Stühle, Tische, 
 supplementaries                          pin=9211734 # Vanilla+-Blöcke und -Mechanik (Krüge, Wegweiser, Wasserhähne, Federschleudern …), braucht Moonlight Lib
 copper-age-backport                      pin=8988105 # Copper Golem aus 1.21.9: sortiert Items aus Kupfertruhen in Truhen; F&F-Golem ist per Config aus
 pandas-falling-trees                     pin=7858908 # mit der Axt gefällte Bäume kippen um und zerfallen in Drops (Config: config/fallingtrees-common.json)
-# --- Jahreszeiten (Saison folgt dem Kalender, siehe Frostbound Tweaks; Config: config/sereneseasons/) ---
+# --- Jahreszeiten (Saison folgt dem Kalender, siehe Proud Mountain Tweaks; Config: config/sereneseasons/) ---
 serene-seasons                           pin=6182596 # Biom-Tags: packwiz/kubejs/data/sereneseasons/
 seasonal-lets-do                         pin=7886750 # Let's-Do-Feldfrüchte respektieren die Jahreszeiten
 # --- Weihnachten ---
@@ -84,7 +84,7 @@ xaeros-world-map                         pin=9067277 side=client
 mouse-tweaks                             pin=5637846 side=client
 controlling                              pin=6368976 side=client
 inventory-profiles-next                  pin=7810574   # Sortieren (Knöpfe/Tasten), Auffüllen gebrochener Werkzeuge, Profile; ersetzt Inventory Sorter (2026-10-23)
-# --- Grafik: Resource Packs (Frostbound Tweaks schaltet sie einmal ein, config/frostbound_tweaks/default_resourcepacks.txt) ---
+# --- Grafik: Resource Packs (Proud Mountain Tweaks schaltet sie einmal ein, config/proudmountain_tweaks/default_resourcepacks.txt) ---
 entity-model-features                    pin=9188526 side=client   # EMF (+ ETF als Abhängigkeit), für Fresh Animations/Moves
 fancy-crops                              pin=7094029 side=client class=12
 motschens-better-leaves                  pin=8882877 side=client class=12

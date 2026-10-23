@@ -3,9 +3,9 @@ loaderVersion = "[4,)"
 license = "MIT"
 
 [[mods]]
-modId = "frostbound_tweaks"
-version = "2.0.0"
-displayName = "Frostbound Tweaks"
+modId = "proudmountain_tweaks"
+version = "2.1.0"
+displayName = "Proud Mountain Tweaks"
 authors = "Tim"
 description = '''
 Anpassungen für das Modpack: Die Jahreszeiten von Serene Seasons folgen dem echten Kalender (Server).
@@ -16,16 +16,16 @@ Ladereihenfolge Farmer's Delight vor Coffee Delight.
 displayTest = "IGNORE_ALL_VERSION"
 
 [[mixins]]
-config = "frostbound_tweaks.mixins.json"
+config = "proudmountain_tweaks.mixins.json"
 
-[[dependencies.frostbound_tweaks]]
+[[dependencies.proudmountain_tweaks]]
 modId = "neoforge"
 type = "required"
 versionRange = "[21.1,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.frostbound_tweaks]]
+[[dependencies.proudmountain_tweaks]]
 modId = "sereneseasons"
 type = "optional"
 versionRange = "*"
@@ -33,15 +33,15 @@ ordering = "AFTER"
 side = "BOTH"
 
 # Coffee Delight liest beim Registrieren Farmer's-Delight-Blöcke, deklariert die Reihenfolge aber nicht.
-# Über diese Mod entsteht die Kette farmersdelight -> frostbound_tweaks -> coffee_delight.
-[[dependencies.frostbound_tweaks]]
+# Über diese Mod entsteht die Kette farmersdelight -> proudmountain_tweaks -> coffee_delight.
+[[dependencies.proudmountain_tweaks]]
 modId = "farmersdelight"
 type = "optional"
 versionRange = "*"
 ordering = "AFTER"
 side = "BOTH"
 
-[[dependencies.frostbound_tweaks]]
+[[dependencies.proudmountain_tweaks]]
 modId = "coffee_delight"
 type = "optional"
 versionRange = "*"

@@ -1,8 +1,8 @@
 // Testwelt: flache Creative-Dimension zum Ausprobieren von Bauwerken und Maschinen
 //
-// /testwelt bringt jeden Spieler in die Dimension frostbound:testwelt und beim zweiten Aufruf zurück an die
+// /testwelt bringt jeden Spieler in die Dimension proudmountain:testwelt und beim zweiten Aufruf zurück an die
 // Stelle, an der er die normale Welt verlassen hat. Die Dimension kommt aus dem Datapack in
-// kubejs/data/frostbound/ (dimension, dimension_type, worldgen/biome): Grundgestein und 15 Schichten grauer
+// kubejs/data/proudmountain/ (dimension, dimension_type, worldgen/biome): Grundgestein und 15 Schichten grauer
 // Beton (Oberfläche y = 16), keine Strukturen, keine Features, Biom ohne Spawns und Niederschlag, immer Mittag.
 //
 // Strenge Trennung: Jeder Spieler hat ein Survival- und ein Testwelt-Profil (Inventar mit Rüstung und Offhand,
@@ -17,8 +17,8 @@
 // Advancements und Statistiken sind nicht getrennt.
 
 ;(function () {
-  const DATA_KEY = 'frostbound_testwelt'
-  const DIM = 'frostbound:testwelt'
+  const DATA_KEY = 'proudmountain_testwelt'
+  const DIM = 'proudmountain:testwelt'
   const SPAWN = [0.5, 16, 0.5]
   const VOID_Y = -8 // wer darunter fällt (Bedrock im Creative abgebaut), landet wieder auf der Oberfläche
   const HURT_COOLDOWN = 200 // nach Schaden 10 s kein Betreten (keine Flucht aus Kämpfen)

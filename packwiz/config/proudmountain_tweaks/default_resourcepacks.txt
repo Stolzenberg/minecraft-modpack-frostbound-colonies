@@ -1,4 +1,4 @@
-# Resource Packs, die Frostbound Tweaks einmal einschaltet (Reihenfolge von unten nach oben).
+# Resource Packs, die Proud Mountain Tweaks einmal einschaltet (Reihenfolge von unten nach oben).
 # Wer ein Pack abwählt, behält das so. Format: Schlüssel Pack-ID (file/<Dateiname in resourcepacks/>).
 # Bei einem Pack-Update nur die Pack-ID ändern, der Schlüssel bleibt: Die neue Datei ersetzt dann die alte.
 fancy_crops file/Fancy Crops v1.3.zip

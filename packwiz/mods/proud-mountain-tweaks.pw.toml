@@ -1,0 +1,8 @@
+name = "Proud Mountain Tweaks"
+filename = "proud-mountain-tweaks-2.1.0.jar"
+side = "both"
+
+[download]
+url = "https://raw.githubusercontent.com/Stolzenberg/minecraft-modpack-proud-mountain-smp/main/extra-mods/proud-mountain-tweaks-2.1.0.jar"
+hash-format = "sha1"
+hash = "d065a81895cf31b204603c3ff561eb9a675a815f"

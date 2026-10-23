@@ -2,7 +2,7 @@
   "type": "minecraft:jigsaw",
   "start_pool": "dungeons_arise:eerie/heavenly_conqueror/heavenly_conqueror_main",
   "size": 7,
-  "biomes": "#frostbound:none",
+  "biomes": "#proudmountain:none",
   "adapt_noise": false,
   "spawn_overrides": {},
   "max_distance_from_center": 114,

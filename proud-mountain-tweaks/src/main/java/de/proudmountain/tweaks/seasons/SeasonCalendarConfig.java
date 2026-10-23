@@ -1,11 +1,11 @@
-package de.frostbound.tweaks.seasons;
+package de.proudmountain.tweaks.seasons;
 
 import net.neoforged.neoforge.common.ModConfigSpec;
 
 import java.time.DateTimeException;
 import java.time.ZoneId;
 
-/** config/frostbound_tweaks-common.toml: Kalender-Jahreszeiten an/aus und Zeitzone. */
+/** config/proudmountain_tweaks-common.toml: Kalender-Jahreszeiten an/aus und Zeitzone. */
 public final class SeasonCalendarConfig {
     public static final ModConfigSpec SPEC;
     public static final ModConfigSpec.BooleanValue ENABLED;

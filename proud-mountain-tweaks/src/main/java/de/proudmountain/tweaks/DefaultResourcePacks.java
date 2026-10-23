@@ -1,4 +1,4 @@
-package de.frostbound.tweaks;
+package de.proudmountain.tweaks;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.server.packs.repository.PackRepository;
@@ -18,7 +18,7 @@ import java.util.function.Predicate;
 
 /**
  * Mitgelieferte Resource Packs einmalig einschalten, ohne sie zu erzwingen (nur Client).
- * config/frostbound_tweaks/default_resourcepacks.txt listet "Schlüssel Pack-ID" von unten nach oben.
+ * config/proudmountain_tweaks/default_resourcepacks.txt listet "Schlüssel Pack-ID" von unten nach oben.
  * Jeder Schlüssel wird nur einmal eingeschaltet und danach in applied_resourcepacks.txt vermerkt,
  * wer ein Pack abwählt, behält das so. Neue Datei für denselben Schlüssel (Pack-Update): Die alte
  * Pack-ID wird an ihrer Stelle ersetzt, aber nur, wenn sie noch eingeschaltet ist.
@@ -87,7 +87,7 @@ public final class DefaultResourcePacks {
         Map<String, String> applied = read(file);
         applied.putAll(pending);
         pending.clear();
-        StringBuilder out = new StringBuilder("# Von Frostbound Tweaks einmal eingeschaltete Resource Packs (Schlüssel Pack-ID)\n");
+        StringBuilder out = new StringBuilder("# Von Proud Mountain Tweaks einmal eingeschaltete Resource Packs (Schlüssel Pack-ID)\n");
         applied.forEach((key, id) -> out.append(key).append(' ').append(id).append('\n'));
         try {
             Files.createDirectories(file.getParent());
@@ -109,7 +109,7 @@ public final class DefaultResourcePacks {
     }
 
     private static Path dir() {
-        return FMLPaths.CONFIGDIR.get().resolve(FrostboundTweaks.MOD_ID);
+        return FMLPaths.CONFIGDIR.get().resolve(ProudMountainTweaks.MOD_ID);
     }
 
     // Zeilen "Schlüssel Pack-ID", die Pack-ID darf Leerzeichen enthalten; # leitet Kommentare ein

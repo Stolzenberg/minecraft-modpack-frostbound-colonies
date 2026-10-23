@@ -1,8 +1,0 @@
-name = "Frostbound Tweaks"
-filename = "frostbound-tweaks-2.0.0.jar"
-side = "both"
-
-[download]
-url = "https://raw.githubusercontent.com/Stolzenberg/minecraft-modpack-proud-mountain-smp/main/extra-mods/frostbound-tweaks-2.0.0.jar"
-hash-format = "sha1"
-hash = "9a0affad50e05f4b6b3e9cb5f6d924e262a4a25f"
