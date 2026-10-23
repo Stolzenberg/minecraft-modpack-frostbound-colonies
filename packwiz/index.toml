@@ -35,7 +35,7 @@ hash = "f6f1749a9e2400daa67150f9f5d8ef0916feed5aa5b58628fc2283b59089c4d9"
 
 [[files]]
 file = "config/tectonic.json"
-hash = "d88e804809a6b0eaeaf5b041083d0d07d812b1913500fd9c02e0ef67bf82b880"
+hash = "6f0499dc71f949ed269491b919eb11925ae3ff0217f777a38b2a1c12fd3e0659"
 
 [[files]]
 file = "kubejs/data/betterdungeons/worldgen/structure_set/skeleton_dungeons.json"
