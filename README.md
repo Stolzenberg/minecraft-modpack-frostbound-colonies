@@ -15,7 +15,7 @@ Basis ist *Skyward Frontiers* (`../skyward-frontiers`): gleiche Struktur- und Mo
 | `packwiz/` | packwiz-Pack, aus dem die Prism-Instanzen ihre Updates holen. Configs, KubeJS-Skripte und das Schneeverwehungs-Datapack (`kubejs/data/`) werden direkt hier gepflegt (Quelle); `*.pw.toml`, `index.toml` und `pack.toml` erzeugt `tools/packwiz.py`, die nicht von Hand bearbeiten. Mods, die als identische Datei auf Modrinth liegen (86 von 109), werden von dort geladen, der Rest von CurseForge |
 | `tools/` | `scale_structures.py` (Strukturdichte senken), `disable_structures.py` (schwebende Strukturen abschalten), `modlist.txt` (Modliste, alle Versionen gepinnt), `build.py` (Abhängigkeiten auflösen), `package.py` (ZIPs bauen), `packwiz.py` (packwiz-Pack und Prism-Instanz bauen), `packwiz-installer-bootstrap.jar` (v0.0.3, steckt in der Prism-Instanz), `coldsweat_frost.py` (Temperatur-Configs erzeugen), `coldsweat-defaults/` (Cold-Sweat-Standardwerte als Eingabe), `test/` (Testserver-Werkzeuge; `surface.py` zählt Schnee/Eis an der Oberfläche je Biom) |
 | `server-overrides/` | Configs nur für den Server (AntiXray), `tools/packwiz.py` kopiert sie nach `packwiz/` |
-| `frostbound-tweaks/` | Quelltext der eigenen Client-Mod *Frostbound Tweaks* (NeoForge 1.21.1, bauen mit `./gradlew build`, braucht JDK 21) |
+| `frostbound-tweaks/` | Quelltext der eigenen Mod *Frostbound Tweaks* für Client und Server (NeoForge 1.21.1, bauen mit `./gradlew build`, braucht JDK 21, z. B. per `JAVA_HOME`) |
 | `extra-mods/` | Fertige Jars eigener Mods. `tools/packwiz.py` (`EXTRA_MODS`) trägt sie mit Download direkt aus diesem Repo ins packwiz-Pack ein |
 | `screenshots/` | 15 Screenshots aus dem Client mit Bildunterschriften (`screenshots/README.md`) |
 
@@ -50,7 +50,7 @@ Was ein Update **nicht** anfasst: `options.txt` (Grafik, Tasten, Sound), Welten,
 - **Wetter** (`kubejs/server_scripts/frost_storms.js`): Primal Winter würde dauerhaftes Gewitter setzen, also Monster auch am Tag. Stattdessen gilt ein Zyklus:
   - Es schneit ruhig 10–20 Minuten am Stück (⅙–⅓ der längeren Tage), tagsüber ist es hell und sicher.
   - Danach kommt mit 60 % **klarer Himmel** (15–30 Minuten bzw. 6–12 Spielstunden, Titel „Der Himmel klart auf“): kein Schneefall, der Nebel blendet aus, Fernsicht durch Distant Horizons bis weit zum Horizont. Ohne Wolkendecke ist es etwa 5 °F milder.
-  - **Sichtbarer Schnee hängt am Wetter:** Colder Primal Winter zeichnet im Client Schneefall, Schneegeräusche und Nebel sonst **immer**, unabhängig vom Wetter (Schnee per `LevelRendererMixin`, Nebel nur nach Himmelslicht). Die eigene Client-Mod *Frostbound Tweaks* (`frostbound-tweaks/`) koppelt alle drei an das Regenlevel der Welt: kein Niederschlag, kein Schnee, kein Nebel; Übergänge werden weich ein- und ausgeblendet. Schneedichte zusätzlich gesenkt (`snowDensity` 15 → 8 in `config/primalwinter-client.toml`, wird bei Updates überschrieben).
+  - **Sichtbarer Schnee hängt am Wetter:** Colder Primal Winter zeichnet im Client Schneefall, Schneegeräusche und Nebel sonst **immer**, unabhängig vom Wetter (Schnee per `LevelRendererMixin`, Nebel nur nach Himmelslicht). Die eigene Mod *Frostbound Tweaks* (`frostbound-tweaks/`) koppelt alle drei an das Regenlevel der Welt: kein Niederschlag, kein Schnee, kein Nebel; Übergänge werden weich ein- und ausgeblendet. Schneedichte zusätzlich gesenkt (`snowDensity` 15 → 8 in `config/primalwinter-client.toml`, wird bei Updates überschrieben).
   - Nur selten (5 % je Schneephase, sonst schneit es eine weitere Phase) ein **Whiteout**: eine Minute Vorwarnung per Titel, dann 5–10 Minuten Schneesturm. Im Mittel schneit es so etwa 52 % der Zeit, 47 % ist es klar, gut 1 % stürmt es, also etwa ein Whiteout pro 10 Stunden Spielzeit (vorher 40 % je Schneephase, 11 % Sturm). Währenddessen spawnen Monster auch am Tag, und wer im Freien steht, kühlt zusätzlich aus. Warme Kleidung dämpft das bis auf 15 %.
   - **`/weather` wird respektiert:** Von Hand gesetztes Wetter gilt für die angegebene Dauer (bis 1.000.000 Ticks), danach schneit es wieder. Längere Dauern (Primal Winters Dauergewitter bei neuen Welten) und das Zurücksetzen beim Schlafen werden überschrieben, Schlafen beendet den Schneefall also nicht.
   - Der Zustand übersteht Neustarts. Admins: `/frost status` (Phase, Restzeit, Temperatur an der eigenen Position), `/frost storm`, `/frost sky` (klarer Himmel), `/frost snow` (zurück zum Schneefall, Alias `/frost clear`).
@@ -69,7 +69,10 @@ Kälte ist der eigentliche Gegner. **Cold Sweat** gibt dem Spieler eine Körpert
   - **Weihnachtskamine** (ManyIdeas Christmas, alle Holzarten) als dauerhafte Wärmequelle (+60 °F).
   - **Create Blaze Burner** heizen je nach Stufe (+12 bis +72 °F).
   - Eis kühlt die Umgebung (Cold-Sweat-Standard): An gefrorenen Seen und Meeren ist es noch kälter.
-  - Der **Hearth** ist der „Generator“ der Kolonie: Er füllt ein ganzes Gebäude mit warmer Luft und lässt sich über Rauchabzüge weiterleiten. Er läuft mit Kohle, Holz oder Lava. **Zusätzliches Overworld-Rezept:** Rauchabzug oben, 3 Ziegelblöcke in der Mitte, unten Eisen – Hochofen – Eisen (`frost_recipes.js`). Das Originalrezept mit Netherziegeln funktioniert weiterhin.
+  - Der **Hearth** ist der „Generator“ der Kolonie: Er füllt den Raum, in dem er steht, mit warmer Luft (bis 20 Blöcke weit, nicht unter freiem Himmel). Er läuft mit Kohle, Holz oder Lava und heizt, solange ein Redstone-Signal anliegt (`Automatic Hearth` ist aus).
+    - **Schornstein:** Ein Rauchabzug oben durchs Dach ist nur Abzug, der Raum bleibt trotzdem warm. In Cold Sweat selbst kam die Luft nur oben aus dem Hearth und verpuffte mit Schornstein im Freien; *Frostbound Tweaks* lässt sie zusätzlich an allen vier Seiten des Hearth austreten (`HearthRadiantMixin`).
+    - **Lüftung zu anderen Gebäuden:** Rauchabzüge und Create-Fluidrohre leiten die warme Luft weiter, auch draußen durch den Schnee. Ein Rohrstück, an das Rohre aus zwei Richtungen anschließen, wird von selbst zum Knick und verteilt die Luft in alle angeschlossenen Rohre, so zweigt man vom Schornstein eine Leitung ab; wo sie im nächsten Gebäude endet, breitet sich die Luft wieder bis zu 20 Blöcke aus. Grenzen: höchstens 96 Blöcke vom Hearth entfernt und 12.000 beheizte Blöcke insgesamt (`config/coldsweat/world.toml`).
+    - **Zusätzliches Overworld-Rezept:** Rauchabzug oben, 3 Ziegelblöcke in der Mitte, unten Eisen – Hochofen – Eisen (`frost_recipes.js`). Das Originalrezept mit Netherziegeln funktioniert weiterhin.
   - **Warme Speisen** heizen für eine Weile auf: Suppen und Eintöpfe (Farmer's Delight, MineColonies, Vanilla) +15 für 2 Min., heiße Getränke (Kakao, Cider, Weihnachtstee, Zimt-Eierpunsch, heiße Schokolade) +20 für 1 Min., Braten und Festtagsplatten +10 für 1 Min.
   - **Wasserschlauch** mit heißem Wasser (am Lagerfeuer füllen).
 - **Warme Kleidung** (Kälteschutz-Punkte; Lederrüstung hat 23, Ziegenpelz 46 für das ganze Set):
@@ -117,6 +120,7 @@ Eine flache Creative-Dimension zum Ausprobieren von Bauwerken und Create-Maschin
 - Inventory Sorter 24.0.24: Server aus der neuen ZIP frisch installiert, startet ohne neue Fehler, `/invsorter` antwortet. Sortieren im Client ist nicht getestet.
 - Coffee Delight 1.4.1, Create Cobblestone 1.5.0, Simple Voice Chat 2.6.22 und CoreProtectNeo 24.1: Testserver (Kopie der Server-Mods, frische Welt) startet ohne neue Fehler, Voice-Chat-Server lauscht auf Port 24454, CoreProtect meldet „Using MySQL for data storage“ und legt seine Tabellen in MariaDB an. Voice Chat mit echten Clients und CoreProtect-Rollbacks sind nicht getestet.
 - Hearth-Rezept und Milch-Tag werden geladen (KubeJS: 1 Rezept hinzugefügt, keine Parse-Fehler).
+- Hearth mit Frostbound Tweaks 1.1.0: geschlossener Raum (9 × 5 × 9 innen) mit Hearth, Schornstein durchs Dach und abzweigender Rauchabzug-Leitung (15 Blöcke, im Freien) in einen zweiten Raum. Mit Mod sind beide Räume komplett mit warmer Luft gefüllt, über dem Dach und zwischen den Gebäuden nicht. Gegenprobe ohne Mod: im ersten Raum nur die Rohrblöcke, der zweite Raum warm. Eine Trennwand neben dem Hearth schneidet den Raumteil ab, nach dem Abreißen ist er nach wenigen Sekunden wieder warm. Geprüft über die Pfade des Hearth, nicht mit einem echten Spieler.
 - Schneeverwehungen: 16.129 Chunks (2 × 2 km, zweiter Seed) ohne neue Fehler generiert, Schichtverteilung wie oben.
 - Im Log stehen nur bekannte, harmlose Meldungen: fehlende Advancements von Dungeons Arise, leere Items in Struktur-Truhen, „Cold Sweat requires primalwinter 6.0.2 or lower for compat“ (die eingebaute Kompatibilität wird durch die eigene Config ersetzt).
 - **Client (CurseForge, RTX 4080, Complementary-Shader, Distant Horizons):** ca. 25 Minuten auf dem Testserver im Zuschauermodus, 18 Szenen aufgenommen (15 davon in `screenshots/`, die drei mit Himmelsbauwerken sind entfernt). Kein Absturz, Shader und DH laufen, im Log nur Asset-Warnungen (Snowy Spirit, GeckoLib). Beobachtungen:
@@ -275,7 +279,7 @@ Eine flache Creative-Dimension zum Ausprobieren von Bauwerken und Create-Maschin
 
 **Eigene Mods**
 
-- Frostbound Tweaks (`frostbound-tweaks/`, Jar in `extra-mods/`) – `frostbound-tweaks-1.0.0.jar` *(nur Client)*
+- Frostbound Tweaks (`frostbound-tweaks/`, Jar in `extra-mods/`) – `frostbound-tweaks-1.1.0.jar` *(Client und Server)*
 
 **Automatisch mitinstallierte Bibliotheken**
 
