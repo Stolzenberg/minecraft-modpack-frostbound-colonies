@@ -1856,6 +1856,11 @@ hash = "00bacfc5a98d9b0dff90bbad503def28abf970a2061c9456f721e442bc32ab29"
 metafile = true
 
 [[files]]
+file = "mods/lambdynamiclights.pw.toml"
+hash = "f6b0c56c18768988d654ffb444562b526553a3437bd85aae2df73d1831d6eeba"
+metafile = true
+
+[[files]]
 file = "mods/lendercataclysm.pw.toml"
 hash = "37422b90103838b2ff7d3e0d058b264b4af8f479f1462defd4b596a65bbcfe63"
 metafile = true

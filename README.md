@@ -10,7 +10,7 @@ Bis Version 1.0.0 hieß das Pack *Frostbound Colonies* (ewiger Winter mit Primal
 |---|---|
 | `dist/ProudMountainSMP-Prism.zip` | Prism-Launcher-Instanz mit Auto-Update (siehe [Installation](#installation-prism-launcher-mit-auto-update)) |
 | `mods.resolved.json` | Exakte Projekt- und Datei-IDs aller Mods (Lock-Datei) |
-| `packwiz/` | packwiz-Pack, aus dem die Prism-Instanzen und der Server ihre Updates holen. Configs, KubeJS-Skripte und Datapacks (`kubejs/data/`) werden direkt hier gepflegt (Quelle); `*.pw.toml`, `index.toml` und `pack.toml` erzeugt `tools/packwiz.py`, die nicht von Hand bearbeiten. Mods, die als identische Datei auf Modrinth liegen (94 von 105), werden von dort geladen, der Rest von CurseForge |
+| `packwiz/` | packwiz-Pack, aus dem die Prism-Instanzen und der Server ihre Updates holen. Configs, KubeJS-Skripte und Datapacks (`kubejs/data/`) werden direkt hier gepflegt (Quelle); `*.pw.toml`, `index.toml` und `pack.toml` erzeugt `tools/packwiz.py`, die nicht von Hand bearbeiten. Mods, die als identische Datei auf Modrinth liegen (95 von 106), werden von dort geladen, der Rest von CurseForge |
 | `tools/` | `modlist.txt` (Modliste, alle Versionen gepinnt), `build.py` (Abhängigkeiten auflösen), `packwiz.py` (packwiz-Pack und Prism-Instanz bauen), `package.py` (CurseForge-ZIPs, bei Bedarf), `scale_structures.py` (Strukturdichte senken), `disable_structures.py` (schwebende Strukturen abschalten), `packwiz-installer-bootstrap.jar` (v0.0.3, steckt in der Prism-Instanz), `test/` (Testserver-Werkzeuge: `srv.sh`, `rcon.py`, `biomemap.js`/`biomemap.py` für Biomkarten, `analyze.py`, `surface.py`) |
 | `server-overrides/` | Configs nur für den Server (AntiXray), `tools/packwiz.py` kopiert sie nach `packwiz/` |
 | `frostbound-tweaks/` | Quelltext der eigenen Mod *Frostbound Tweaks* (NeoForge 1.21.1, bauen mit `./gradlew build`, braucht JDK 21, z. B. per `JAVA_HOME`) |
@@ -88,6 +88,11 @@ Was ein Update **nicht** anfasst: `options.txt` (Grafik, Tasten, Sound), Welten,
 - **Handcrafted:** Möbel (Stühle, Tische, Bänke, Regale, Schränke, Betten, Kissen, Deko).
 - **Macaw's Holidays:** Weihnachts- und Festtagsdeko (Bäume, Lichterketten, Girlanden, Socken, Geschenke). Die übrigen Weihnachts-Mods sind mit dem ewigen Winter gegangen.
 
+## Licht in der Hand (LambDynamicLights)
+- **Problem:** Complementary leuchtet eine Fackel in der Hand nur für den Spieler aus, der sie hält. Der Shader kennt nur das eigene Hand-Item, was andere Spieler halten, sieht er nicht. Mitspieler standen deshalb im Dunkeln.
+- **LambDynamicLights** (nur Client) macht aus leuchtenden Items in Haupt- oder Nebenhand echtes Licht im Lightmap, für jeden Spieler und Mob, auch für fallengelassene Fackeln und brennende Mobs. Der Shader liest das Lightmap mit, also sehen alle das Licht. Der Server braucht die Mod nicht.
+- Falls das eigene Handlicht mit Shader zu hell wirkt (Shader-Handlicht und Mod-Licht addieren sich), in den Complementary-Einstellungen das Handlicht („Held Lighting“) abschalten. Die Mod hat eigene Einstellungen (Aktualisierungsrate, welche Lichtquellen), erreichbar über die Videoeinstellungen bzw. die Mod-Liste.
+
 ## Resource Packs
 Mitgeliefert und beim ersten Start mit dem Pack **eingeschaltet** (von unten nach oben): Fancy Crops (buschigere Felder, Varianten der Pflanzentexturen, passend zu Farmer's Delight), Motschen's Better Leaves (dichte, buschige Blätter), Fresh Animations (lebendigere Mob-Animationen), Fresh Animations: Extensions (Details, Köcher, leuchtende Augen, animierte Truhen u. a., liegt über Fresh Animations) und Fresh Moves (Spieler-Animationen).
 - **Nichts wird erzwungen:** Wer ein Pack unter *Optionen → Ressourcenpakete* abwählt oder umsortiert, behält das so, auch nach Updates. Das Einschalten übernimmt *Frostbound Tweaks* (`DefaultResourcePacks`): Die Liste steht in `config/frostbound_tweaks/default_resourcepacks.txt`, schon eingeschaltete Packs vermerkt die Mod in `config/frostbound_tweaks/applied_resourcepacks.txt` (nicht im Pack, bleibt bei Updates). Neue Packs in der Liste werden bei bestehenden Instanzen einmal nachgeschaltet. Bekommt ein Pack eine neue Datei, bleibt der Schlüssel in der Liste gleich und nur die Pack-ID ändert sich: Die neue Datei ersetzt die alte an ihrer Stelle, ein abgewähltes Pack bleibt aus.
@@ -114,7 +119,7 @@ Eine flache Creative-Dimension zum Ausprobieren von Bauwerken und Redstone, offe
 - Biomkarte und Zonen wie unter [Welt](#welt-klimazonen-kontinente-biomes-o-plenty), drei Durchläufe mit verschiedenen Natural-Temperature-Einstellungen. Chunks wurden dafür nicht generiert.
 - Copper Golem bauen und Items sortieren, siehe oben.
 - Inventory Profiles Next 2.2.5 (ersetzt Inventory Sorter) mit libIPN und Kotlin for Forge: Server startet ohne neue Fehler. Sortieren im Client nicht getestet.
-- **Nicht getestet:** alles im Client (Laubfarben, Schneefall im Winter, umstürzende Bäume, Supplementaries-Blöcke, Resource Packs mit den neuen Mods), Vorgenerierung größerer Gebiete mit Tectonic + Natural Temperature + BoP, das Pflanzenwachstum im Winter und das Schmelzen im Frühling.
+- **Nicht getestet:** alles im Client (Laubfarben, Schneefall im Winter, umstürzende Bäume, Supplementaries-Blöcke, Handlicht mit LambDynamicLights und Shader, Resource Packs mit den neuen Mods), Vorgenerierung größerer Gebiete mit Tectonic + Natural Temperature + BoP, das Pflanzenwachstum im Winter und das Schmelzen im Frühling.
 
 **Aus 1.0.0, weiter gültig:**
 - Distant Horizons auf dem Server: neue Welt, LOD-Datenbanken für alle drei Dimensionen angelegt, Neustart ohne Fehler.
@@ -150,7 +155,7 @@ Eine flache Creative-Dimension zum Ausprobieren von Bauwerken und Redstone, offe
 ## Wichtig: kein Chunky
 **Chunky nicht ins Pack aufnehmen.** Distant Horizons 3.3.3 und Chunky 1.4.23 stürzen zusammen beim Erstellen einer neuen Welt ab (siehe Skyward Frontiers). Zum Vorgenerieren auf dem Server Chunky nur vorübergehend und ohne DH verwenden.
 
-## Mods, Shader und Resource Packs (82 gelistet: 80 im Client, 2 nur auf dem Server, dazu 1 eigene Mod und 23 Bibliotheken)
+## Mods, Shader und Resource Packs (83 gelistet: 81 im Client, 2 nur auf dem Server, dazu 1 eigene Mod und 23 Bibliotheken)
 
 **Kern: Farmer's Delight**
 
@@ -261,6 +266,7 @@ Eine flache Creative-Dimension zum Ausprobieren von Bauwerken und Redstone, offe
 - [Sodium](https://www.curseforge.com/minecraft/mc-mods/sodium) – `sodium-neoforge-0.8.13+mc1.21.1.jar`
 - [Iris Shaders](https://www.curseforge.com/minecraft/mc-mods/irisshaders) – `iris-neoforge-1.8.14-beta.1+mc1.21.1.jar`
 - [Complementary Shaders - Reimagined](https://www.curseforge.com/minecraft/shaders/complementary-reimagined) – `ComplementaryReimagined_r5.9.3.zip`
+- [LambDynamicLights](https://www.curseforge.com/minecraft/mc-mods/lambdynamiclights) – `lambdynamiclights-4.8.11+1.21.1.jar`
 - [Distant Horizons: A Level of Detail mod](https://www.curseforge.com/minecraft/mc-mods/distant-horizons) – `DistantHorizons-3.3.3-1.21.1-fabric-neoforge.jar`
 - [ImmediatelyFast](https://www.curseforge.com/minecraft/mc-mods/immediatelyfast) – `ImmediatelyFast-NeoForge-1.6.15+1.21.1.jar`
 - [Entity Culling Fabric/Forge](https://www.curseforge.com/minecraft/mc-mods/entityculling) – `entityculling-neoforge-1.11.3-mc1.21.1.jar`

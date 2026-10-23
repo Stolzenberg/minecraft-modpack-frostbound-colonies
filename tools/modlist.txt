@@ -95,6 +95,7 @@ fresh-moves                              pin=6105669 side=client class=12   # Sp
 sodium                                   pin=8756580 side=client
 irisshaders                              pin=8242804 side=client
 complementary-reimagined                 pin=8884654 side=client class=6552
+lambdynamiclights                        pin=8780227 side=client   # Fackel u. Ä. in der Hand leuchtet für alle (Shader-Handlicht sieht nur der Halter selbst)
 distant-horizons                         pin=9004764
 immediatelyfast                          pin=9165518 side=client
 entityculling                            pin=9100286 side=client

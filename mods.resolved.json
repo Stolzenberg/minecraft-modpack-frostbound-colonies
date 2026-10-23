@@ -1459,6 +1459,25 @@
   "serverPackOnly": false
  },
  {
+  "slug": "lambdynamiclights",
+  "name": "LambDynamicLights",
+  "projectID": 393442,
+  "fileID": 8780227,
+  "fileName": "lambdynamiclights-4.8.11+1.21.1.jar",
+  "date": "2026-08-31",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8780/227/lambdynamiclights-4.8.11%2b1.21.1.jar",
+  "side": "client",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/lambdynamiclights",
+  "authors": [
+   "LambdAurora"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
   "slug": "distant-horizons",
   "name": "Distant Horizons: A Level of Detail mod",
   "projectID": 508933,
