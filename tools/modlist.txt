@@ -5,13 +5,8 @@
 # primal-winter (Original, Server-Absturz), particle-rain (Konflikt-Risiko mit Primal-Winter-Wetter-Rendering),
 # terralith (zu kleinteilige Biome, durch Tectonic ersetzt).
 # Bewusst entfernt: mss-moogs-soaring-structures, sky-whale-ship (keine schwebenden Strukturen, siehe disable_structures.py).
-# --- Kern: MineColonies ---
-minecolonies                             pin=9058295
-stylecolonies                            pin=9173039
-christmascolonies                        pin=7290892
-createcolonies                           pin=8956260
-jadecolonies                             pin=8879119
-domum-ornamentum                         pin=8784713   # Release 1.0.231 ist zu alt für jadecolonies
+# Nicht mehr genutzt (2026-10-23): minecolonies mit stylecolonies, christmascolonies, createcolonies, jadecolonies,
+# domum-ornamentum (und den Abhängigkeiten structurize, blockui, multi-piston, towntalk).
 # --- Kern: Create + Farmer's Delight ---
 create                                   pin=7963363
 farmers-delight                          pin=8765184

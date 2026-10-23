@@ -43,18 +43,16 @@ HEAT_BOOST = {"#minecraft:fire": (2.6, 1.8), "#minecraft:campfires": (2.6, 1.8),
 # Warme Speisen: (Items, Körpertemperatur, Dauer in Ticks)
 SOUPS = ["farmersdelight:" + i for i in ("beef_stew", "chicken_soup", "vegetable_soup", "fish_stew", "pumpkin_soup",
                                          "baked_cod_stew", "noodle_soup", "onion_soup", "bone_broth")] + \
-        ["minecolonies:" + i for i in ("lamb_stew", "stew_trencher", "chicken_broth", "corn_chowder", "pea_soup",
-                                       "potato_soup", "squash_soup", "eggdrop_soup", "veggie_soup")] + \
         ["minecraft:mushroom_stew", "minecraft:rabbit_stew", "minecraft:beetroot_soup",
          "christmas_culinary_decorations:fsoup"]
 DRINKS = ["farmersdelight:hot_cocoa", "farmersdelight:apple_cider", "festive_delight:christmas_tea",
-          "minecolonies:mint_tea", "manyideas_christmas:hot_chocolate"] + \
+          "manyideas_christmas:hot_chocolate"] + \
          ["farmers_delight_christmas_editio:" + i for i in (
              "hot_cocoa_with_marshmallows", "hot_cocoa_with_marshmallows_and_peppermint",
              "hot_cocoa_with_marshmallows_and_candy_cane", "hot_cocoa_with_marshmallows_and_cinnamon",
              "cinnamon_eggnog")]
 MEALS = ["farmersdelight:" + i for i in ("roasted_mutton_chops", "steak_and_potatoes", "roast_chicken", "shepherds_pie")] + \
-        ["minecolonies:steak_dinner", "festive_delight:festive_chiken"]
+        ["festive_delight:festive_chiken"]
 WARM_FOODS = [(SOUPS, 15, 2400), (DRINKS, 20, 1200), (MEALS, 10, 1200)]
 
 # Kleidung (Kälteschutz-Punkte; zum Vergleich: Lederrüstung 23, Ziegenpelz-Kleidung 46 für das ganze Set)

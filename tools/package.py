@@ -104,7 +104,7 @@ Get-Content mods.txt | Where-Object {{ $_ }} | ForEach-Object {{
 Write-Host "Fertig. EULA in eula.txt akzeptieren, dann start.bat ausfuehren."
 """
 server_properties = """# Frostbound Colonies: normale Weltgenerierung (Terralith + BOP), Primal Winter friert die Overworld ein
-motd=Frostbound Colonies - MineColonies im ewigen Winter
+motd=Frostbound Colonies - Siedeln im ewigen Winter
 view-distance=10
 simulation-distance=8
 spawn-protection=0
