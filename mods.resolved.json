@@ -1261,20 +1261,23 @@
   "serverPackOnly": false
  },
  {
-  "slug": "inventory-sorter",
-  "name": "Inventory Sorter",
-  "projectID": 240633,
-  "fileID": 7188660,
-  "fileName": "inventorysorter-1.21.1-24.0.24.jar",
-  "date": "2025-11-05",
+  "slug": "inventory-profiles-next",
+  "name": "Inventory Profiles Next",
+  "projectID": 495267,
+  "fileID": 7810574,
+  "fileName": "InventoryProfilesNext-neoforge-1.21.1-2.2.5.jar",
+  "date": "2026-03-25",
   "releaseType": 1,
-  "downloadUrl": "https://edge.forgecdn.net/files/7188/660/inventorysorter-1.21.1-24.0.24.jar",
+  "downloadUrl": "https://edge.forgecdn.net/files/7810/574/InventoryProfilesNext-neoforge-1.21.1-2.2.5.jar",
   "side": "both",
   "why": "listed",
-  "requires": [],
-  "url": "https://www.curseforge.com/minecraft/mc-mods/inventory-sorter",
+  "requires": [
+   351264,
+   679177
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/inventory-profiles-next",
   "authors": [
-   "cpw"
+   "mirinimi"
   ],
   "classId": 6,
   "serverPackOnly": false
@@ -2050,6 +2053,46 @@
   "url": "https://www.curseforge.com/minecraft/mc-mods/searchables",
   "authors": [
    "Jaredlll08"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "kotlin-for-forge",
+  "name": "Kotlin for Forge",
+  "projectID": 351264,
+  "fileID": 8335665,
+  "fileName": "kotlinforforge-5.12.0-all.jar",
+  "date": "2026-06-28",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/8335/665/kotlinforforge-5.12.0-all.jar",
+  "side": "both",
+  "why": "dep of inventory-profiles-next",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/kotlin-for-forge",
+  "authors": [
+   "thedarkcolour"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
+  "slug": "libipn",
+  "name": "libIPN",
+  "projectID": 679177,
+  "fileID": 7810552,
+  "fileName": "libIPN-neoforge-1.21.1-6.6.3.jar",
+  "date": "2026-03-25",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/7810/552/libIPN-neoforge-1.21.1-6.6.3.jar",
+  "side": "both",
+  "why": "dep of inventory-profiles-next",
+  "requires": [
+   351264
+  ],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/libipn",
+  "authors": [
+   "mirinimi"
   ],
   "classId": 6,
   "serverPackOnly": false

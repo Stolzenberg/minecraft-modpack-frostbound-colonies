@@ -83,7 +83,7 @@ xaeros-minimap                           pin=9067173 side=client
 xaeros-world-map                         pin=9067277 side=client
 mouse-tweaks                             pin=5637846 side=client
 controlling                              pin=6368976 side=client
-inventory-sorter                         pin=7188660   # Mittelklick sortiert; weicht dem Mausrad von Mouse Tweaks aus
+inventory-profiles-next                  pin=7810574   # Sortieren (Knöpfe/Tasten), Auffüllen gebrochener Werkzeuge, Profile; ersetzt Inventory Sorter (2026-10-23)
 # --- Grafik: Resource Packs (Frostbound Tweaks schaltet sie einmal ein, config/frostbound_tweaks/default_resourcepacks.txt) ---
 entity-model-features                    pin=9188526 side=client   # EMF (+ ETF als Abhängigkeit), für Fresh Animations/Moves
 fancy-crops                              pin=7094029 side=client class=12

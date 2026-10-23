@@ -10,7 +10,7 @@ Bis Version 1.0.0 hieß das Pack *Frostbound Colonies* (ewiger Winter mit Primal
 |---|---|
 | `dist/ProudMountainSMP-Prism.zip` | Prism-Launcher-Instanz mit Auto-Update (siehe [Installation](#installation-prism-launcher-mit-auto-update)) |
 | `mods.resolved.json` | Exakte Projekt- und Datei-IDs aller Mods (Lock-Datei) |
-| `packwiz/` | packwiz-Pack, aus dem die Prism-Instanzen und der Server ihre Updates holen. Configs, KubeJS-Skripte und Datapacks (`kubejs/data/`) werden direkt hier gepflegt (Quelle); `*.pw.toml`, `index.toml` und `pack.toml` erzeugt `tools/packwiz.py`, die nicht von Hand bearbeiten. Mods, die als identische Datei auf Modrinth liegen (92 von 103), werden von dort geladen, der Rest von CurseForge |
+| `packwiz/` | packwiz-Pack, aus dem die Prism-Instanzen und der Server ihre Updates holen. Configs, KubeJS-Skripte und Datapacks (`kubejs/data/`) werden direkt hier gepflegt (Quelle); `*.pw.toml`, `index.toml` und `pack.toml` erzeugt `tools/packwiz.py`, die nicht von Hand bearbeiten. Mods, die als identische Datei auf Modrinth liegen (94 von 105), werden von dort geladen, der Rest von CurseForge |
 | `tools/` | `modlist.txt` (Modliste, alle Versionen gepinnt), `build.py` (Abhängigkeiten auflösen), `packwiz.py` (packwiz-Pack und Prism-Instanz bauen), `package.py` (CurseForge-ZIPs, bei Bedarf), `scale_structures.py` (Strukturdichte senken), `disable_structures.py` (schwebende Strukturen abschalten), `packwiz-installer-bootstrap.jar` (v0.0.3, steckt in der Prism-Instanz), `test/` (Testserver-Werkzeuge: `srv.sh`, `rcon.py`, `biomemap.js`/`biomemap.py` für Biomkarten, `analyze.py`, `surface.py`) |
 | `server-overrides/` | Configs nur für den Server (AntiXray), `tools/packwiz.py` kopiert sie nach `packwiz/` |
 | `frostbound-tweaks/` | Quelltext der eigenen Mod *Frostbound Tweaks* (NeoForge 1.21.1, bauen mit `./gradlew build`, braucht JDK 21, z. B. per `JAVA_HOME`) |
@@ -107,12 +107,13 @@ Eine flache Creative-Dimension zum Ausprobieren von Bauwerken und Redstone, offe
   - Nicht getrennt: Advancements, Statistiken und freigeschaltete Rezepte.
 
 ## Getestet (Headless-Server, Java 21)
-**2.0.0** (Testserver mit allen 85 Server-Mods, frische Welt, Seed `frostbound-test`):
+**2.0.0** (Testserver mit allen 87 Server-Mods, frische Welt, Seed `frostbound-test`):
 - Server startet in etwa 10 Sekunden ohne neue Fehler. Im Log nur Bekanntes: fehlende Advancements von Dungeons Arise (gab es in 1.0.0 genauso), Versionsprüfung von Natural Temperature (liefert keine gültige Update-Datei).
 - Zwei Fehler gefunden und behoben: Coffee Delight lud vor Farmer's Delight (siehe [Küche](#küche-landwirtschaft-einrichtung)), und das Abschalten der Kupferknöpfe von Friends & Foes brach das Laden der Datapacks ab (siehe [Copper Golem](#copper-golem-copper-age-backport)).
 - Kalender-Jahreszeit: am 23.10. um 19:26 „Mid Autumn, Tag 404/548“, rechnerisch (22 + 0,81) / 31 × 548 = 403. Ein `/season set early_spring` war nach 10 Sekunden wieder auf das Datum gesetzt.
 - Biomkarte und Zonen wie unter [Welt](#welt-klimazonen-kontinente-biomes-o-plenty), drei Durchläufe mit verschiedenen Natural-Temperature-Einstellungen. Chunks wurden dafür nicht generiert.
 - Copper Golem bauen und Items sortieren, siehe oben.
+- Inventory Profiles Next 2.2.5 (ersetzt Inventory Sorter) mit libIPN und Kotlin for Forge: Server startet ohne neue Fehler. Sortieren im Client nicht getestet.
 - **Nicht getestet:** alles im Client (Laubfarben, Schneefall im Winter, umstürzende Bäume, Supplementaries-Blöcke, Resource Packs mit den neuen Mods), Vorgenerierung größerer Gebiete mit Tectonic + Natural Temperature + BoP, das Pflanzenwachstum im Winter und das Schmelzen im Frühling.
 
 **Aus 1.0.0, weiter gültig:**
@@ -149,7 +150,7 @@ Eine flache Creative-Dimension zum Ausprobieren von Bauwerken und Redstone, offe
 ## Wichtig: kein Chunky
 **Chunky nicht ins Pack aufnehmen.** Distant Horizons 3.3.3 und Chunky 1.4.23 stürzen zusammen beim Erstellen einer neuen Welt ab (siehe Skyward Frontiers). Zum Vorgenerieren auf dem Server Chunky nur vorübergehend und ohne DH verwenden.
 
-## Mods, Shader und Resource Packs (82 gelistet: 80 im Client, 2 nur auf dem Server, dazu 1 eigene Mod und 21 Bibliotheken)
+## Mods, Shader und Resource Packs (82 gelistet: 80 im Client, 2 nur auf dem Server, dazu 1 eigene Mod und 23 Bibliotheken)
 
 **Kern: Farmer's Delight**
 
@@ -244,7 +245,7 @@ Eine flache Creative-Dimension zum Ausprobieren von Bauwerken und Redstone, offe
 - [Xaero's World Map](https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map) – `xaeroworldmap-neoforge-1.21.1-1.47.0.jar`
 - [Mouse Tweaks](https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks) – `MouseTweaks-neoforge-mc1.21-2.26.1.jar`
 - [Controlling](https://www.curseforge.com/minecraft/mc-mods/controlling) – `Controlling-neoforge-1.21.1-19.0.5.jar`
-- [Inventory Sorter](https://www.curseforge.com/minecraft/mc-mods/inventory-sorter) – `inventorysorter-1.21.1-24.0.24.jar`
+- [Inventory Profiles Next](https://www.curseforge.com/minecraft/mc-mods/inventory-profiles-next) – `InventoryProfilesNext-neoforge-1.21.1-2.2.5.jar`
 
 **Grafik: Resource Packs (Frostbound Tweaks schaltet sie einmal ein, config/frostbound_tweaks/default_resourcepacks.txt)**
 
@@ -278,4 +279,4 @@ Eine flache Creative-Dimension zum Ausprobieren von Bauwerken und Redstone, offe
 
 **Automatisch mitinstallierte Bibliotheken**
 
-Architectury API, Balm, Better Advanced Tooltips, CERBON's API [Forge | Fabric | NeoForge], Cloth Config API (Fabric/Forge/NeoForge), Curios API, GeckoLib, GlitchCore, Lionfish API, Moog's Structure Lib (moogs_structures), Moonlight Lib, PandaLib, Puzzles Lib, Resourceful Config, Resourceful Lib, Searchables, Sophisticated Core, TerraBlender (NeoForge), YUNG's API (NeoForge) [1.20.4-1.21.1 ONLY], YetAnotherConfigLib, [ETF] Entity Texture Features - [Fabric & Forge]
+Architectury API, Balm, Better Advanced Tooltips, CERBON's API [Forge | Fabric | NeoForge], Cloth Config API (Fabric/Forge/NeoForge), Curios API, GeckoLib, GlitchCore, Kotlin for Forge, Lionfish API, Moog's Structure Lib (moogs_structures), Moonlight Lib, PandaLib, Puzzles Lib, Resourceful Config, Resourceful Lib, Searchables, Sophisticated Core, TerraBlender (NeoForge), YUNG's API (NeoForge) [1.20.4-1.21.1 ONLY], YetAnotherConfigLib, [ETF] Entity Texture Features - [Fabric & Forge], libIPN

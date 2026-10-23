@@ -1826,8 +1826,8 @@ hash = "4fa29d160cfd245f307538a6ff27f9e989a018774d0e2bd88a8f126eefdf139a"
 metafile = true
 
 [[files]]
-file = "mods/inventory-sorter.pw.toml"
-hash = "01d2dc33988b6daf0fad9a63b7474832d3876455d1119d6c6e1dde9d203ad718"
+file = "mods/inventory-profiles-next.pw.toml"
+hash = "32e285888d6ff8e6ab5ec40a0fdcb57c1ddd2ebd533c93101a13a853a3fdd96a"
 metafile = true
 
 [[files]]
@@ -1843,6 +1843,11 @@ metafile = true
 [[files]]
 file = "mods/jei.pw.toml"
 hash = "a0173d81cb7230abe164228c0c43558284a3790925dbb8bd9c2324361744a067"
+metafile = true
+
+[[files]]
+file = "mods/kotlin-for-forge.pw.toml"
+hash = "1506a3d749a45bc760b3ad57ef1fbb959f0c166b6d1d4955114fd66db7a4855d"
 metafile = true
 
 [[files]]
@@ -1868,6 +1873,11 @@ metafile = true
 [[files]]
 file = "mods/lets-do-farm-charm.pw.toml"
 hash = "1ad1c715fef541d26db102c4a8da0d48bcdf23ca9c55eca2d33a7ef34d82b0d9"
+metafile = true
+
+[[files]]
+file = "mods/libipn.pw.toml"
+hash = "378bc3dffa957f169e27f53f71a5cbe873ae18bac99bd18a39f1ae99a38486a2"
 metafile = true
 
 [[files]]
