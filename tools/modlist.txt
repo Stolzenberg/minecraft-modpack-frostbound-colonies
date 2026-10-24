@@ -70,6 +70,7 @@ ribbits                                  pin=7355196
 frost-bear                               pin=8507529
 # --- Überleben ---
 paragliders                              pin=7795089
+modernminecarts                          pin=8817323 # Copper Rails, Rail Crossing, Directed Powered Rail, Powered Detector Rail, Minecart-Ketten (Config: config/modernminecarts-common.toml, Standardwerte; brennende Furnace Minecarts laden Chunks); Rails Revamped gibt es nur für Fabric
 small-ships                              pin=9205243 # Segelschiffe aus der Werft; ohne Kanonen (Rezepte weg: packwiz/kubejs/server_scripts/smallships.js, Config: packwiz/config/smallships-server.toml; Vanilla-Boote 75 % langsamer, so gewollt); aleki's Nifty Ships gibt es nur für 1.20.1
 gravestone-mod                           pin=8671622
 sophisticated-backpacks                  pin=9154769 # Slots verkleinert (packwiz/config/sophisticatedbackpacks-server.toml); Nemo's Backpacks gibt es erst ab 1.21.5

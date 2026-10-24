@@ -1942,6 +1942,11 @@ hash = "307b5d0fd0913c555eb497227d91246517d8f00c35bd2c8c7f996697748104d2"
 metafile = true
 
 [[files]]
+file = "mods/modernminecarts.pw.toml"
+hash = "326355e01ad5ac3bafaf8ebac2295c95c49c9ce4ec8a55c33bc643da1dc134f9"
+metafile = true
+
+[[files]]
 file = "mods/moogs-end-structures.pw.toml"
 hash = "9030e655b281b41f6eafb20f9a47ff4c3787d0425c7dd6d609135570fa803a11"
 metafile = true
