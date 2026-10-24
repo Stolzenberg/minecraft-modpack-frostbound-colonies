@@ -470,6 +470,10 @@ file = "kubejs/data/mes/worldgen/structure_set/starlight_voyager.json"
 hash = "a9108634f879d22414af161983a06ca53aa6e95c97f04414f4a1ca6e2b7b7f74"
 
 [[files]]
+file = "kubejs/data/minecraft/chat_type/chat.json"
+hash = "b4a28a15b020d1562d6819290644beb5bb97e3a0d3ddede9d9af88edbbcb97f4"
+
+[[files]]
 file = "kubejs/data/minecraft/worldgen/structure_set/ancient_cities.json"
 hash = "fb941c2a854000c154c415cff6867e56c5e43db07f92c9bd3a0aafd25bc09aa1"
 
