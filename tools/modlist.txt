@@ -1,4 +1,4 @@
-# slug  pin=<fileID>  [side=client|server]  [class=<CF-Klasse>]  [pack=server]  [id=<projectID>]
+# slug  pin=<fileID>  [side=client|server|both]  [class=<CF-Klasse>]  [pack=server]  [id=<projectID>]
 # Basis: Skyward Frontiers 1.0.0 (gleiche Versionen für alle übernommenen Mods), ohne Himmels-/Luftschiff-Mods.
 # Alle Versionen gepinnt (so getestet). Entfernt nach Tests: towns-and-towers (Blöcke außerhalb der Chunks),
 # minecolonies-compatibility (Tweaks-Mixin-Absturz),
@@ -82,8 +82,8 @@ coreprotectneo                           pin=8917394 side=server pack=server # B
 jei                                      pin=8792638
 jade                                     pin=8591319
 appleskin                                pin=7854442
-xaeros-minimap                           pin=9067173 side=client
-xaeros-world-map                         pin=9067277 side=client
+xaeros-minimap                           pin=9067173 side=both # auch auf dem Server: erzwingt config/xaero/*/server_profiles (Cave-Mode nur im Nether, Radar ohne Spieler/Feinde)
+xaeros-world-map                         pin=9067277 side=both
 mouse-tweaks                             pin=5637846 side=client
 controlling                              pin=6368976 side=client
 inventory-profiles-next                  pin=7810574   # Sortieren (Knöpfe/Tasten), Auffüllen gebrochener Werkzeuge, Profile; ersetzt Inventory Sorter (2026-10-23)

@@ -3,7 +3,7 @@
 
 usage: build.py <modlist.txt> <mods.resolved.json>
 
-Optionen pro Zeile: pin=<fileID>  side=client|server  class=<CF-Klasse, 6=Mod, 6552=Shader>  pack=server
+Optionen pro Zeile: pin=<fileID>  side=client|server|both  class=<CF-Klasse, 6=Mod, 6552=Shader>  pack=server
                     id=<projectID> (falls die CurseForge-Suche den Slug nicht findet)
 Abhängigkeiten ohne pin behalten die Datei aus der bestehenden mods.resolved.json (Lock),
 nur neue Abhängigkeiten werden auf die neueste NeoForge-1.21.1-Datei aufgelöst.

@@ -54,6 +54,18 @@ file = "config/waystones-common.toml"
 hash = "f338c510714391635d7a8a38ef2687d6ecfc94f3a0ac48794293ca3b86ffbf98"
 
 [[files]]
+file = "config/xaero/minimap/server_profiles/default.cfg"
+hash = "21727c1a44a39fc98b124ab537eed8935720c3832838ed9b8338bcd8a88c2460"
+
+[[files]]
+file = "config/xaero/minimap/server_profiles/entity_radar_categories/default.cfg.json"
+hash = "2c71b01de9f8445f1897bc80b18b3e00a6c268f3fef3fbbbfe98a056a6867bf7"
+
+[[files]]
+file = "config/xaero/world-map/server_profiles/default.cfg"
+hash = "2485a4a91399363128a1f6921d2c1db891e2440ef0c6239014b80125d06c2983"
+
+[[files]]
 file = "kubejs/data/betterdungeons/worldgen/structure_set/skeleton_dungeons.json"
 hash = "2598b2b278b72d40288a2e6a66be791a6659d6ffaf26ec56532bf5237a5ee0c1"
 
@@ -2158,12 +2170,12 @@ metafile = true
 
 [[files]]
 file = "mods/xaeros-minimap.pw.toml"
-hash = "1a181a0eaaa6bc85082a432df14d2e6241b4ac97be4065294c14edd33a788237"
+hash = "12be6c667b9239ae537b09dfcd29cf7a1a78b66ac4af3730f33b8a129dbb9e36"
 metafile = true
 
 [[files]]
 file = "mods/xaeros-world-map.pw.toml"
-hash = "1b01900ccc1454ad5f57248934c88cd1dd620969dcbb0736f8cace67802941ce"
+hash = "ea8b133c02c0aed6d86f71278c48ab62ef91903343a1f2dc3297d5a4f54d1a44"
 metafile = true
 
 [[files]]
