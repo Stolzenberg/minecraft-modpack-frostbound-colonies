@@ -474,6 +474,18 @@ file = "kubejs/data/minecraft/chat_type/chat.json"
 hash = "b4a28a15b020d1562d6819290644beb5bb97e3a0d3ddede9d9af88edbbcb97f4"
 
 [[files]]
+file = "kubejs/data/minecraft/chat_type/emote_command.json"
+hash = "ab5a65ce1bf9a5d4d85126e966294e30a9ee8798b06a98585095495a4742df62"
+
+[[files]]
+file = "kubejs/data/minecraft/chat_type/msg_command_incoming.json"
+hash = "a722611024d515e6817145ea91e27cfe7c6dcc4bb196afd9ceaf3c76cf228fb0"
+
+[[files]]
+file = "kubejs/data/minecraft/chat_type/msg_command_outgoing.json"
+hash = "254da8418ac122a3d9a8e003f6e59365cb5d08f547de813d9af57a7ac30ea543"
+
+[[files]]
 file = "kubejs/data/minecraft/worldgen/structure_set/ancient_cities.json"
 hash = "fb941c2a854000c154c415cff6867e56c5e43db07f92c9bd3a0aafd25bc09aa1"
 
