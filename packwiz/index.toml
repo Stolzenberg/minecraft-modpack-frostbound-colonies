@@ -50,6 +50,10 @@ file = "config/tectonic.json"
 hash = "c44645599a7c0c0315131e7e0c4189b7957b6b1eae534e443c795bbafc20dd2a"
 
 [[files]]
+file = "config/waystones-common.toml"
+hash = "f338c510714391635d7a8a38ef2687d6ecfc94f3a0ac48794293ca3b86ffbf98"
+
+[[files]]
 file = "kubejs/data/betterdungeons/worldgen/structure_set/skeleton_dungeons.json"
 hash = "2598b2b278b72d40288a2e6a66be791a6659d6ffaf26ec56532bf5237a5ee0c1"
 
