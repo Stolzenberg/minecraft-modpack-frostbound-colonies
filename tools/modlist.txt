@@ -97,6 +97,8 @@ fresh-animations                         pin=7670377 side=client class=12   # 1.
 fresh-animations-extensions              pin=7953813 side=client class=12
 fresh-moves                              pin=6105669 side=client class=12   # Spieler-Animationen, Fassung ohne animierte Augen (braucht keinen angepassten Skin)
 # diagonal-perfect-rails-3d: Kurven-Rails als 45°-Diagonale, auch Powered/Detector/Activator (Modrinth-Pack, MODRINTH_FILES in packwiz.py)
+# variated: zufällige Texturvarianten für Bretter samt Stufen/Treppen, Bücherregal, Ziegel, Terrakotta, Stein, Erde, Gras (Modrinth-Pack, MODRINTH_FILES in packwiz.py); Ersatz für Variated Textures (nur bis 1.20.1, Downloads gesperrt)
+# rustic: zufällige Texturvarianten für Terrain (Stein, Erde, Gras, Sand, Kies, Eis, Schnee, Kürbisse …), liegt über Variated (Modrinth-Pack, MODRINTH_FILES in packwiz.py)
 # --- Performance / Stabilität ---
 sodium                                   pin=8756580 side=client
 irisshaders                              pin=8242804 side=client

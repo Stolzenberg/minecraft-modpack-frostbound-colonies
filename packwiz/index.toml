@@ -27,7 +27,7 @@ hash = "fc1ec8d3e3c8afd9f2ee55927a03efeb691a8efcd68d93937daef476a8d5aeb3"
 
 [[files]]
 file = "config/proudmountain_tweaks/default_resourcepacks.txt"
-hash = "7cf9bf08197bb18fb47e4c18691973f0befbb00119011bb15de2476f5500ed6f"
+hash = "1a39fdf741f78a6c3ccf75a0b3a340c9e27a60ecce19567bf849054b9b5c3813"
 
 [[files]]
 file = "config/sereneseasons/seasons.toml"
@@ -2226,6 +2226,16 @@ metafile = true
 [[files]]
 file = "resourcepacks/motschens-better-leaves.pw.toml"
 hash = "cc051154c623aadc332dd8427a824e21a975185e6193a27d6baae533b73a38a9"
+metafile = true
+
+[[files]]
+file = "resourcepacks/rustic.pw.toml"
+hash = "b449245dd4f5c53e54d8830e44b70f4a1417daa042385a6ca9f5aa05ac7ce3b6"
+metafile = true
+
+[[files]]
+file = "resourcepacks/variated.pw.toml"
+hash = "059c58fbbb915a1aaba0f05ea3fb9dd59dac236d0b137729e909d6db72a6a268"
 metafile = true
 
 [[files]]

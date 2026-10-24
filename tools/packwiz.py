@@ -32,6 +32,10 @@ MODRINTH_FILES = {
                                              "Overlays V75 MC1.20-1.21.11.zip", "1bf7668d53b2fdb7bd42b5718c45a8e7e4e0ec56"),
     "resourcepacks/diagonal-perfect-rails-3d.pw.toml": ("Diagonal Perfect Rails 3D PBR", "client", "GpbiI09r", "OuhpP9gE",
                                                         "DiagonalPerfectRails2.1.zip", "1bdf7c6b30d5a591d5059350eca27a65955b002d"),
+    "resourcepacks/rustic.pw.toml": ("Rustic", "client", "uL4WlbKR", "wdlaSp9Y",
+                                     "Rustic 1.6 [1.21-1.21.1].zip", "684eb6ab8419ded0a7800b94f082043675bdd59a"),
+    "resourcepacks/variated.pw.toml": ("Variated", "client", "FvMA7P5s", "FL39DY4Q",
+                                       "Variated.zip", "e910eb6e98720f70d8c4647ad695251e1cbc144c"),
 }
 # Persönliche Einstellungen: nur bei der Erstinstallation schreiben, Updates überschreiben sie nicht
 PRESERVE = ("config/iris.properties",)

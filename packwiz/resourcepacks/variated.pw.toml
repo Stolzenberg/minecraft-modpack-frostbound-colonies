@@ -1,0 +1,13 @@
+name = "Variated"
+filename = "Variated.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/FvMA7P5s/versions/FL39DY4Q/Variated.zip"
+hash-format = "sha1"
+hash = "e910eb6e98720f70d8c4647ad695251e1cbc144c"
+
+[update]
+[update.modrinth]
+mod-id = "FvMA7P5s"
+version = "FL39DY4Q"
