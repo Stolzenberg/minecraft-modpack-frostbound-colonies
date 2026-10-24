@@ -15,11 +15,6 @@
     { "id": "biomesoplenty:snowy_coniferous_forest", "required": false },
     { "id": "biomesoplenty:snowy_fir_clearing", "required": false },
     { "id": "biomesoplenty:snowy_maple_woods", "required": false },
-    "minecraft:taiga",
-    "minecraft:old_growth_pine_taiga",
-    "minecraft:old_growth_spruce_taiga",
-    { "id": "biomesoplenty:coniferous_forest", "required": false },
-    { "id": "biomesoplenty:fir_clearing", "required": false },
     { "id": "biomesoplenty:cold_desert", "required": false }
   ]
 }

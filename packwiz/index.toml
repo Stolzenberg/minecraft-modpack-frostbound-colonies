@@ -27,7 +27,7 @@ preserve = true
 
 [[files]]
 file = "config/naturaltemperature-common.toml"
-hash = "a0b15ca2628e3bab45f748ae16591aa0ecc6da11a9caf178b58ec90febe75577"
+hash = "fc1ec8d3e3c8afd9f2ee55927a03efeb691a8efcd68d93937daef476a8d5aeb3"
 
 [[files]]
 file = "config/proudmountain_tweaks/default_resourcepacks.txt"
@@ -1579,7 +1579,7 @@ hash = "7bc80d4cade96d3ec62eabec9c5f59a9bf4a725848b8985e1b192493b3454159"
 
 [[files]]
 file = "kubejs/data/sereneseasons/tags/worldgen/biome/blacklisted_biomes.json"
-hash = "da830880662d8d6952f2f219dc3a3e0a528357cb30715632519fbdfd85ad0977"
+hash = "870007e0a938a7ef8b5165cc8787322ffc6119792b3299973134a9494fae7b62"
 
 [[files]]
 file = "kubejs/data/vegandelight/loot_modifiers/add_loot_abandoned_mineshaft.json"
