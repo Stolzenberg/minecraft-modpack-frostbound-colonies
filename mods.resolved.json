@@ -1048,6 +1048,25 @@
   "serverPackOnly": false
  },
  {
+  "slug": "small-ships",
+  "name": "Small Ships",
+  "projectID": 450659,
+  "fileID": 9205243,
+  "fileName": "smallships-neoforge-1.21.1-2.0.2.jar",
+  "date": "2026-10-16",
+  "releaseType": 1,
+  "downloadUrl": "https://edge.forgecdn.net/files/9205/243/smallships-neoforge-1.21.1-2.0.2.jar",
+  "side": "both",
+  "why": "listed",
+  "requires": [],
+  "url": "https://www.curseforge.com/minecraft/mc-mods/small-ships",
+  "authors": [
+   "talhanation"
+  ],
+  "classId": 6,
+  "serverPackOnly": false
+ },
+ {
   "slug": "gravestone-mod",
   "name": "GraveStone Mod",
   "projectID": 238551,

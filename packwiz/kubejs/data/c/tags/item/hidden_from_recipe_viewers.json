@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "smallships:cannon",
+    "smallships:cannon_ball",
+    "smallships:chained_shot",
+    "smallships:grape_shot",
+    "smallships:fine_grain_powder"
+  ]
+}

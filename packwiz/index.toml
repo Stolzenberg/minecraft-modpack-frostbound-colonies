@@ -38,6 +38,10 @@ file = "config/sereneseasons/seasons.toml"
 hash = "f6f1749a9e2400daa67150f9f5d8ef0916feed5aa5b58628fc2283b59089c4d9"
 
 [[files]]
+file = "config/smallships-server.toml"
+hash = "1d8afb24e83f0b7ab2d27625c4fcccafe9ee9189f0d7d94e80d318812731bdc1"
+
+[[files]]
 file = "config/sophisticatedbackpacks-server.toml"
 hash = "2e49cfa87ea3b7fc8d8142bfc6fd7e3863db5e9adfc120701d36a0b0a4271d11"
 
@@ -204,6 +208,10 @@ hash = "047fbb97730d232ca4b96413c26a2cbeb9bdf72b9f3cc376f75b12f119a1979d"
 [[files]]
 file = "kubejs/data/bosses_of_mass_destruction/worldgen/structure_set/void_blossom.json"
 hash = "5b60b055dea23ad604892cd4a4fba971ef191124daddb581888fc58d7fa73983"
+
+[[files]]
+file = "kubejs/data/c/tags/item/hidden_from_recipe_viewers.json"
+hash = "c7be0cbab564da060f7d7dd512992b7a72b3f7bc440660c198e87adaaa97d993"
 
 [[files]]
 file = "kubejs/data/cataclysm/worldgen/structure_set/abandoned_structures.json"
@@ -1626,6 +1634,10 @@ file = "kubejs/data/vegandelight/loot_modifiers/add_loot_village_taiga_house.jso
 hash = "76286c339280e176b04fd27dd88032312803af36178aaf174e5a3dda796dde4e"
 
 [[files]]
+file = "kubejs/server_scripts/smallships.js"
+hash = "de10973245c650c925376f297637b6a4c6586ca092a4c60bfc34a2bac34c5d62"
+
+[[files]]
 file = "kubejs/server_scripts/testwelt.js"
 hash = "3a1e5d8f013f3568fbc1610cf58338b69501f9c2542331f2190bc1f1436b644f"
 
@@ -2057,6 +2069,11 @@ metafile = true
 [[files]]
 file = "mods/simple-voice-chat.pw.toml"
 hash = "55f8ed1da1c15d2f2bb8d18660b2b171983a346a00a3e866b6f3bfc865eeebd7"
+metafile = true
+
+[[files]]
+file = "mods/small-ships.pw.toml"
+hash = "6d447eb2ee3b1f22811a28a675922ab07aef50447cc13c79ff17e84bb6231897"
 metafile = true
 
 [[files]]

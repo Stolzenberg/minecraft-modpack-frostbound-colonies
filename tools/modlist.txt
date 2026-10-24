@@ -70,6 +70,7 @@ ribbits                                  pin=7355196
 frost-bear                               pin=8507529
 # --- Überleben ---
 paragliders                              pin=7795089
+small-ships                              pin=9205243 # Segelschiffe aus der Werft; ohne Kanonen (Rezepte weg: packwiz/kubejs/server_scripts/smallships.js, Config: packwiz/config/smallships-server.toml, dort auch Vanilla-Boote nicht verlangsamt); aleki's Nifty Ships gibt es nur für 1.20.1
 gravestone-mod                           pin=8671622
 sophisticated-backpacks                  pin=9154769 # Slots verkleinert (packwiz/config/sophisticatedbackpacks-server.toml); Nemo's Backpacks gibt es erst ab 1.21.5
 betterdays                               pin=7978626 # 4x längere Tage (Config: packwiz/config/betterdays-common.toml)
