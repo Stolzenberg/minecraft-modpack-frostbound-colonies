@@ -39,7 +39,7 @@ hash = "f6f1749a9e2400daa67150f9f5d8ef0916feed5aa5b58628fc2283b59089c4d9"
 
 [[files]]
 file = "config/smallships-server.toml"
-hash = "1d8afb24e83f0b7ab2d27625c4fcccafe9ee9189f0d7d94e80d318812731bdc1"
+hash = "7b4cd43c08dd82009d20d2c25a375c2e192b50ae654af024468f814ba48d8911"
 
 [[files]]
 file = "config/sophisticatedbackpacks-server.toml"
