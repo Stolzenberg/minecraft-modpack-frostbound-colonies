@@ -7,3 +7,4 @@ fresh_animations file/FreshAnimations_v1.10.4.zip
 fresh_animations_extensions file/FA+All_Extensions-v1.8.1.zip
 fresh_moves file/-1.21.2 Fresh Moves v3.1 (No Animated Eyes).zip
 block_overlays file/Overlays V75 MC1.20-1.21.11.zip
+diagonal_rails file/DiagonalPerfectRails2.1.zip

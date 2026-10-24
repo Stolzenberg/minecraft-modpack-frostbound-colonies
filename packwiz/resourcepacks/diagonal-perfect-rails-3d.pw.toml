@@ -1,0 +1,13 @@
+name = "Diagonal Perfect Rails 3D PBR"
+filename = "DiagonalPerfectRails2.1.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/GpbiI09r/versions/OuhpP9gE/DiagonalPerfectRails2.1.zip"
+hash-format = "sha1"
+hash = "1bdf7c6b30d5a591d5059350eca27a65955b002d"
+
+[update]
+[update.modrinth]
+mod-id = "GpbiI09r"
+version = "OuhpP9gE"

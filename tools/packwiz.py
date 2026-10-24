@@ -30,6 +30,8 @@ RAW_BASE = PACK_URL.rsplit("/packwiz/", 1)[0]
 MODRINTH_FILES = {
     "resourcepacks/block-overlays.pw.toml": ("Block Overlays", "client", "ZYV3OmS5", "Ao5BMsy0",
                                              "Overlays V75 MC1.20-1.21.11.zip", "1bf7668d53b2fdb7bd42b5718c45a8e7e4e0ec56"),
+    "resourcepacks/diagonal-perfect-rails-3d.pw.toml": ("Diagonal Perfect Rails 3D PBR", "client", "GpbiI09r", "OuhpP9gE",
+                                                        "DiagonalPerfectRails2.1.zip", "1bdf7c6b30d5a591d5059350eca27a65955b002d"),
 }
 # Persönliche Einstellungen: nur bei der Erstinstallation schreiben, Updates überschreiben sie nicht
 PRESERVE = ("config/iris.properties",)

@@ -31,7 +31,7 @@ hash = "fc1ec8d3e3c8afd9f2ee55927a03efeb691a8efcd68d93937daef476a8d5aeb3"
 
 [[files]]
 file = "config/proudmountain_tweaks/default_resourcepacks.txt"
-hash = "e885f1c15f0763070b7e5a659d917e1d71387c90d7c074d22e0f4a86740c9916"
+hash = "7cf9bf08197bb18fb47e4c18691973f0befbb00119011bb15de2476f5500ed6f"
 
 [[files]]
 file = "config/sereneseasons/seasons.toml"
@@ -2164,6 +2164,11 @@ metafile = true
 [[files]]
 file = "resourcepacks/block-overlays.pw.toml"
 hash = "e257807f81230b7f13979378e6656a447cfbe6d13fa673775bb76591fec7d681"
+metafile = true
+
+[[files]]
+file = "resourcepacks/diagonal-perfect-rails-3d.pw.toml"
+hash = "b0d2ed0ea672040fcfb0a270a9659fcc240509999b7eb313f3d4d2fcfc015dd5"
 metafile = true
 
 [[files]]
